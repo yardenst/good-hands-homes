@@ -28,27 +28,36 @@
       <span class="brand-name">Good&nbsp;Hands<span class="brand-name-sub">Homes</span></span>
     </a>
 
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#get">What you get</a>
-      <a href="#why">How it works</a>
-      <a href="#start" class="nav-cta">Become a member</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#get" data-i18n="nav.get">What you get</a>
+        <a href="#why" data-i18n="nav.why">How it works</a>
+        <a href="#start" class="nav-cta" data-i18n="nav.cta">Become a member</a>
+      </nav>
+      <select class="lang-select" id="lang-select" aria-label="Language">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+        <option value="el">EL</option>
+        <option value="fr">FR</option>
+        <option value="de">DE</option>
+      </select>
+    </div>
   </header>
 
   <main id="top">
-    <!-- ═══════════ HERO · NAME THE PAIN ═══════════ -->
+    <!-- ═══════════ HERO ═══════════ -->
     <section class="hero">
       <div class="hero-glow" aria-hidden="true"></div>
 
-      <p class="eyebrow reveal">Built for short-term rental management companies</p>
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">Built for short-term rental management companies</p>
 
       <h1 class="hero-title hero-title-triad">
-        <span class="reveal" style="--d:.05s">Exceptional hospitality.</span>
-        <span class="reveal" style="--d:.15s">Outstanding reviews.</span>
-        <span class="reveal serif-ital" style="--d:.25s">Guests who come back.</span>
+        <span class="reveal" style="--d:.05s" data-i18n="hero.t1">Exceptional hospitality.</span>
+        <span class="reveal" style="--d:.15s" data-i18n="hero.t2">Outstanding reviews.</span>
+        <span class="reveal serif-ital" style="--d:.25s" data-i18n="hero.t3">Guests who come back.</span>
       </h1>
 
-      <p class="hero-lede reveal" style="--d:.38s">
+      <p class="hero-lede reveal" style="--d:.38s" data-i18n="hero.lede">
         Good Hands is the guest-experience engine behind property management companies. You
         keep managing the homes and the owners, while we make every guest feel five-star and
         put your portfolio in front of our returning-guest network of 10,000+ homes across
@@ -56,22 +65,22 @@
       </p>
 
       <div class="hero-actions reveal" style="--d:.5s">
-        <a href="#start" class="btn btn-primary">Become a member<span class="btn-arrow">→</span></a>
-        <a href="#get" class="btn btn-ghost">What you get</a>
+        <a href="#start" class="btn btn-primary"><span data-i18n="hero.btnPrimary">Become a member</span><span class="btn-arrow">→</span></a>
+        <a href="#get" class="btn btn-ghost"><span data-i18n="hero.btnGhost">What you get</span></a>
       </div>
 
-      <p class="hero-note reveal" style="--d:.58s">Now accepting management companies with <strong>10+ listings</strong>.</p>
+      <p class="hero-note reveal" style="--d:.58s" data-i18n="hero.note">Now accepting management companies with <strong>10+ listings</strong>.</p>
 
       <ul class="hero-trust reveal" style="--d:.52s">
-        <li><strong>10,000+</strong> homes in the family</li>
-        <li><strong>24/7</strong> fast, personal &amp; warm support</li>
-        <li><strong>Europe</strong>-wide network</li>
+        <li data-i18n="hero.trust1"><strong>10,000+</strong> homes in the family</li>
+        <li data-i18n="hero.trust2"><strong>24/7</strong> fast, personal &amp; warm support</li>
+        <li data-i18n="hero.trust3"><strong>Europe</strong>-wide network</li>
       </ul>
     </section>
 
     <!-- ───────────── MARQUEE ───────────── -->
     <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
+      <div class="marquee-track" id="marquee-track">
         <span>Exceptional hospitality</span><span class="dot">•</span>
         <span>Outstanding reviews</span><span class="dot">•</span>
         <span>Returning guests</span><span class="dot">•</span>
@@ -90,112 +99,112 @@
     <!-- ═══════════ WHAT YOU GET ═══════════ -->
     <section class="section section-dark" id="get">
       <div class="section-head">
-        <span class="section-index light">What you get</span>
-        <h2 class="section-title">Three things, the<br>day you <em>join</em>.</h2>
-        <p class="section-sub">One membership, and a full hospitality operation stands behind every home you manage.</p>
+        <span class="section-index light" data-i18n="get.eyebrow">What you get</span>
+        <h2 class="section-title" data-i18n="get.title">Three things, the<br>day you <em>join</em>.</h2>
+        <p class="section-sub" data-i18n="get.sub">One membership, and a full hospitality operation stands behind every home you manage.</p>
       </div>
 
       <div class="cards cards-on-dark">
         <article class="card reveal-up">
           <span class="card-num">01</span>
-          <h3>Our pool of returning guests</h3>
-          <p>Guests come back to Good Hands again and again because they know how well they'll
+          <h3 data-i18n="card1.t">Our pool of returning guests</h3>
+          <p data-i18n="card1.b">Guests come back to Good Hands again and again because they know how well they'll
              be treated. Join, and your homes get put in front of that loyal crowd. Companies
              who work with us see 2–3× more direct bookings.</p>
         </article>
         <article class="card reveal-up" style="--d:.1s">
           <span class="card-num">02</span>
-          <h3>Outstanding reviews</h3>
-          <p>Hospitality this good shows up where it counts. Members watch their ratings climb
+          <h3 data-i18n="card2.t">Outstanding reviews</h3>
+          <p data-i18n="card2.b">Hospitality this good shows up where it counts. Members watch their ratings climb
              and their reputation compound, home after home, review after review.</p>
         </article>
         <article class="card reveal-up" style="--d:.2s">
           <span class="card-num">03</span>
-          <h3>Exceptional hospitality, run for you</h3>
-          <p>Hire us to deliver five-star guest experience across your homes: fast, personal
+          <h3 data-i18n="card3.t">Exceptional hospitality, run for you</h3>
+          <p data-i18n="card3.b">Hire us to deliver five-star guest experience across your homes: fast, personal
              and warm, 24/7. We hold the standard so you never have to build a support team to do it.</p>
         </article>
       </div>
     </section>
 
-    <!-- ═══════════ THE SPLIT · THE REFRAME ═══════════ -->
+    <!-- ═══════════ HOW IT WORKS ═══════════ -->
     <section class="statement" id="why">
       <div class="statement-inner">
-        <p class="eyebrow reveal-up">How it works</p>
-        <h2 class="statement-title reveal-up" style="--d:.08s">
+        <p class="eyebrow reveal-up" data-i18n="why.eyebrow">How it works</p>
+        <h2 class="statement-title reveal-up" style="--d:.08s" data-i18n="why.title">
           You make the homes.<br>
           <span class="serif-ital">We make them exceptional.</span>
         </h2>
-        <p class="statement-sub reveal-up" style="--d:.18s">
+        <p class="statement-sub reveal-up" style="--d:.18s" data-i18n="why.sub">
           You hire Good Hands to run guest experience across the homes you manage: fast,
           personal, warm, and around the clock. We hold the five-star standard, so every stay
           becomes one worth reviewing and returning to.
         </p>
 
         <ul class="assurances reveal-up" style="--d:.28s">
-          <li>We're not a property manager. We never sign owners or take listings.</li>
-          <li>You keep your business and your owners.</li>
-          <li>We're the hospitality layer working behind companies like yours.</li>
+          <li data-i18n="assure1">We're not a property manager. We never sign owners or take listings.</li>
+          <li data-i18n="assure2">You keep your business and your owners.</li>
+          <li data-i18n="assure3">We're the hospitality layer working behind companies like yours.</li>
         </ul>
       </div>
     </section>
 
-    <!-- ═══════════ THE RELIEF · WHAT DISAPPEARS ═══════════ -->
+    <!-- ═══════════ THE RELIEF ═══════════ -->
     <section class="section section-soft" id="relief">
       <div class="section-head">
-        <span class="section-index">The relief</span>
-        <h2 class="section-title">Things you never have to<br>do <em>again</em>.</h2>
-        <p class="section-sub">The day you join, these stop being your problem.</p>
+        <span class="section-index" data-i18n="relief.eyebrow">The relief</span>
+        <h2 class="section-title" data-i18n="relief.title">Things you never have to<br>do <em>again</em>.</h2>
+        <p class="section-sub" data-i18n="relief.sub">The day you join, these stop being your problem.</p>
       </div>
 
       <ul class="reliefs">
-        <li class="relief reveal-up"><span class="relief-mark" aria-hidden="true">✓</span>Hire, train, and babysit a support team</li>
-        <li class="relief reveal-up" style="--d:.08s"><span class="relief-mark" aria-hidden="true">✓</span>Watch reply times slip as you add homes</li>
-        <li class="relief reveal-up" style="--d:.16s"><span class="relief-mark" aria-hidden="true">✓</span>Be on call 24/7 for every guest message</li>
+        <li class="relief reveal-up"><span class="relief-mark" aria-hidden="true">✓</span><span data-i18n="relief1">Hire, train, and babysit a support team</span></li>
+        <li class="relief reveal-up" style="--d:.08s"><span class="relief-mark" aria-hidden="true">✓</span><span data-i18n="relief2">Watch reply times slip as you add homes</span></li>
+        <li class="relief reveal-up" style="--d:.16s"><span class="relief-mark" aria-hidden="true">✓</span><span data-i18n="relief3">Be on call 24/7 for every guest message</span></li>
       </ul>
     </section>
 
-    <!-- ═══════════ PROOF IT SCALES ═══════════ -->
+    <!-- ═══════════ PROOF ═══════════ -->
     <section class="section" id="proof">
       <div class="section-head">
-        <span class="section-index">Proof</span>
-        <h2 class="section-title">Hospitality that scales,<br>because someone <em>owns</em> it.</h2>
-        <p class="section-sub">We already hold this standard across more than 10,000 homes in Europe, and companies who join us see 2–3× more direct bookings. Yours are next.</p>
+        <span class="section-index" data-i18n="proof.eyebrow">Proof</span>
+        <h2 class="section-title" data-i18n="proof.title">Hospitality that scales,<br>because someone <em>owns</em> it.</h2>
+        <p class="section-sub" data-i18n="proof.sub">We already hold this standard across more than 10,000 homes in Europe, and companies who join us see 2–3× more direct bookings. Yours are next.</p>
       </div>
 
       <div class="stats">
         <div class="stat reveal-up">
           <span class="stat-num" data-count="10000">0</span><span class="stat-suffix">+</span>
-          <p>homes already in the family across Europe</p>
+          <p data-i18n="stat1">homes already in the family across Europe</p>
         </div>
         <div class="stat reveal-up" style="--d:.1s">
           <span class="stat-num" data-count="4.9">0</span><span class="stat-suffix">★</span>
-          <p>average guest review across managed homes</p>
+          <p data-i18n="stat2">average guest review across managed homes</p>
         </div>
         <div class="stat reveal-up" style="--d:.2s">
           <span class="stat-num">2–3<span class="stat-suffix">×</span></span>
-          <p>more direct bookings for companies who work with us</p>
+          <p data-i18n="stat3">more direct bookings for companies who work with us</p>
         </div>
       </div>
 
       <figure class="quote reveal-up">
-        <blockquote>
+        <blockquote data-i18n="quote.text">
           "I doubled my listings and my reviews went <em>up</em>. Guests think there's a
           five-star front desk behind every booking, and I finally got my evenings back."
         </blockquote>
         <figcaption>
           <span class="quote-name">Mara L.</span>
-          <span class="quote-role">Founder, 24-home management company · Lisbon</span>
+          <span class="quote-role" data-i18n="quote.role">Founder, 24-home management company · Lisbon</span>
         </figcaption>
       </figure>
     </section>
 
-    <!-- ═══════════ THE DECISION · YES / NO ═══════════ -->
+    <!-- ═══════════ CTA ═══════════ -->
     <section class="cta" id="start">
       <div class="cta-inner">
-        <p class="eyebrow eyebrow-on-dark reveal-up">One decision left</p>
-        <h2 class="cta-title">Exceptional hospitality.<br><span class="serif-ital">Yours to join.</span></h2>
-        <p class="cta-sub">Outstanding reviews, returning guests, and a five-star standard behind every home, all from one membership. Tell us about your portfolio; a real person replies within a business day.</p>
+        <p class="eyebrow eyebrow-on-dark reveal-up" data-i18n="cta.eyebrow">One decision left</p>
+        <h2 class="cta-title" data-i18n="cta.title">Exceptional hospitality.<br><span class="serif-ital">Yours to join.</span></h2>
+        <p class="cta-sub" data-i18n="cta.sub">Outstanding reviews, returning guests, and a five-star standard behind every home, all from one membership. Tell us about your portfolio; a real person replies within a business day.</p>
 
         <form class="cta-form" id="join-form">
           <!-- Web3Forms config -->
@@ -205,19 +214,19 @@
           <!-- honeypot (hidden from humans; bots fill it and get rejected) -->
           <input type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true" class="hp" />
 
-          <input type="email" name="email" placeholder="Email" aria-label="Work email" required />
-          <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" required />
+          <input type="email" name="email" placeholder="Email" aria-label="Work email" data-i18n-ph="form.email" required />
+          <input type="tel" name="phone" placeholder="Phone number" aria-label="Phone number" data-i18n-ph="form.phone" required />
           <select name="listings" aria-label="Number of homes you manage" required>
-            <option value="">Homes you manage…</option>
+            <option value="" data-i18n="form.listings0">Homes you manage…</option>
             <option>10–20</option>
             <option>21–50</option>
             <option>51–100</option>
             <option>100+</option>
           </select>
-          <button type="submit" class="btn btn-primary">Yes, I'm in<span class="btn-arrow">→</span></button>
+          <button type="submit" class="btn btn-primary"><span data-i18n="form.btn">Yes, I'm in</span><span class="btn-arrow">→</span></button>
         </form>
         <p class="form-status" role="status" aria-live="polite"></p>
-        <p class="cta-fine">Now accepting management companies with 10+ listings.</p>
+        <p class="cta-fine" data-i18n="cta.fine">Now accepting management companies with 10+ listings.</p>
       </div>
     </section>
   </main>
@@ -232,14 +241,15 @@
         </svg>
         <span class="brand-name">Good&nbsp;Hands<span class="brand-name-sub">Homes</span></span>
       </span>
-      <p>Exceptional hospitality. Outstanding reviews. Returning guests.</p>
+      <p data-i18n="footer.tagline">Exceptional hospitality. Outstanding reviews. Returning guests.</p>
     </div>
     <div class="footer-meta">
       <span>© 2026 Good Hands Homes</span>
-      <a href="#top">Back to top ↑</a>
+      <a href="#top" data-i18n="footer.back">Back to top ↑</a>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
