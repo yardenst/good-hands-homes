@@ -1,99 +1,160 @@
-// Good Hands Homes — small interactions (no dependencies)
+// Flixbnb: small interactions (no dependencies)
 
-// 1. Nav shadow once you scroll past the hero top
-const nav = document.getElementById('nav');
-const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
-onScroll();
-window.addEventListener('scroll', onScroll, { passive: true });
+// Tabs (the four sizes), with arrow-key support.
+function initTabs(list) {
+  const tabs = [...list.querySelectorAll('[role="tab"]')];
 
-// 2. Reveal-on-scroll for .reveal-up elements
-const revealEls = document.querySelectorAll('.reveal-up');
-const revealObserver = new IntersectionObserver((entries) => {
-  for (const entry of entries) {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in');
-      revealObserver.unobserve(entry.target);
-    }
-  }
-}, { threshold: 0.18 });
-revealEls.forEach((el) => revealObserver.observe(el));
-
-// 3. Count-up animation for stats
-const animateCount = (el) => {
-  const target = parseFloat(el.dataset.count);
-  const decimals = (el.dataset.count.split('.')[1] || '').length;
-  const duration = 1400;
-  let start = null;
-
-  const tick = (ts) => {
-    if (start === null) start = ts;
-    const p = Math.min((ts - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
-    const value = (target * eased).toFixed(decimals);
-    el.textContent = Number(value).toLocaleString('en-US', {
-      minimumFractionDigits: decimals,
-      maximumFractionDigits: decimals,
+  function select(tab, focus) {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
     });
-    if (p < 1) requestAnimationFrame(tick);
-  };
-  requestAnimationFrame(tick);
-};
-
-const statObserver = new IntersectionObserver((entries) => {
-  for (const entry of entries) {
-    if (entry.isIntersecting) {
-      animateCount(entry.target);
-      statObserver.unobserve(entry.target);
-    }
-  }
-}, { threshold: 0.6 });
-document.querySelectorAll('.stat-num[data-count]').forEach((el) => statObserver.observe(el));
-
-// 4. CTA form — submits to Web3Forms (https://web3forms.com)
-const form = document.getElementById('join-form');
-const status = document.querySelector('.form-status');
-
-form?.addEventListener('submit', async (e) => {
-  e.preventDefault();
-
-  const btn = form.querySelector('button[type="submit"]');
-  const original = btn.innerHTML;
-  const data = Object.fromEntries(new FormData(form));
-
-  // Guard against the unconfigured placeholder key
-  if (!data.access_key || data.access_key.includes('YOUR_WEB3FORMS')) {
-    setStatus('Form isn’t connected yet. Add your Web3Forms access key.', 'is-error');
-    return;
+    if (focus) tab.focus();
   }
 
-  btn.disabled = true;
-  btn.innerHTML = 'Sending…';
-  setStatus('', '');
-
-  try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify(data),
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!step) return;
+      e.preventDefault();
+      select(tabs[(i + step + tabs.length) % tabs.length], true);
     });
-    const json = await res.json();
+  });
 
-    if (json.success) {
-      form.reset();
-      setStatus('Thanks! A real person will reply within a business day.', 'is-success');
-    } else {
-      throw new Error(json.message || 'Submission failed');
-    }
-  } catch (err) {
-    setStatus('Something went wrong. Please try again, or email us directly.', 'is-error');
-  } finally {
-    btn.disabled = false;
-    btn.innerHTML = original;
-  }
+  return { tabs, select };
+}
+
+document.querySelectorAll('[role="tablist"]').forEach(list => {
+  const { tabs, select } = initTabs(list);
+
+  // Campaign links can open a size group directly: flixbnb.com/?size=a (a, b, c or d).
+  const size = new URLSearchParams(location.search).get('size');
+  const fromUrl = tabs.find(t => t.dataset.size && t.dataset.size === size);
+  if (fromUrl) select(fromUrl);
 });
 
-function setStatus(message, cls) {
-  if (!status) return;
-  status.textContent = message;
-  status.className = 'form-status' + (cls ? ' ' + cls : '');
-}
+// The cloud of situations: show a screenful, fading out, until the visitor asks for all of them.
+(function () {
+  const cloud = document.getElementById('cloud');
+  const more = document.querySelector('.cloud-more');
+  if (!cloud || !more) return;
+  cloud.classList.add('is-collapsed');
+  more.setAttribute('aria-expanded', 'false');
+  more.hidden = false;
+  more.addEventListener('click', () => {
+    const open = cloud.classList.toggle('is-collapsed') === false;
+    more.setAttribute('aria-expanded', open);
+    more.textContent = open ? 'Show fewer' : 'Show all 150+';
+  });
+})();
+
+// The lead form: every "Start onboarding" and "Free PMS scan" button opens it.
+// Submissions go to FormSubmit, which emails each one to Sharon. The very first submission
+// sends Sharon an "Activate Form" email; until that link is clicked, sends fail and the visitor
+// is told to email instead. If LEAD_ENDPOINT is emptied, the form opens a ready-to-send email.
+const LEAD_ENDPOINT = 'https://formsubmit.co/ajax/sharon@flixbnb.com';
+const LEAD_EMAIL = 'sharon@flixbnb.com';
+
+(function () {
+  const dialog = document.getElementById('lead');
+  if (!dialog || typeof dialog.showModal !== 'function') return; // no <dialog>: the buttons stay email links
+
+  const form = dialog.querySelector('.lead-form');
+  const done = dialog.querySelector('.lead-done');
+  const error = dialog.querySelector('.lead-error');
+  const submit = dialog.querySelector('.lead-submit');
+  const title = form.querySelector('.lead-title');
+
+  const kinds = {
+    onboarding: { title: 'Start onboarding', button: 'Start onboarding', subject: 'Start onboarding' },
+    scan: { title: 'Get your free PMS scan', button: 'Get my free scan', subject: 'Free PMS scan' }
+  };
+
+  function open(kind) {
+    const k = kinds[kind] || kinds.onboarding;
+    form.reset();
+    form.request.value = kind;
+    title.textContent = k.title;
+    submit.textContent = k.button;
+    form.hidden = false;
+    done.hidden = true;
+    error.hidden = true;
+    form.querySelectorAll('[aria-invalid]').forEach(f => f.removeAttribute('aria-invalid'));
+    dialog.showModal();
+  }
+
+  document.querySelectorAll('[data-lead]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      open(btn.dataset.lead);
+    });
+  });
+
+  dialog.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => dialog.close()));
+  // A click on the dimmed backdrop closes it too
+  dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+
+  // A phone number is anything with at least 6 digits; spaces, dashes and a leading + are fine
+  function checkPhone() {
+    const digits = form.phone.value.replace(/\D/g, '').length;
+    form.phone.setCustomValidity(digits >= 6 ? '' : 'Enter a phone number, with the country code.');
+  }
+
+  function valid() {
+    checkPhone();
+    let ok = true;
+    [form.company, form.email, form.phone].forEach(f => {
+      const bad = !f.checkValidity();
+      f.toggleAttribute('aria-invalid', bad);
+      if (bad && ok) { f.focus(); ok = false; }
+    });
+    return ok;
+  }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    error.hidden = true;
+    if (!valid()) {
+      error.textContent = 'Fill in your company name, a valid email and a phone number.';
+      error.hidden = false;
+      return;
+    }
+    const data = Object.fromEntries(new FormData(form));
+    const k = kinds[data.request] || kinds.onboarding;
+
+    if (LEAD_ENDPOINT) {
+      submit.disabled = true;
+      try {
+        const res = await fetch(LEAD_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({ ...data, _subject: k.subject + ': ' + data.company, _template: 'table' })
+        });
+        // FormSubmit answers 200 with success "false" while the form isn't activated yet
+        const reply = await res.json().catch(() => ({}));
+        if (!res.ok || String(reply.success) !== 'true') throw new Error(reply.message || res.status);
+      } catch (err) {
+        error.textContent = 'Your details weren\'t sent. Try again, or email ' + LEAD_EMAIL + '.';
+        error.hidden = false;
+        submit.disabled = false;
+        return;
+      }
+      submit.disabled = false;
+    } else {
+      const body = 'Company: ' + data.company + '\nEmail: ' + data.email + '\nPhone: ' + data.phone;
+      location.href = 'mailto:' + LEAD_EMAIL + '?subject=' + encodeURIComponent(k.subject + ': ' + data.company) + '&body=' + encodeURIComponent(body);
+    }
+
+    form.hidden = true;
+    done.hidden = false;
+    done.querySelector('.lead-title').focus();
+  });
+
+  form.addEventListener('input', e => {
+    if (e.target === form.phone) checkPhone();
+    if (e.target.hasAttribute('aria-invalid') && e.target.checkValidity()) e.target.removeAttribute('aria-invalid');
+  });
+})();
