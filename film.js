@@ -935,8 +935,9 @@
   /* ───────────── Rendering a frame ───────────── */
   let scale = 1, offX = 0, offY = 0;
   function fit() {
-    const r = canvas.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const cw = Math.max(1, Math.round(r.width * dpr)), ch = Math.max(1, Math.round(r.height * dpr));
+    // clientWidth/Height ignore CSS rotation (the phone full-screen view turns the film sideways)
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const cw = Math.max(1, Math.round(canvas.clientWidth * dpr)), ch = Math.max(1, Math.round(canvas.clientHeight * dpr));
     if (canvas.width !== cw || canvas.height !== ch) { canvas.width = cw; canvas.height = ch; }
     scale = Math.min(cw / W, ch / H); offX = (cw - W * scale) / 2; offY = (ch - H * scale) / 2;
   }
@@ -1326,10 +1327,30 @@
     muteBtn.setAttribute('aria-label', muted ? 'Unmute' : 'Mute');
     if (master) master.gain.value = muted ? 0 : 1;
   });
+  // Full screen. iPhones only allow it for their own video player, so there the film fills the
+  // screen itself (turned sideways when the phone is upright), with a close button.
+  function fakeFull(on) {
+    root.classList.toggle('is-full', on);
+    document.documentElement.classList.toggle('film-locked', on);
+    fullBtn.setAttribute('aria-label', on ? 'Exit full screen' : 'Full screen');
+    fit(); if (ready && state !== 'playing') render(offset);
+  }
   fullBtn.addEventListener('click', () => {
-    if (document.fullscreenElement) document.exitFullscreen();
-    else if (root.requestFullscreen) root.requestFullscreen();
+    if (root.classList.contains('is-full')) return fakeFull(false);
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+      (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+      return;
+    }
+    const req = root.requestFullscreen || root.webkitRequestFullscreen;
+    if (!req) return fakeFull(true);
+    try {
+      const p = req.call(root);
+      if (p && p.catch) p.catch(() => fakeFull(true));
+    } catch (e) { fakeFull(true); }
   });
+  const closeBtn = root.querySelector('.film-close');
+  if (closeBtn) closeBtn.addEventListener('click', () => fakeFull(false));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && root.classList.contains('is-full')) fakeFull(false); });
   seek.max = DUR;
   seek.addEventListener('pointerdown', () => { seeking = true; });
   seek.addEventListener('pointerup', () => { seeking = false; });
