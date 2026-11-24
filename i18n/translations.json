@@ -1,0 +1,1831 @@
+{
+ "strings": {
+  "Flixbnb · The AI Operations Manager for Short-Term Rentals": {
+   "es": "Flixbnb · El gestor de operaciones con IA para alquileres vacacionales",
+   "fr": "Flixbnb · Le gestionnaire des opérations IA pour la location courte durée",
+   "pl": "Flixbnb · Menedżer operacji AI dla najmu krótkoterminowego"
+  },
+  "Flixbnb is the AI operations manager for short-term rentals. Connected to your guests, your staff and your PMS, it knows how to run a short-term rental business and leaves your team only the decisions.": {
+   "es": "Flixbnb es el gestor de operaciones con IA para alquileres vacacionales. Conectado con tus huéspedes, tu equipo y tu PMS, sabe cómo llevar un negocio de alquiler vacacional y a tu equipo solo le deja las decisiones.",
+   "fr": "Flixbnb est le gestionnaire des opérations IA pour la location courte durée. Connecté à vos voyageurs, votre équipe et votre PMS, il sait faire tourner une activité de location courte durée et ne laisse à votre équipe que les décisions.",
+   "pl": "Flixbnb to menedżer operacji AI dla najmu krótkoterminowego. Połączony z Twoimi gośćmi, zespołem i systemem PMS, wie, jak prowadzić biznes najmu krótkoterminowego, a Twojemu zespołowi zostawia tylko decyzje."
+  },
+  "It is handled. Perfectly.": {
+   "es": "Está resuelto. A la perfección.",
+   "fr": "C'est géré. Parfaitement.",
+   "pl": "Załatwione. Perfekcyjnie."
+  },
+  "What we know": {
+   "es": "Lo que sabemos",
+   "fr": "Ce que nous savons",
+   "pl": "Co wiemy"
+  },
+  "How it works": {
+   "es": "Cómo funciona",
+   "fr": "Comment ça marche",
+   "pl": "Jak to działa"
+  },
+  "Start onboarding": {
+   "es": "Empezar el onboarding",
+   "fr": "Démarrer l'onboarding",
+   "pl": "Rozpocznij wdrożenie"
+  },
+  "Primary": {
+   "es": "Principal",
+   "fr": "Principale",
+   "pl": "Główna"
+  },
+  "Language": {
+   "es": "Idioma",
+   "fr": "Langue",
+   "pl": "Język"
+  },
+  "Watch the 1-minute video": {
+   "es": "Mira el vídeo de 1 minuto",
+   "fr": "Voir la vidéo d'une minute",
+   "pl": "Obejrzyj 1-minutowy film"
+  },
+  "Your team, 100X better.": {
+   "es": "Tu equipo, 100X mejor.",
+   "fr": "Votre équipe, 100X meilleure.",
+   "pl": "Twój zespół, 100X lepszy."
+  },
+  "Lockbox empty.": {
+   "es": "Caja de llaves vacía.",
+   "fr": "Boîte à clés vide.",
+   "pl": "Pusty sejf na klucze."
+  },
+  "Refund threat.": {
+   "es": "Piden reembolso.",
+   "fr": "Remboursez-moi !",
+   "pl": "Groźba zwrotu."
+  },
+  "Extra night request.": {
+   "es": "¿Una noche más?",
+   "fr": "Une nuit de plus ?",
+   "pl": "Jeszcze jedna noc?"
+  },
+  "Handled. Perfectly.": {
+   "es": "Resuelto. Perfecto.",
+   "fr": "Géré. Parfaitement.",
+   "pl": "Załatwione. Perfekcyjnie."
+  },
+  "Flixbnb already knows the ": {
+   "es": "Flixbnb ya conoce las ",
+   "fr": "Flixbnb connaît déjà les ",
+   "pl": "Flixbnb zna już "
+  },
+  "150+ situations": {
+   "es": "150+ situaciones",
+   "fr": "150+ situations",
+   "pl": "150+ sytuacji"
+  },
+  " a short-term rental runs into, and exactly how to handle each one. Plug it into your company and the ops mistakes stop, your team gets 100X better, and your reviews show it.": {
+   "es": " que vive un alquiler vacacional, y exactamente cómo resolver cada una. Conéctalo a tu empresa: se acaban los errores operativos, tu equipo mejora 100X y tus reseñas lo reflejan.",
+   "fr": " qu'une location courte durée rencontre, et exactement comment gérer chacune. Branchez-le à votre entreprise : les erreurs opérationnelles s'arrêtent, votre équipe devient 100X meilleure, et vos avis le montrent.",
+   "pl": ", z którymi mierzy się najem krótkoterminowy, i dokładnie wie, jak poradzić sobie z każdą z nich. Podłącz go do swojej firmy: błędy operacyjne znikają, Twój zespół staje się 100X lepszy, a recenzje to pokazują."
+  },
+  "Schedule a call": {
+   "es": "Agendar una llamada",
+   "fr": "Planifier un appel",
+   "pl": "Umów rozmowę"
+  },
+  "No credit card required yet.": {
+   "es": "Aún no hace falta tarjeta de crédito.",
+   "fr": "Pas de carte bancaire demandée pour l'instant.",
+   "pl": "Na razie bez karty kredytowej."
+  },
+  "Works with": {
+   "es": "Funciona con",
+   "fr": "Fonctionne avec",
+   "pl": "Działa z"
+  },
+  "Exit full screen": {
+   "es": "Salir de pantalla completa",
+   "fr": "Quitter le plein écran",
+   "pl": "Wyjdź z pełnego ekranu"
+  },
+  "Full screen": {
+   "es": "Pantalla completa",
+   "fr": "Plein écran",
+   "pl": "Pełny ekran"
+  },
+  "Play the film, with sound": {
+   "es": "Ver el vídeo, con sonido",
+   "fr": "Lancer la vidéo, avec le son",
+   "pl": "Odtwórz film z dźwiękiem"
+  },
+  "Play the film again": {
+   "es": "Ver el vídeo otra vez",
+   "fr": "Revoir la vidéo",
+   "pl": "Odtwórz film ponownie"
+  },
+  "Pause": {
+   "es": "Pausa",
+   "fr": "Pause",
+   "pl": "Pauza"
+  },
+  "Play": {
+   "es": "Reproducir",
+   "fr": "Lecture",
+   "pl": "Odtwórz"
+  },
+  "Position in the film": {
+   "es": "Posición en el vídeo",
+   "fr": "Position dans la vidéo",
+   "pl": "Pozycja w filmie"
+  },
+  "Mute": {
+   "es": "Silenciar",
+   "fr": "Couper le son",
+   "pl": "Wycisz"
+  },
+  "Unmute": {
+   "es": "Activar sonido",
+   "fr": "Remettre le son",
+   "pl": "Włącz dźwięk"
+  },
+  "The film: running short-term rentals, every single day, a host is buried in guest messages, from an empty lockbox to a refund demand, then in 150+ sticky notes of everything a rental runs into. The page rips open on Flixbnb, connected to your guests, your team and your PMS. A yellow checklist gets ticked: lockbox empty, extra night request, cleaner running late, same-day turnover and a wrong door code are all handled, and only the €200 refund comes to you. In a chat, Flixbnb asks where the fuse box is, gets a one-line answer, and reports the power is back. Your team gets 100X better. Lockbox empty. Refund threat. Extra night request. Handled. flixbnb.com.": {
+   "es": "El vídeo: gestionando alquileres vacacionales, todos los días, un anfitrión se ahoga en mensajes de huéspedes, de una caja de llaves vacía a una petición de reembolso, y luego en 150+ notas de todo lo que vive un alquiler. La página se rasga y aparece Flixbnb, conectado con tus huéspedes, tu equipo y tu PMS. Una lista amarilla se va marcando: caja de llaves vacía, noche extra, limpieza con retraso, cambio el mismo día y código de puerta equivocado quedan resueltos, y solo el reembolso de 200 € llega a ti. En un chat, Flixbnb pregunta dónde está el cuadro eléctrico, recibe una respuesta de una línea y avisa de que vuelve la luz. Tu equipo mejora 100X. Caja de llaves vacía. Amenaza de reembolso. Petición de una noche extra. Resuelto. flixbnb.com.",
+   "fr": "La vidéo : en location courte durée, chaque jour, un hôte croule sous les messages des voyageurs, d'une boîte à clés vide à une demande de remboursement, puis sous 150+ post-it de tout ce qu'une location rencontre. La page se déchire sur Flixbnb, connecté à vos voyageurs, votre équipe et votre PMS. Une liste jaune se coche : boîte à clés vide, nuit en plus, ménage en retard, rotation le jour même et mauvais code de porte sont gérés, et seul le remboursement de 200 € vous revient. Dans un chat, Flixbnb demande où est le tableau électrique, reçoit une réponse d'une ligne et annonce que le courant est revenu. Votre équipe devient 100X meilleure. Boîte à clés vide. Menace de remboursement. Demande de nuit en plus. Géré. flixbnb.com.",
+   "pl": "Film: w najmie krótkoterminowym, każdego dnia, gospodarz tonie w wiadomościach od gości, od pustego sejfu na klucze po żądanie zwrotu, a potem w 150+ karteczkach ze wszystkim, co spotyka wynajem. Strona rozdziera się i pojawia się Flixbnb, połączony z gośćmi, zespołem i systemem PMS. Żółta lista się odhacza: pusty sejf, dodatkowa noc, spóźnione sprzątanie, zmiana gości tego samego dnia i zły kod do drzwi są załatwione, a do Ciebie trafia tylko zwrot 200 €. Na czacie Flixbnb pyta, gdzie jest skrzynka z bezpiecznikami, dostaje odpowiedź w jednym zdaniu i melduje, że prąd wrócił. Twój zespół staje się 100X lepszy. Pusty sejf na klucze. Groźba zwrotu pieniędzy. Prośba o dodatkową noc. Załatwione. flixbnb.com."
+  },
+  "You know these problems.": {
+   "es": "Conoces estos problemas.",
+   "fr": "Vous connaissez ces problèmes.",
+   "pl": "Znasz te problemy."
+  },
+  "We know how to handle them. Perfectly.": {
+   "es": "Sabemos cómo resolverlos. A la perfección.",
+   "fr": "Nous savons les gérer. Parfaitement.",
+   "pl": "My wiemy, jak je załatwić. Perfekcyjnie."
+  },
+  " a short-term rental runs into, and the best way to handle every one of them, already built in.": {
+   "es": " que vive un alquiler vacacional, y la mejor forma de resolver cada una, ya integradas.",
+   "fr": " qu'une location courte durée rencontre, et la meilleure façon de gérer chacune, déjà intégrées.",
+   "pl": " w najmie krótkoterminowym i najlepszy sposób na każdą z nich, już wbudowane."
+  },
+  "Situations Flixbnb knows how to handle": {
+   "es": "Situaciones que Flixbnb sabe resolver",
+   "fr": "Situations que Flixbnb sait gérer",
+   "pl": "Sytuacje, z którymi Flixbnb umie sobie radzić"
+  },
+  "Show all 150+": {
+   "es": "Ver las 150+",
+   "fr": "Voir les 150+",
+   "pl": "Pokaż wszystkie 150+"
+  },
+  "Show fewer": {
+   "es": "Ver menos",
+   "fr": "Voir moins",
+   "pl": "Pokaż mniej"
+  },
+  "Guest can't get in": {
+   "es": "El huésped no puede entrar",
+   "fr": "Le voyageur ne peut pas entrer",
+   "pl": "Gość nie może wejść"
+  },
+  "Booking change request": {
+   "es": "Cambio de reserva",
+   "fr": "Demande de modification",
+   "pl": "Prośba o zmianę rezerwacji"
+  },
+  "Wi-Fi down": {
+   "es": "Wi-Fi caído",
+   "fr": "Wi-Fi en panne",
+   "pl": "Nie działa Wi-Fi"
+  },
+  "Refund demand": {
+   "es": "Exigen un reembolso",
+   "fr": "Demande de remboursement",
+   "pl": "Żądanie zwrotu"
+  },
+  "\"Doesn't look like the photos\"": {
+   "es": "\"No se parece a las fotos\"",
+   "fr": "\"Ça ne ressemble pas aux photos\"",
+   "pl": "\"Nie wygląda jak na zdjęciach\""
+  },
+  "\"How do we get in?\"": {
+   "es": "\"¿Cómo entramos?\"",
+   "fr": "\"Comment on entre ?\"",
+   "pl": "\"Jak wejść do środka?\""
+  },
+  "\"The apartment is dirty\"": {
+   "es": "\"El apartamento está sucio\"",
+   "fr": "\"L'appartement est sale\"",
+   "pl": "\"Mieszkanie jest brudne\""
+  },
+  "Invoice request": {
+   "es": "Petición de factura",
+   "fr": "Demande de facture",
+   "pl": "Prośba o fakturę"
+  },
+  "Broken appliance": {
+   "es": "Electrodoméstico averiado",
+   "fr": "Appareil en panne",
+   "pl": "Zepsuty sprzęt AGD"
+  },
+  "Apartment not ready": {
+   "es": "Apartamento sin preparar",
+   "fr": "Appartement pas prêt",
+   "pl": "Mieszkanie nie jest gotowe"
+  },
+  "Noise complaint": {
+   "es": "Queja por ruido",
+   "fr": "Plainte pour bruit",
+   "pl": "Skarga na hałas"
+  },
+  "Price or discount request": {
+   "es": "Petición de precio o descuento",
+   "fr": "Demande de prix ou de remise",
+   "pl": "Prośba o cenę lub rabat"
+  },
+  "Pests or bedbugs": {
+   "es": "Plagas o chinches",
+   "fr": "Nuisibles ou punaises de lit",
+   "pl": "Insekty lub pluskwy"
+  },
+  "Left something behind": {
+   "es": "Se dejó algo olvidado",
+   "fr": "Objet oublié",
+   "pl": "Coś zostało w mieszkaniu"
+  },
+  "Elevator out of service": {
+   "es": "Ascensor averiado",
+   "fr": "Ascenseur en panne",
+   "pl": "Winda nie działa"
+  },
+  "No hot water": {
+   "es": "Sin agua caliente",
+   "fr": "Pas d'eau chaude",
+   "pl": "Brak ciepłej wody"
+  },
+  "Missing towels or amenities": {
+   "es": "Faltan toallas o productos",
+   "fr": "Serviettes ou produits manquants",
+   "pl": "Brak ręczników lub kosmetyków"
+  },
+  "Question about the area": {
+   "es": "Pregunta sobre la zona",
+   "fr": "Question sur le quartier",
+   "pl": "Pytanie o okolicę"
+  },
+  "Guest left after a complaint": {
+   "es": "El huésped se fue tras una queja",
+   "fr": "Voyageur parti après une plainte",
+   "pl": "Gość wyjechał po skardze"
+  },
+  "Check-in or checkout time dispute": {
+   "es": "Disputa por la hora de entrada o salida",
+   "fr": "Litige sur l'heure d'arrivée ou de départ",
+   "pl": "Spór o godzinę zameldowania lub wymeldowania"
+  },
+  "Early departure": {
+   "es": "Salida anticipada",
+   "fr": "Départ anticipé",
+   "pl": "Wcześniejszy wyjazd"
+  },
+  "Small feedback, happy guest": {
+   "es": "Pequeño comentario, huésped contento",
+   "fr": "Petite remarque, voyageur content",
+   "pl": "Drobna uwaga, zadowolony gość"
+  },
+  "Lockbox empty": {
+   "es": "Caja de llaves vacía",
+   "fr": "Boîte à clés vide",
+   "pl": "Pusty sejf na klucze"
+  },
+  "Early check-in": {
+   "es": "Entrada anticipada",
+   "fr": "Arrivée anticipée",
+   "pl": "Wcześniejsze zameldowanie"
+  },
+  "Previous guests still inside": {
+   "es": "Los huéspedes anteriores siguen dentro",
+   "fr": "Les voyageurs précédents encore là",
+   "pl": "Poprzedni goście wciąż w środku"
+  },
+  "3am dripping tap": {
+   "es": "Grifo que gotea a las 3 de la mañana",
+   "fr": "Robinet qui goutte à 3 h du matin",
+   "pl": "Kapiący kran o 3 w nocy"
+  },
+  "Same-day turnover": {
+   "es": "Cambio de huéspedes el mismo día",
+   "fr": "Rotation le jour même",
+   "pl": "Zmiana gości tego samego dnia"
+  },
+  "Resolution Center claim": {
+   "es": "Reclamación en el Centro de Resoluciones",
+   "fr": "Réclamation au Centre de résolution",
+   "pl": "Roszczenie w Centrum rozwiązywania problemów"
+  },
+  "Late checkout": {
+   "es": "Salida tardía",
+   "fr": "Départ tardif",
+   "pl": "Późne wymeldowanie"
+  },
+  "Cleaner hasn't confirmed": {
+   "es": "La limpieza no ha confirmado",
+   "fr": "Le ménage n'a pas confirmé",
+   "pl": "Sprzątanie niepotwierdzone"
+  },
+  "\"Hello???\" five times": {
+   "es": "\"¿¿¿Hola???\" cinco veces",
+   "fr": "\"Allô ???\" cinq fois",
+   "pl": "\"Halo???\" pięć razy"
+  },
+  "Damage claim": {
+   "es": "Reclamación por daños",
+   "fr": "Réclamation pour dégâts",
+   "pl": "Roszczenie za szkody"
+  },
+  "Delayed flight": {
+   "es": "Vuelo retrasado",
+   "fr": "Vol retardé",
+   "pl": "Opóźniony lot"
+  },
+  "Set up for 4, 6 arriving": {
+   "es": "Preparado para 4, llegan 6",
+   "fr": "Prévu pour 4, ils arrivent à 6",
+   "pl": "Przygotowane dla 4, przyjeżdża 6"
+  },
+  "Cleaning running late": {
+   "es": "La limpieza va con retraso",
+   "fr": "Ménage en retard",
+   "pl": "Sprzątanie się opóźnia"
+  },
+  "Wrong door code sent": {
+   "es": "Código de puerta equivocado",
+   "fr": "Mauvais code de porte envoyé",
+   "pl": "Wysłany zły kod do drzwi"
+  },
+  "Gas smell or a leak": {
+   "es": "Olor a gas o una fuga",
+   "fr": "Odeur de gaz ou fuite",
+   "pl": "Zapach gazu lub wyciek"
+  },
+  "Nobody on shift": {
+   "es": "Nadie de guardia",
+   "fr": "Personne de permanence",
+   "pl": "Nikogo na dyżurze"
+  },
+  "Same complaint every stay": {
+   "es": "La misma queja en cada estancia",
+   "fr": "Même plainte à chaque séjour",
+   "pl": "Ta sama skarga przy każdym pobycie"
+  },
+  "AI naming the wrong city": {
+   "es": "La IA nombra la ciudad equivocada",
+   "fr": "L'IA se trompe de ville",
+   "pl": "AI podaje złe miasto"
+  },
+  "Passport photos for the building": {
+   "es": "Fotos del pasaporte para el edificio",
+   "fr": "Photos de passeport pour l'immeuble",
+   "pl": "Zdjęcia paszportów dla budynku"
+  },
+  "Where are the cleaners?": {
+   "es": "¿Dónde está la limpieza?",
+   "fr": "Où est l'équipe de ménage ?",
+   "pl": "Gdzie jest ekipa sprzątająca?"
+  },
+  "Guest has to move out for a night": {
+   "es": "El huésped tiene que cambiarse una noche",
+   "fr": "Le voyageur doit déménager une nuit",
+   "pl": "Gość musi się wyprowadzić na jedną noc"
+  },
+  "Phone ringing for the off-shift": {
+   "es": "Suena el teléfono a quien libra",
+   "fr": "Le téléphone sonne chez celui qui est en repos",
+   "pl": "Telefon dzwoni do osoby po dyżurze"
+  },
+  "Unknown caller": {
+   "es": "Llamada desconocida",
+   "fr": "Appel inconnu",
+   "pl": "Nieznany numer"
+  },
+  "When the AI breaks": {
+   "es": "Cuando la IA falla",
+   "fr": "Quand l'IA tombe en panne",
+   "pl": "Gdy AI przestaje działać"
+  },
+  "Platform support deadline": {
+   "es": "Plazo del soporte de la plataforma",
+   "fr": "Délai du support de la plateforme",
+   "pl": "Termin wsparcia platformy"
+  },
+  "Crib or high chair request": {
+   "es": "Petición de cuna o trona",
+   "fr": "Demande de lit bébé ou chaise haute",
+   "pl": "Prośba o łóżeczko lub krzesełko"
+  },
+  "Date change through Booking.com": {
+   "es": "Cambio de fechas por Booking.com",
+   "fr": "Changement de dates via Booking.com",
+   "pl": "Zmiana dat przez Booking.com"
+  },
+  "\"What time do they arrive?\"": {
+   "es": "\"¿A qué hora llegan?\"",
+   "fr": "\"Ils arrivent à quelle heure ?\"",
+   "pl": "\"O której przyjeżdżają?\""
+  },
+  "Owner approval needed": {
+   "es": "Hace falta el visto bueno del propietario",
+   "fr": "Accord du propriétaire nécessaire",
+   "pl": "Potrzebna zgoda właściciela"
+  },
+  "Robotic messages": {
+   "es": "Mensajes robóticos",
+   "fr": "Messages robotiques",
+   "pl": "Robotyczne wiadomości"
+  },
+  "Cancelled, but plans still running": {
+   "es": "Cancelada, pero todo sigue en marcha",
+   "fr": "Annulée, mais tout tourne encore",
+   "pl": "Odwołana, ale plany wciąż w toku"
+  },
+  "\"Is this WhatsApp a scam?\"": {
+   "es": "\"¿Este WhatsApp es una estafa?\"",
+   "fr": "\"Ce WhatsApp, c'est une arnaque ?\"",
+   "pl": "\"Czy ten WhatsApp to oszustwo?\""
+  },
+  "AI repeating a mistake": {
+   "es": "La IA repite un error",
+   "fr": "L'IA répète une erreur",
+   "pl": "AI powtarza błąd"
+  },
+  "Extending the stay": {
+   "es": "Alargar la estancia",
+   "fr": "Prolonger le séjour",
+   "pl": "Przedłużenie pobytu"
+  },
+  "Crib or sofa bed forgotten": {
+   "es": "Cuna o sofá cama olvidado",
+   "fr": "Lit bébé ou canapé-lit oublié",
+   "pl": "Zapomniane łóżeczko lub sofa"
+  },
+  "New cleaner can't find the place": {
+   "es": "La nueva limpiadora no encuentra el piso",
+   "fr": "Le nouvel agent de ménage ne trouve pas le logement",
+   "pl": "Nowa sprzątaczka nie może znaleźć mieszkania"
+  },
+  "Booking went pending and back": {
+   "es": "La reserva pasó a pendiente y volvió",
+   "fr": "Réservation passée en attente puis revenue",
+   "pl": "Rezerwacja przeszła w oczekującą i z powrotem"
+  },
+  "AC not working": {
+   "es": "El aire acondicionado no funciona",
+   "fr": "Clim en panne",
+   "pl": "Nie działa klimatyzacja"
+  },
+  "\"Fixed\", but still broken": {
+   "es": "\"Arreglado\", pero sigue roto",
+   "fr": "\"Réparé\", mais toujours cassé",
+   "pl": "\"Naprawione\", ale dalej zepsute"
+  },
+  "Bags after checkout": {
+   "es": "Maletas después de la salida",
+   "fr": "Bagages après le départ",
+   "pl": "Bagaże po wymeldowaniu"
+  },
+  "One-night stays quietly blocked": {
+   "es": "Estancias de una noche bloqueadas sin avisar",
+   "fr": "Séjours d'une nuit bloqués en silence",
+   "pl": "Jednonocne pobyty po cichu zablokowane"
+  },
+  "Guest never read the instructions": {
+   "es": "El huésped no leyó las instrucciones",
+   "fr": "Le voyageur n'a pas lu les instructions",
+   "pl": "Gość nie przeczytał instrukcji"
+  },
+  "Staff locked out of the app": {
+   "es": "El equipo no puede entrar en la app",
+   "fr": "L'équipe bloquée hors de l'appli",
+   "pl": "Zespół nie może się zalogować do aplikacji"
+  },
+  "Old food in the fridge": {
+   "es": "Comida vieja en la nevera",
+   "fr": "Vieille nourriture dans le frigo",
+   "pl": "Stare jedzenie w lodówce"
+  },
+  "Which cleaner causes complaints": {
+   "es": "Qué limpiador provoca quejas",
+   "fr": "Quel agent de ménage cause des plaintes",
+   "pl": "Która sprzątaczka powoduje skargi"
+  },
+  "Forgotten checkout time": {
+   "es": "Hora de salida olvidada",
+   "fr": "Heure de départ oubliée",
+   "pl": "Zapomniana godzina wymeldowania"
+  },
+  "WhatsApp failing silently": {
+   "es": "WhatsApp falla sin avisar",
+   "fr": "WhatsApp qui échoue en silence",
+   "pl": "WhatsApp po cichu nie działa"
+  },
+  "Unhappy guest who stays quiet": {
+   "es": "Huésped descontento que no dice nada",
+   "fr": "Voyageur mécontent qui ne dit rien",
+   "pl": "Niezadowolony gość, który milczy"
+  },
+  "Old Wi-Fi password in the listing": {
+   "es": "Contraseña de Wi-Fi antigua en el anuncio",
+   "fr": "Ancien mot de passe Wi-Fi dans l'annonce",
+   "pl": "Stare hasło do Wi-Fi w ogłoszeniu"
+  },
+  "Key taken from the lockbox": {
+   "es": "Se llevaron la llave de la caja",
+   "fr": "Clé prise dans la boîte à clés",
+   "pl": "Klucz zabrany z sejfu"
+  },
+  "AI stuck, nobody knows why": {
+   "es": "La IA atascada y nadie sabe por qué",
+   "fr": "L'IA bloquée, personne ne sait pourquoi",
+   "pl": "AI utknęła, nikt nie wie dlaczego"
+  },
+  "Booking ID inside a photo": {
+   "es": "Número de reserva dentro de una foto",
+   "fr": "Numéro de réservation dans une photo",
+   "pl": "Numer rezerwacji na zdjęciu"
+  },
+  "Agreeing a repair time": {
+   "es": "Acordar la hora de una reparación",
+   "fr": "Fixer l'heure d'une réparation",
+   "pl": "Ustalenie terminu naprawy"
+  },
+  "Cleaner walks in on the guest": {
+   "es": "La limpieza entra con el huésped dentro",
+   "fr": "Le ménage entre sur le voyageur",
+   "pl": "Sprzątaczka wchodzi do gościa"
+  },
+  "Complaint to Booking.com": {
+   "es": "Queja a Booking.com",
+   "fr": "Plainte à Booking.com",
+   "pl": "Skarga do Booking.com"
+  },
+  "Repair with the guest inside": {
+   "es": "Reparación con el huésped dentro",
+   "fr": "Réparation avec le voyageur sur place",
+   "pl": "Naprawa z gościem w środku"
+  },
+  "Message from an unknown number": {
+   "es": "Mensaje de un número desconocido",
+   "fr": "Message d'un numéro inconnu",
+   "pl": "Wiadomość z nieznanego numeru"
+  },
+  "Questions before booking": {
+   "es": "Preguntas antes de reservar",
+   "fr": "Questions avant de réserver",
+   "pl": "Pytania przed rezerwacją"
+  },
+  "Replying to a bad review": {
+   "es": "Responder a una mala reseña",
+   "fr": "Répondre à un mauvais avis",
+   "pl": "Odpowiedź na złą recenzję"
+  },
+  "Booking changed after cleaning was set": {
+   "es": "Reserva cambiada con la limpieza ya fijada",
+   "fr": "Réservation changée après le ménage prévu",
+   "pl": "Rezerwacja zmieniona po ustaleniu sprzątania"
+  },
+  "Confusing staff messages": {
+   "es": "Mensajes confusos al equipo",
+   "fr": "Messages confus à l'équipe",
+   "pl": "Niejasne wiadomości do zespołu"
+  },
+  "Too many alerts": {
+   "es": "Demasiadas alertas",
+   "fr": "Trop d'alertes",
+   "pl": "Za dużo alertów"
+  },
+  "Task nobody picked up": {
+   "es": "Tarea que nadie cogió",
+   "fr": "Tâche que personne n'a prise",
+   "pl": "Zadanie, którego nikt nie wziął"
+  },
+  "Reviews only from happy guests": {
+   "es": "Reseñas solo de huéspedes contentos",
+   "fr": "Avis seulement des voyageurs contents",
+   "pl": "Recenzje tylko od zadowolonych gości"
+  },
+  "Guest writes in another language": {
+   "es": "El huésped escribe en otro idioma",
+   "fr": "Le voyageur écrit dans une autre langue",
+   "pl": "Gość pisze w innym języku"
+  },
+  "Approved message changed": {
+   "es": "Mensaje aprobado modificado",
+   "fr": "Message validé modifié",
+   "pl": "Zatwierdzona wiadomość zmieniona"
+  },
+  "New door code nobody updated": {
+   "es": "Nuevo código de puerta sin actualizar",
+   "fr": "Nouveau code de porte jamais mis à jour",
+   "pl": "Nowy kod do drzwi, którego nikt nie zaktualizował"
+  },
+  "Late-night arrival, nobody around": {
+   "es": "Llegada de madrugada, sin nadie",
+   "fr": "Arrivée tard le soir, personne sur place",
+   "pl": "Przyjazd w nocy, nikogo na miejscu"
+  },
+  "Check-in link won't open": {
+   "es": "El enlace de check-in no abre",
+   "fr": "Le lien d'enregistrement ne s'ouvre pas",
+   "pl": "Link do zameldowania się nie otwiera"
+  },
+  "Unanswered staff messages": {
+   "es": "Mensajes del equipo sin respuesta",
+   "fr": "Messages de l'équipe sans réponse",
+   "pl": "Wiadomości zespołu bez odpowiedzi"
+  },
+  "Question hidden in a \"thanks\"": {
+   "es": "Pregunta escondida en un \"gracias\"",
+   "fr": "Question cachée dans un \"merci\"",
+   "pl": "Pytanie ukryte w \"dziękuję\""
+  },
+  "Photos in Booking.com chat": {
+   "es": "Fotos en el chat de Booking.com",
+   "fr": "Photos dans le chat Booking.com",
+   "pl": "Zdjęcia w czacie Booking.com"
+  },
+  "Midnight arrival, wrong night": {
+   "es": "Llegada a medianoche, noche equivocada",
+   "fr": "Arrivée à minuit, mauvaise nuit",
+   "pl": "Przyjazd o północy, zła noc"
+  },
+  "Free-cancellation request": {
+   "es": "Petición de cancelación gratuita",
+   "fr": "Demande d'annulation gratuite",
+   "pl": "Prośba o bezpłatne anulowanie"
+  },
+  "AI saying it did something it didn't": {
+   "es": "La IA dice que hizo algo que no hizo",
+   "fr": "L'IA dit avoir fait ce qu'elle n'a pas fait",
+   "pl": "AI twierdzi, że coś zrobiła, a nie zrobiła"
+  },
+  "Guest can't find the key holder": {
+   "es": "El huésped no encuentra la caja de llaves",
+   "fr": "Le voyageur ne trouve pas la boîte à clés",
+   "pl": "Gość nie może znaleźć sejfu na klucze"
+  },
+  "Smart-lock app won't work": {
+   "es": "La app de la cerradura inteligente no funciona",
+   "fr": "L'appli de la serrure connectée ne marche pas",
+   "pl": "Aplikacja inteligentnego zamka nie działa"
+  },
+  "Forgotten promise": {
+   "es": "Promesa olvidada",
+   "fr": "Promesse oubliée",
+   "pl": "Zapomniana obietnica"
+  },
+  "Restaurant tips and parking": {
+   "es": "Recomendaciones de restaurantes y parking",
+   "fr": "Bonnes adresses et parking",
+   "pl": "Polecane restauracje i parking"
+  },
+  "\"Email me instead\"": {
+   "es": "\"Mejor escríbeme un email\"",
+   "fr": "\"Écrivez-moi plutôt par email\"",
+   "pl": "\"Wolę maila\""
+  },
+  "Owner staying in their own place": {
+   "es": "El propietario se aloja en su piso",
+   "fr": "Le propriétaire séjourne chez lui",
+   "pl": "Właściciel nocuje we własnym mieszkaniu"
+  },
+  "Guest not registered yet": {
+   "es": "Huésped aún sin registrar",
+   "fr": "Voyageur pas encore enregistré",
+   "pl": "Gość jeszcze niezarejestrowany"
+  },
+  "Cleaners who don't speak English": {
+   "es": "Limpiadores que no hablan inglés",
+   "fr": "Ménage qui ne parle pas anglais",
+   "pl": "Sprzątaczki, które nie mówią po angielsku"
+  },
+  "Guest cancels mid-stay": {
+   "es": "El huésped cancela a mitad de estancia",
+   "fr": "Le voyageur annule en plein séjour",
+   "pl": "Gość rezygnuje w trakcie pobytu"
+  },
+  "Brown water from the tap": {
+   "es": "Agua marrón del grifo",
+   "fr": "Eau marron au robinet",
+   "pl": "Brązowa woda z kranu"
+  },
+  "Three messages instead of one": {
+   "es": "Tres mensajes en vez de uno",
+   "fr": "Trois messages au lieu d'un",
+   "pl": "Trzy wiadomości zamiast jednej"
+  },
+  "Translation changing the meaning": {
+   "es": "Una traducción que cambia el sentido",
+   "fr": "Traduction qui change le sens",
+   "pl": "Tłumaczenie zmienia sens"
+  },
+  "AI messages nobody checked": {
+   "es": "Mensajes de IA que nadie revisó",
+   "fr": "Messages de l'IA que personne n'a vérifiés",
+   "pl": "Wiadomości AI, których nikt nie sprawdził"
+  },
+  "\"Ready\" when it isn't": {
+   "es": "\"Listo\" cuando no lo está",
+   "fr": "\"Prêt\" alors que non",
+   "pl": "\"Gotowe\", choć nie jest"
+  },
+  "Cleaning not marked as started": {
+   "es": "Limpieza sin marcar como empezada",
+   "fr": "Ménage non marqué comme commencé",
+   "pl": "Sprzątanie nieoznaczone jako rozpoczęte"
+  },
+  "Early departure, cleaner on the old time": {
+   "es": "Salida anticipada, limpieza a la hora antigua",
+   "fr": "Départ anticipé, ménage à l'ancienne heure",
+   "pl": "Wcześniejszy wyjazd, sprzątanie na starą godzinę"
+  },
+  "Open problem taken for \"all good\"": {
+   "es": "Problema abierto tomado por \"todo bien\"",
+   "fr": "Problème ouvert pris pour \"tout va bien\"",
+   "pl": "Otwarty problem wzięty za \"wszystko OK\""
+  },
+  "A real emergency": {
+   "es": "Una emergencia real",
+   "fr": "Une vraie urgence",
+   "pl": "Prawdziwy nagły wypadek"
+  },
+  "Door code a week early": {
+   "es": "Código de puerta una semana antes",
+   "fr": "Code de porte une semaine trop tôt",
+   "pl": "Kod do drzwi tydzień za wcześnie"
+  },
+  "How the apartment should look": {
+   "es": "Cómo debe quedar el apartamento",
+   "fr": "À quoi doit ressembler l'appartement",
+   "pl": "Jak powinno wyglądać mieszkanie"
+  },
+  "Paying back a refund": {
+   "es": "Devolver un reembolso",
+   "fr": "Rembourser un voyageur",
+   "pl": "Wypłata zwrotu"
+  },
+  "Cleaner at the door too early": {
+   "es": "La limpieza llega demasiado pronto",
+   "fr": "Le ménage à la porte trop tôt",
+   "pl": "Sprzątaczka pod drzwiami za wcześnie"
+  },
+  "No cleaner assigned": {
+   "es": "Sin limpieza asignada",
+   "fr": "Aucun agent de ménage assigné",
+   "pl": "Nie przydzielono sprzątania"
+  },
+  "How the stay really went": {
+   "es": "Cómo fue de verdad la estancia",
+   "fr": "Comment s'est vraiment passé le séjour",
+   "pl": "Jak naprawdę minął pobyt"
+  },
+  "Staff woken for nothing": {
+   "es": "Despertar al equipo para nada",
+   "fr": "Équipe réveillée pour rien",
+   "pl": "Zespół obudzony bez powodu"
+  },
+  "Second key request": {
+   "es": "Petición de una segunda llave",
+   "fr": "Demande d'une deuxième clé",
+   "pl": "Prośba o drugi klucz"
+  },
+  "Technician no-show": {
+   "es": "El técnico no aparece",
+   "fr": "Technicien qui ne vient pas",
+   "pl": "Technik się nie pojawił"
+  },
+  "Internal note sent to a guest": {
+   "es": "Nota interna enviada a un huésped",
+   "fr": "Note interne envoyée à un voyageur",
+   "pl": "Notatka wewnętrzna wysłana do gościa"
+  },
+  "Guest not answering": {
+   "es": "El huésped no contesta",
+   "fr": "Le voyageur ne répond pas",
+   "pl": "Gość nie odpowiada"
+  },
+  "Reply sent too late": {
+   "es": "Respuesta enviada demasiado tarde",
+   "fr": "Réponse envoyée trop tard",
+   "pl": "Odpowiedź wysłana za późno"
+  },
+  "Thanking every 5-star review": {
+   "es": "Agradecer cada reseña de 5 estrellas",
+   "fr": "Remercier chaque avis 5 étoiles",
+   "pl": "Podziękowanie za każdą recenzję na 5 gwiazdek"
+  },
+  "Silence until arrival": {
+   "es": "Silencio hasta la llegada",
+   "fr": "Silence jusqu'à l'arrivée",
+   "pl": "Cisza aż do przyjazdu"
+  },
+  "Haggling over the price": {
+   "es": "Regateo del precio",
+   "fr": "Marchandage sur le prix",
+   "pl": "Targowanie się o cenę"
+  },
+  "Message never sent": {
+   "es": "Mensaje que nunca se envió",
+   "fr": "Message jamais envoyé",
+   "pl": "Wiadomość nigdy niewysłana"
+  },
+  "\"Nobody cleaned during our stay\"": {
+   "es": "\"Nadie limpió durante nuestra estancia\"",
+   "fr": "\"Personne n'a fait le ménage pendant notre séjour\"",
+   "pl": "\"Nikt nie sprzątał w czasie naszego pobytu\""
+  },
+  "AI assuming the guest read it": {
+   "es": "La IA da por hecho que el huésped lo leyó",
+   "fr": "L'IA suppose que le voyageur a lu",
+   "pl": "AI zakłada, że gość to przeczytał"
+  },
+  "Emergency missed, system down": {
+   "es": "Emergencia perdida, sistema caído",
+   "fr": "Urgence manquée, système en panne",
+   "pl": "Przeoczony nagły wypadek, system nie działa"
+  },
+  "Unknown arrival time": {
+   "es": "Hora de llegada desconocida",
+   "fr": "Heure d'arrivée inconnue",
+   "pl": "Nieznana godzina przyjazdu"
+  },
+  "AI inventing a policy": {
+   "es": "La IA se inventa una norma",
+   "fr": "L'IA invente une règle",
+   "pl": "AI wymyśla zasadę"
+  },
+  "Paying later, in cash": {
+   "es": "Pagar más tarde, en efectivo",
+   "fr": "Payer plus tard, en espèces",
+   "pl": "Płatność później, gotówką"
+  },
+  "Key not returned": {
+   "es": "Llave no devuelta",
+   "fr": "Clé non rendue",
+   "pl": "Klucz niezwrócony"
+  },
+  "Offering something for a review": {
+   "es": "Ofrecer algo a cambio de una reseña",
+   "fr": "Offrir quelque chose contre un avis",
+   "pl": "Oferowanie czegoś za recenzję"
+  },
+  "Late checkout approved by mistake": {
+   "es": "Salida tardía aprobada por error",
+   "fr": "Départ tardif accepté par erreur",
+   "pl": "Późne wymeldowanie zatwierdzone przez pomyłkę"
+  },
+  "Extension: clean or not?": {
+   "es": "Prórroga: ¿limpiar o no?",
+   "fr": "Prolongation : ménage ou pas ?",
+   "pl": "Przedłużenie: sprzątać czy nie?"
+  },
+  "Key locked inside": {
+   "es": "Llave cerrada dentro",
+   "fr": "Clé enfermée à l'intérieur",
+   "pl": "Klucz zatrzaśnięty w środku"
+  },
+  "\"Will someone meet us?\"": {
+   "es": "\"¿Alguien nos recibirá?\"",
+   "fr": "\"Quelqu'un va nous accueillir ?\"",
+   "pl": "\"Czy ktoś nas przywita?\""
+  },
+  "Unpaid direct booking": {
+   "es": "Reserva directa sin pagar",
+   "fr": "Réservation directe impayée",
+   "pl": "Nieopłacona rezerwacja bezpośrednia"
+  },
+  "Owner's late cleaning request": {
+   "es": "Petición tardía de limpieza del propietario",
+   "fr": "Demande de ménage tardive du propriétaire",
+   "pl": "Spóźniona prośba właściciela o sprzątanie"
+  },
+  "Entry details before registration": {
+   "es": "Datos de acceso antes del registro",
+   "fr": "Infos d'accès avant l'enregistrement",
+   "pl": "Dane wejścia przed rejestracją"
+  },
+  "Smart-lock invite without an email": {
+   "es": "Invitación de la cerradura sin email",
+   "fr": "Invitation serrure connectée sans email",
+   "pl": "Zaproszenie do zamka bez adresu e-mail"
+  },
+  "Same job sent twice": {
+   "es": "El mismo trabajo enviado dos veces",
+   "fr": "Même tâche envoyée deux fois",
+   "pl": "To samo zlecenie wysłane dwa razy"
+  },
+  "Small problem at 2am": {
+   "es": "Pequeño problema a las 2 de la mañana",
+   "fr": "Petit problème à 2 h du matin",
+   "pl": "Drobny problem o 2 w nocy"
+  },
+  "AI approving a refund": {
+   "es": "La IA aprueba un reembolso",
+   "fr": "L'IA accepte un remboursement",
+   "pl": "AI zatwierdza zwrot"
+  },
+  "Extra guests": {
+   "es": "Huéspedes de más",
+   "fr": "Voyageurs en plus",
+   "pl": "Dodatkowi goście"
+  },
+  "First-night problem nobody reported": {
+   "es": "Problema de la primera noche que nadie avisó",
+   "fr": "Problème de la première nuit jamais signalé",
+   "pl": "Problem z pierwszej nocy, którego nikt nie zgłosił"
+  },
+  "Over-cautious AI": {
+   "es": "IA demasiado prudente",
+   "fr": "IA trop prudente",
+   "pl": "Zbyt ostrożna AI"
+  },
+  "Forgotten discount": {
+   "es": "Descuento olvidado",
+   "fr": "Remise oubliée",
+   "pl": "Zapomniany rabat"
+  },
+  "Damage \"seen\" in an innocent photo": {
+   "es": "Daños \"vistos\" en una foto inocente",
+   "fr": "Dégât \"vu\" sur une photo innocente",
+   "pl": "Szkoda \"zobaczona\" na niewinnym zdjęciu"
+  },
+  "Parking after checkout": {
+   "es": "Aparcar después de la salida",
+   "fr": "Stationnement après le départ",
+   "pl": "Parkowanie po wymeldowaniu"
+  },
+  "Defect that can wait": {
+   "es": "Un desperfecto que puede esperar",
+   "fr": "Défaut qui peut attendre",
+   "pl": "Usterka, która może poczekać"
+  },
+  "Saying too much in a dispute": {
+   "es": "Decir demasiado en una disputa",
+   "fr": "En dire trop dans un litige",
+   "pl": "Za dużo powiedziane w sporze"
+  },
+  "Lost platform support emails": {
+   "es": "Emails del soporte de la plataforma perdidos",
+   "fr": "Emails du support de la plateforme perdus",
+   "pl": "Zgubione maile od wsparcia platformy"
+  },
+  "Other bots answer the guest. Flixbnb fixes the problem.": {
+   "es": "Otros bots responden al huésped. Flixbnb arregla el problema.",
+   "fr": "Les autres bots répondent au voyageur. Flixbnb règle le problème.",
+   "pl": "Inne boty odpowiadają gościowi. Flixbnb rozwiązuje problem."
+  },
+  "Here's one empty lockbox, late at night. Watch what Flixbnb does about it, without anyone having to ask.": {
+   "es": "Una caja de llaves vacía, de noche. Mira lo que hace Flixbnb, sin que nadie tenga que pedírselo.",
+   "fr": "Une boîte à clés vide, tard le soir. Regardez ce que fait Flixbnb, sans que personne n'ait à le demander.",
+   "pl": "Pusty sejf na klucze, późnym wieczorem. Zobacz, co robi Flixbnb, bez proszenia kogokolwiek."
+  },
+  "Example: what Flixbnb does about an empty lockbox": {
+   "es": "Ejemplo: lo que hace Flixbnb con una caja de llaves vacía",
+   "fr": "Exemple : ce que fait Flixbnb face à une boîte à clés vide",
+   "pl": "Przykład: co Flixbnb robi z pustym sejfem na klucze"
+  },
+  "Messaged the guest, in German": {
+   "es": "Escribió al huésped, en alemán",
+   "fr": "A écrit au voyageur, en allemand",
+   "pl": "Napisał do gościa po niemiecku"
+  },
+  "Called Maria, who is on shift tonight": {
+   "es": "Llamó a Maria, que está de guardia esta noche",
+   "fr": "A appelé Maria, de permanence ce soir",
+   "pl": "Zadzwonił do Marii, która ma dziś dyżur"
+  },
+  "Checking every minute until the guest is inside": {
+   "es": "Comprueba cada minuto hasta que el huésped entra",
+   "fr": "Vérifie chaque minute jusqu'à ce que le voyageur soit entré",
+   "pl": "Sprawdza co minutę, aż gość wejdzie"
+  },
+  "Added a note to the booking in Hostaway": {
+   "es": "Añadió una nota a la reserva en Hostaway",
+   "fr": "A ajouté une note à la réservation dans Hostaway",
+   "pl": "Dodał notatkę do rezerwacji w Hostaway"
+  },
+  "Opened a task: refill the lockbox tomorrow": {
+   "es": "Abrió una tarea: reponer la caja de llaves mañana",
+   "fr": "A ouvert une tâche : remplir la boîte à clés demain",
+   "pl": "Otworzył zadanie: uzupełnić sejf jutro"
+  },
+  "Set a reminder: ask the guest how the night went, with an apology": {
+   "es": "Puso un recordatorio: preguntar al huésped qué tal la noche, con una disculpa",
+   "fr": "A programmé un rappel : demander au voyageur comment s'est passée la nuit, avec des excuses",
+   "pl": "Ustawił przypomnienie: zapytać gościa, jak minęła noc, i przeprosić"
+  },
+  "✓ Handled.": {
+   "es": "✓ Resuelto.",
+   "fr": "✓ Géré.",
+   "pl": "✓ Załatwione."
+  },
+  " Guest inside at 23:52.": {
+   "es": " Huésped dentro a las 23:52.",
+   "fr": " Voyageur entré à 23 h 52.",
+   "pl": " Gość w środku o 23:52."
+  },
+  "Your team stays in as much ": {
+   "es": "Tu equipo mantiene todo el ",
+   "fr": "Votre équipe garde autant de ",
+   "pl": "Twój zespół zachowuje tyle "
+  },
+  "control": {
+   "es": "control",
+   "fr": "contrôle",
+   "pl": "kontroli"
+  },
+  " as they want.": {
+   "es": " que quiera.",
+   "fr": " qu'elle le souhaite.",
+   "pl": ", ile chce."
+  },
+  "Flixbnb doesn't replace your team. It works for them. Slide to choose what it does on its own, and what it checks with them first.": {
+   "es": "Flixbnb no sustituye a tu equipo. Trabaja para él. Desliza para elegir qué hace por su cuenta y qué consulta antes con ellos.",
+   "fr": "Flixbnb ne remplace pas votre équipe. Il travaille pour elle. Faites glisser pour choisir ce qu'il fait seul, et ce qu'il vérifie d'abord avec elle.",
+   "pl": "Flixbnb nie zastępuje Twojego zespołu. Pracuje dla niego. Przesuń suwak, aby wybrać, co robi sam, a co najpierw z nim uzgadnia."
+  },
+  "More supervision": {
+   "es": "Más supervisión",
+   "fr": "Plus de contrôle",
+   "pl": "Więcej nadzoru"
+  },
+  "More automatic": {
+   "es": "Más automático",
+   "fr": "Plus automatique",
+   "pl": "Więcej automatyki"
+  },
+  "How much Flixbnb does on its own": {
+   "es": "Cuánto hace Flixbnb por su cuenta",
+   "fr": "Ce que Flixbnb fait seul",
+   "pl": "Ile Flixbnb robi sam"
+  },
+  "You approve everything": {
+   "es": "Tú lo apruebas todo",
+   "fr": "Vous validez tout",
+   "pl": "Zatwierdzasz wszystko"
+  },
+  "Routine on its own": {
+   "es": "Lo rutinario, solo",
+   "fr": "La routine, tout seul",
+   "pl": "Rutyna sama"
+  },
+  "Most things on its own": {
+   "es": "Casi todo, solo",
+   "fr": "Presque tout, tout seul",
+   "pl": "Większość sama"
+  },
+  "Everything but money": {
+   "es": "Todo menos el dinero",
+   "fr": "Tout sauf l'argent",
+   "pl": "Wszystko poza pieniędzmi"
+  },
+  "Answer \"What's the Wi-Fi password?\"": {
+   "es": "Responder \"¿Cuál es la contraseña del Wi-Fi?\"",
+   "fr": "Répondre à \"C'est quoi le mot de passe Wi-Fi ?\"",
+   "pl": "Odpowiedź na \"Jakie jest hasło do Wi-Fi?\""
+  },
+  "Remind the cleaner the night before": {
+   "es": "Recordar a la limpieza la noche antes",
+   "fr": "Rappeler le ménage la veille",
+   "pl": "Przypomnienie sprzątaczce dzień wcześniej"
+  },
+  "Send the door code once the guest is registered": {
+   "es": "Enviar el código de la puerta cuando el huésped esté registrado",
+   "fr": "Envoyer le code de porte une fois le voyageur enregistré",
+   "pl": "Wysłanie kodu do drzwi po rejestracji gościa"
+  },
+  "Say yes to a late checkout when the next guest arrives late": {
+   "es": "Aceptar una salida tardía si el siguiente huésped llega tarde",
+   "fr": "Accepter un départ tardif quand le suivant arrive tard",
+   "pl": "Zgoda na późne wymeldowanie, gdy następny gość przyjeżdża późno"
+  },
+  "Move the cleaning after a date change": {
+   "es": "Mover la limpieza tras un cambio de fechas",
+   "fr": "Déplacer le ménage après un changement de dates",
+   "pl": "Przesunięcie sprzątania po zmianie dat"
+  },
+  "Offer an extra night at your price": {
+   "es": "Ofrecer una noche extra a tu precio",
+   "fr": "Proposer une nuit en plus à votre prix",
+   "pl": "Oferta dodatkowej nocy w Twojej cenie"
+  },
+  "Refund a guest €200": {
+   "es": "Devolver 200 € a un huésped",
+   "fr": "Rembourser 200 € à un voyageur",
+   "pl": "Zwrot 200 € dla gościa"
+  },
+  "Handled": {
+   "es": "Resuelto",
+   "fr": "Géré",
+   "pl": "Załatwione"
+  },
+  "Needs approval": {
+   "es": "Necesita aprobación",
+   "fr": "À valider",
+   "pl": "Wymaga zgody"
+  },
+  "Always your call": {
+   "es": "Siempre decides tú",
+   "fr": "Toujours votre décision",
+   "pl": "Zawsze Twoja decyzja"
+  },
+  "It talks to you like a teammate, on WhatsApp or Telegram.": {
+   "es": "Te habla como un compañero, por WhatsApp o Telegram.",
+   "fr": "Il vous parle comme un collègue, sur WhatsApp ou Telegram.",
+   "pl": "Rozmawia z Tobą jak członek zespołu, na WhatsAppie lub Telegramie."
+  },
+  "When it needs something only you know, it asks. You answer in one line, and it takes it from there.": {
+   "es": "Cuando necesita algo que solo tú sabes, te pregunta. Respondes en una línea y se encarga del resto.",
+   "fr": "Quand il a besoin d'une info que vous seul connaissez, il demande. Vous répondez en une ligne, et il s'occupe du reste.",
+   "pl": "Gdy potrzebuje czegoś, co wiesz tylko Ty, pyta. Odpowiadasz jednym zdaniem, a on zajmuje się resztą."
+  },
+  "No new software to learn.": {
+   "es": "Ningún software nuevo que aprender.",
+   "fr": "Aucun nouveau logiciel à apprendre.",
+   "pl": "Żadnego nowego programu do nauki."
+  },
+  " If your team can use WhatsApp, they can use Flixbnb.": {
+   "es": " Si tu equipo sabe usar WhatsApp, sabe usar Flixbnb.",
+   "fr": " Si votre équipe sait utiliser WhatsApp, elle sait utiliser Flixbnb.",
+   "pl": " Jeśli Twój zespół umie korzystać z WhatsAppa, umie korzystać z Flixbnb."
+  },
+  "Example WhatsApp chat with Flixbnb": {
+   "es": "Ejemplo de chat de WhatsApp con Flixbnb",
+   "fr": "Exemple de discussion WhatsApp avec Flixbnb",
+   "pl": "Przykładowy czat WhatsApp z Flixbnb"
+  },
+  "online": {
+   "es": "en línea",
+   "fr": "en ligne",
+   "pl": "online"
+  },
+  "typing…": {
+   "es": "escribiendo…",
+   "fr": "écrit…",
+   "pl": "pisze…"
+  },
+  "Today": {
+   "es": "Hoy",
+   "fr": "Aujourd'hui",
+   "pl": "Dzisiaj"
+  },
+  "The electricity in Nikis 54 is out. Where's the fuse box, so I can tell the guest to check it?": {
+   "es": "Se ha ido la luz en Nikis 54. ¿Dónde está el cuadro eléctrico, para decirle al huésped que lo revise?",
+   "fr": "Plus de courant à Nikis 54. Où est le tableau électrique, pour que je dise au voyageur de vérifier ?",
+   "pl": "W Nikis 54 nie ma prądu. Gdzie jest skrzynka z bezpiecznikami, żebym mógł powiedzieć gościowi, żeby sprawdził?"
+  },
+  "Your team": {
+   "es": "Tu equipo",
+   "fr": "Votre équipe",
+   "pl": "Twój zespół"
+  },
+  "Behind the curtain, left of the shower door.": {
+   "es": "Detrás de la cortina, a la izquierda de la puerta de la ducha.",
+   "fr": "Derrière le rideau, à gauche de la porte de douche.",
+   "pl": "Za zasłoną, na lewo od drzwi prysznica."
+  },
+  "read": {
+   "es": "leído",
+   "fr": "lu",
+   "pl": "przeczytane"
+  },
+  "Got it. Telling the guest now. I'll check in with them in about 15 minutes to make sure it's OK, and update you if more help is needed.": {
+   "es": "Entendido. Se lo digo al huésped ahora. En unos 15 minutos le pregunto si todo va bien y te aviso si hace falta más ayuda.",
+   "fr": "Compris. Je préviens le voyageur maintenant. Je reviens vers lui dans 15 minutes environ pour vérifier que tout va bien, et je vous tiens au courant si besoin.",
+   "pl": "Jasne. Już piszę do gościa. Za jakieś 15 minut sprawdzę, czy wszystko w porządku, i dam znać, jeśli trzeba będzie więcej pomocy."
+  },
+  "15 minutes later": {
+   "es": "15 minutos después",
+   "fr": "15 minutes plus tard",
+   "pl": "15 minut później"
+  },
+  "Power's back, the guest is all good ✅": {
+   "es": "Ha vuelto la luz, el huésped está bien ✅",
+   "fr": "Le courant est revenu, tout va bien pour le voyageur ✅",
+   "pl": "Prąd wrócił, u gościa wszystko w porządku ✅"
+  },
+  "Message": {
+   "es": "Mensaje",
+   "fr": "Message",
+   "pl": "Wiadomość"
+  },
+  "Onboarding is short. Your old chats do most of it.": {
+   "es": "El onboarding es corto. Tus chats antiguos hacen casi todo.",
+   "fr": "L'onboarding est court. Vos anciennes conversations font l'essentiel.",
+   "pl": "Wdrożenie jest krótkie. Większość robią Twoje stare czaty."
+  },
+  "We scan your PMS": {
+   "es": "Escaneamos tu PMS",
+   "fr": "Nous analysons votre PMS",
+   "pl": "Skanujemy Twój PMS"
+  },
+  "Example: what the scan finds": {
+   "es": "Ejemplo: lo que encuentra el escaneo",
+   "fr": "Exemple : ce que l'analyse trouve",
+   "pl": "Przykład: co znajduje skan"
+  },
+  "Lockbox": {
+   "es": "Caja de llaves",
+   "fr": "Boîte à clés",
+   "pl": "Sejf na klucze"
+  },
+  "By the entrance": {
+   "es": "Junto a la entrada",
+   "fr": "Près de l'entrée",
+   "pl": "Przy wejściu"
+  },
+  "From 13:00": {
+   "es": "Desde las 13:00",
+   "fr": "Dès 13 h",
+   "pl": "Od 13:00"
+  },
+  "Pets": {
+   "es": "Mascotas",
+   "fr": "Animaux",
+   "pl": "Zwierzęta"
+  },
+  "You confirm": {
+   "es": "Tú confirmas",
+   "fr": "Vous confirmez",
+   "pl": "Ty potwierdzasz"
+  },
+  "You say who does what": {
+   "es": "Tú dices quién hace qué",
+   "fr": "Vous dites qui fait quoi",
+   "pl": "Ty mówisz, kto co robi"
+  },
+  "Example: who does what": {
+   "es": "Ejemplo: quién hace qué",
+   "fr": "Exemple : qui fait quoi",
+   "pl": "Przykład: kto co robi"
+  },
+  "Guest stuck? Tell ": {
+   "es": "¿Huésped atascado? Avisa a ",
+   "fr": "Voyageur bloqué ? Prévenir ",
+   "pl": "Gość utknął? Powiadom "
+  },
+  "Cleaning late? Tell ": {
+   "es": "¿Limpieza con retraso? Avisa a ",
+   "fr": "Ménage en retard ? Prévenir ",
+   "pl": "Sprzątanie spóźnione? Powiadom "
+  },
+  "Refund? ": {
+   "es": "¿Reembolso? ",
+   "fr": "Remboursement ? ",
+   "pl": "Zwrot? "
+  },
+  "You": {
+   "es": "Tú",
+   "fr": "Vous",
+   "pl": "Ty"
+  },
+  " decide.": {
+   "es": " decides.",
+   "fr": " décidez.",
+   "pl": " decydujesz."
+  },
+  "It runs": {
+   "es": "Se pone en marcha",
+   "fr": "Il tourne",
+   "pl": "Działa"
+  },
+  "Example: it runs": {
+   "es": "Ejemplo: en marcha",
+   "fr": "Exemple : il tourne",
+   "pl": "Przykład: działa"
+  },
+  "Early check-in: 13:00 offered": {
+   "es": "Entrada anticipada: ofrecidas las 13:00",
+   "fr": "Arrivée anticipée : 13 h proposée",
+   "pl": "Wcześniejsze zameldowanie: zaproponowano 13:00"
+  },
+  "Cleaning late: Nikos told": {
+   "es": "Limpieza con retraso: avisado Nikos",
+   "fr": "Ménage en retard : Nikos prévenu",
+   "pl": "Spóźnione sprzątanie: Nikos powiadomiony"
+  },
+  "Refund: sent to you": {
+   "es": "Reembolso: te lo enviamos a ti",
+   "fr": "Remboursement : envoyé à vous",
+   "pl": "Zwrot: przekazany Tobie"
+  },
+  "Your call": {
+   "es": "Tú decides",
+   "fr": "À vous de décider",
+   "pl": "Twoja decyzja"
+  },
+  "How it fits together": {
+   "es": "Cómo encaja todo",
+   "fr": "Comment tout s'articule",
+   "pl": "Jak to się łączy"
+  },
+  "AI models bring the intelligence.": {
+   "es": "Los modelos de IA aportan la inteligencia.",
+   "fr": "Les modèles d'IA apportent l'intelligence.",
+   "pl": "Modele AI wnoszą inteligencję."
+  },
+  "The same models everyone has access to.": {
+   "es": "Los mismos modelos a los que todos tienen acceso.",
+   "fr": "Les mêmes modèles auxquels tout le monde a accès.",
+   "pl": "Te same modele, do których każdy ma dostęp."
+  },
+  "You bring the local knowledge.": {
+   "es": "Tú aportas el conocimiento local.",
+   "fr": "Vous apportez la connaissance locale.",
+   "pl": "Ty wnosisz lokalną wiedzę."
+  },
+  "Your door codes, your house rules, your cleaners, the way you talk to guests.": {
+   "es": "Tus códigos de puerta, tus normas de la casa, tu equipo de limpieza, tu forma de hablar con los huéspedes.",
+   "fr": "Vos codes de porte, votre règlement intérieur, votre équipe de ménage, votre façon de parler aux voyageurs.",
+   "pl": "Twoje kody do drzwi, zasady domu, sprzątaczki i sposób, w jaki rozmawiasz z gośćmi."
+  },
+  "Flixbnb brings the experience.": {
+   "es": "Flixbnb aporta la experiencia.",
+   "fr": "Flixbnb apporte l'expérience.",
+   "pl": "Flixbnb wnosi doświadczenie."
+  },
+  " and exactly how to handle each one, and it makes sure every step actually happens.": {
+   "es": " y exactamente cómo resolver cada una, y se asegura de que cada paso se cumpla de verdad.",
+   "fr": " et exactement comment gérer chacune, et il s'assure que chaque étape est vraiment faite.",
+   "pl": " i dokładna wiedza, jak sobie z każdą poradzić, a do tego pilnuje, by każdy krok naprawdę się wydarzył."
+  },
+  "We work with any company size.": {
+   "es": "Trabajamos con empresas de cualquier tamaño.",
+   "fr": "Nous travaillons avec des entreprises de toutes tailles.",
+   "pl": "Pracujemy z firmami każdej wielkości."
+  },
+  "We handle many teammates, many cleaners, shift changes and ": {
+   "es": "Gestionamos muchos compañeros, muchos limpiadores, cambios de turno y ",
+   "fr": "Nous gérons de nombreux collègues, de nombreux agents de ménage, les changements d'équipe et ",
+   "pl": "Obsługujemy wielu pracowników, wiele sprzątaczek, zmiany dyżurów i "
+  },
+  "every edge case.": {
+   "es": "cada caso límite.",
+   "fr": "tous les cas particuliers.",
+   "pl": "każdy nietypowy przypadek."
+  },
+  "See it run on your own listings.": {
+   "es": "Míralo funcionar en tus propios alojamientos.",
+   "fr": "Voyez-le tourner sur vos propres logements.",
+   "pl": "Zobacz, jak działa w Twoich obiektach."
+  },
+  "Start onboarding, or schedule a call with our team first.": {
+   "es": "Empieza el onboarding o, primero, agenda una llamada con nuestro equipo.",
+   "fr": "Démarrez l'onboarding, ou planifiez d'abord un appel avec notre équipe.",
+   "pl": "Rozpocznij wdrożenie albo najpierw umów rozmowę z naszym zespołem."
+  },
+  ", the AI operations manager for short-term rentals": {
+   "es": ", el gestor de operaciones con IA para alquileres vacacionales",
+   "fr": ", le gestionnaire des opérations IA pour la location courte durée",
+   "pl": ", menedżer operacji AI dla najmu krótkoterminowego"
+  },
+  "Leave your details and someone from our team will reach out within an hour.": {
+   "es": "Déjanos tus datos y alguien de nuestro equipo te contactará en menos de una hora.",
+   "fr": "Laissez vos coordonnées et quelqu'un de notre équipe vous contactera dans l'heure.",
+   "pl": "Zostaw swoje dane, a ktoś z naszego zespołu odezwie się w ciągu godziny."
+  },
+  "Company name": {
+   "es": "Nombre de la empresa",
+   "fr": "Nom de l'entreprise",
+   "pl": "Nazwa firmy"
+  },
+  "Email": {
+   "es": "Email",
+   "fr": "Email",
+   "pl": "E-mail"
+  },
+  "Phone": {
+   "es": "Teléfono",
+   "fr": "Téléphone",
+   "pl": "Telefon"
+  },
+  "Thanks, we got it.": {
+   "es": "Gracias, lo hemos recibido.",
+   "fr": "Merci, c'est bien reçu.",
+   "pl": "Dziękujemy, otrzymaliśmy."
+  },
+  "Someone from our team will reach out within an hour.": {
+   "es": "Alguien de nuestro equipo te contactará en menos de una hora.",
+   "fr": "Quelqu'un de notre équipe vous contactera dans l'heure.",
+   "pl": "Ktoś z naszego zespołu odezwie się w ciągu godziny."
+  },
+  "Close": {
+   "es": "Cerrar",
+   "fr": "Fermer",
+   "pl": "Zamknij"
+  },
+  "Enter a phone number, with the country code.": {
+   "es": "Escribe un teléfono, con el prefijo del país.",
+   "fr": "Saisissez un numéro de téléphone, avec l'indicatif du pays.",
+   "pl": "Wpisz numer telefonu z kierunkowym kraju."
+  },
+  "Fill in your company name, a valid email and a phone number.": {
+   "es": "Rellena el nombre de tu empresa, un email válido y un teléfono.",
+   "fr": "Indiquez le nom de votre entreprise, un email valide et un numéro de téléphone.",
+   "pl": "Podaj nazwę firmy, poprawny e-mail i numer telefonu."
+  },
+  "Your details weren't sent. Try again, or email ": {
+   "es": "Tus datos no se enviaron. Inténtalo de nuevo o escribe a ",
+   "fr": "Vos coordonnées n'ont pas été envoyées. Réessayez, ou écrivez à ",
+   "pl": "Twoje dane nie zostały wysłane. Spróbuj ponownie albo napisz na "
+  },
+  "Lockbox is empty!": {
+   "es": "¡La caja de llaves está vacía!",
+   "fr": "La boîte à clés est vide !",
+   "pl": "Sejf na klucze jest pusty!"
+  },
+  "Can we stay one more night?": {
+   "es": "¿Podemos quedarnos una noche más?",
+   "fr": "On peut rester une nuit de plus ?",
+   "pl": "Możemy zostać jeszcze jedną noc?"
+  },
+  "I want €200 back.": {
+   "es": "Quiero que me devuelvan 200 €.",
+   "fr": "Je veux 200 € de remboursement.",
+   "pl": "Chcę zwrotu 200 €."
+  },
+  "What's the Wi-Fi password?": {
+   "es": "¿Cuál es la contraseña del Wi-Fi?",
+   "fr": "C'est quoi le mot de passe Wi-Fi ?",
+   "pl": "Jakie jest hasło do Wi-Fi?"
+  },
+  "We're 6, not 4!": {
+   "es": "¡Somos 6, no 4!",
+   "fr": "On est 6, pas 4 !",
+   "pl": "Jest nas 6, nie 4!"
+  },
+  "Door code doesn't work": {
+   "es": "El código de la puerta no funciona",
+   "fr": "Le code de la porte ne marche pas",
+   "pl": "Kod do drzwi nie działa"
+  },
+  "Hello???": {
+   "es": "¿¿¿Hola???",
+   "fr": "Allô ???",
+   "pl": "Halo???"
+  },
+  "Early check-in?": {
+   "es": "¿Entrada anticipada?",
+   "fr": "Arrivée anticipée ?",
+   "pl": "Wcześniejsze zameldowanie?"
+  },
+  "No hot water!!": {
+   "es": "¡¡No hay agua caliente!!",
+   "fr": "Pas d'eau chaude !!",
+   "pl": "Nie ma ciepłej wody!!"
+  },
+  "Where do we park?": {
+   "es": "¿Dónde aparcamos?",
+   "fr": "On se gare où ?",
+   "pl": "Gdzie zaparkować?"
+  },
+  "Hello?????": {
+   "es": "¿¿¿Hola?????",
+   "fr": "Allô ?????",
+   "pl": "Halo?????"
+  },
+  "Running short-term rentals?": {
+   "es": "¿Gestionas alquileres vacacionales?",
+   "fr": "Vous gérez de la location courte durée ?",
+   "pl": "Prowadzisz najem krótkoterminowy?"
+  },
+  "Every. Single. Day.": {
+   "es": "Todos. Los. Días.",
+   "fr": "Tous. Les. Jours.",
+   "pl": "Każdego. Dnia. Bez wyjątku."
+  },
+  "Refund threat": {
+   "es": "Amenaza de reembolso",
+   "fr": "Menace de remboursement",
+   "pl": "Groźba zwrotu"
+  },
+  "Bedbugs": {
+   "es": "Chinches",
+   "fr": "Punaises de lit",
+   "pl": "Pluskwy"
+  },
+  "Noisy neighbours": {
+   "es": "Vecinos ruidosos",
+   "fr": "Voisins bruyants",
+   "pl": "Głośni sąsiedzi"
+  },
+  "Wrong door code": {
+   "es": "Código equivocado",
+   "fr": "Mauvais code",
+   "pl": "Zły kod do drzwi"
+  },
+  "Cleaner late": {
+   "es": "Limpieza tarde",
+   "fr": "Ménage en retard",
+   "pl": "Sprzątanie spóźnione"
+  },
+  "Bad review": {
+   "es": "Mala reseña",
+   "fr": "Mauvais avis",
+   "pl": "Zła recenzja"
+  },
+  "Smart lock dead": {
+   "es": "Cerradura sin batería",
+   "fr": "Serrure connectée HS",
+   "pl": "Padł inteligentny zamek"
+  },
+  "Where to park?": {
+   "es": "¿Dónde aparcar?",
+   "fr": "Où se garer ?",
+   "pl": "Gdzie parkować?"
+  },
+  "Extra night": {
+   "es": "Noche extra",
+   "fr": "Nuit en plus",
+   "pl": "Dodatkowa noc"
+  },
+  "Pets allowed?": {
+   "es": "¿Se admiten mascotas?",
+   "fr": "Animaux acceptés ?",
+   "pl": "Zwierzęta dozwolone?"
+  },
+  "Missing towels": {
+   "es": "Faltan toallas",
+   "fr": "Serviettes manquantes",
+   "pl": "Brak ręczników"
+  },
+  "Brown water": {
+   "es": "Agua marrón",
+   "fr": "Eau marron",
+   "pl": "Brązowa woda"
+  },
+  "Gas smell": {
+   "es": "Olor a gas",
+   "fr": "Odeur de gaz",
+   "pl": "Zapach gazu"
+  },
+  "Crib request": {
+   "es": "Piden una cuna",
+   "fr": "Demande de lit bébé",
+   "pl": "Prośba o łóżeczko"
+  },
+  "Elevator out": {
+   "es": "Ascensor roto",
+   "fr": "Ascenseur en panne",
+   "pl": "Winda stoi"
+  },
+  "Paying in cash": {
+   "es": "Pago en efectivo",
+   "fr": "Paiement en espèces",
+   "pl": "Płatność gotówką"
+  },
+  "Mid-stay cancel": {
+   "es": "Cancela a mitad",
+   "fr": "Annulation en cours",
+   "pl": "Rezygnacja w trakcie"
+  },
+  "Not registered": {
+   "es": "Sin registrar",
+   "fr": "Pas enregistré",
+   "pl": "Niezarejestrowany"
+  },
+  "Leaking tap": {
+   "es": "Grifo que gotea",
+   "fr": "Robinet qui fuit",
+   "pl": "Cieknący kran"
+  },
+  "Second key": {
+   "es": "Segunda llave",
+   "fr": "Deuxième clé",
+   "pl": "Drugi klucz"
+  },
+  "Cleaner no-show": {
+   "es": "La limpieza no viene",
+   "fr": "Ménage absent",
+   "pl": "Sprzątaczka nie przyszła"
+  },
+  "Booking pending": {
+   "es": "Reserva pendiente",
+   "fr": "Réservation en attente",
+   "pl": "Rezerwacja oczekuje"
+  },
+  "Lights out": {
+   "es": "Sin luz",
+   "fr": "Plus de lumière",
+   "pl": "Brak światła"
+  },
+  "\"Hello???\"": {
+   "es": "\"¿¿¿Hola???\"",
+   "fr": "\"Allô ???\"",
+   "pl": "\"Halo???\""
+  },
+  "Owner visit": {
+   "es": "Visita del propietario",
+   "fr": "Visite du propriétaire",
+   "pl": "Wizyta właściciela"
+  },
+  "situations every rental runs into.": {
+   "es": "situaciones que vive cualquier alquiler.",
+   "fr": "situations que toute location rencontre.",
+   "pl": "sytuacji, które zna każdy wynajem."
+  },
+  "Guests": {
+   "es": "Huéspedes",
+   "fr": "Voyageurs",
+   "pl": "Goście"
+  },
+  "Your PMS": {
+   "es": "Tu PMS",
+   "fr": "Votre PMS",
+   "pl": "Twój PMS"
+  },
+  "the AI operations manager for short-term rentals": {
+   "es": "el gestor de operaciones con IA para alquileres vacacionales",
+   "fr": "le gestionnaire des opérations IA pour la location courte durée",
+   "pl": "menedżer operacji AI dla najmu krótkoterminowego"
+  },
+  "Connected to your guests, your team and your PMS.": {
+   "es": "Conectado con tus huéspedes, tu equipo y tu PMS.",
+   "fr": "Connecté à vos voyageurs, votre équipe et votre PMS.",
+   "pl": "Połączony z gośćmi, zespołem i Twoim PMS."
+  },
+  "It already|knows what|to do.": {
+   "es": "Ya sabe|qué hay|que hacer.",
+   "fr": "Il sait|déjà quoi|faire.",
+   "pl": "Już wie,|co trzeba|zrobić."
+  },
+  "Extra night request": {
+   "es": "Petición de noche extra",
+   "fr": "Demande de nuit en plus",
+   "pl": "Prośba o dodatkową noc"
+  },
+  "Cleaner running late": {
+   "es": "La limpieza llega tarde",
+   "fr": "Ménage en retard",
+   "pl": "Sprzątaczka się spóźnia"
+  },
+  "Guest wants €200 back": {
+   "es": "El huésped quiere 200 €",
+   "fr": "Le voyageur veut 200 €",
+   "pl": "Gość chce zwrotu 200 €"
+  },
+  "Pay or dispute?": {
+   "es": "¿Pagar o reclamar?",
+   "fr": "Payer ou contester ?",
+   "pl": "Zapłacić czy się odwołać?"
+  },
+  "The power's out in Nikis 54. Where's the fuse box?": {
+   "es": "Se ha ido la luz en Nikis 54. ¿Dónde está el cuadro eléctrico?",
+   "fr": "Plus de courant à Nikis 54. Où est le tableau électrique ?",
+   "pl": "W Nikis 54 nie ma prądu. Gdzie są bezpieczniki?"
+  },
+  "Got it. Telling the guest now.": {
+   "es": "Entendido. Se lo digo al huésped.",
+   "fr": "Compris. Je préviens le voyageur.",
+   "pl": "Jasne. Już piszę do gościa."
+  },
+  "Power's back. The guest is all good.": {
+   "es": "Ha vuelto la luz. El huésped está bien.",
+   "fr": "Le courant est revenu. Tout va bien.",
+   "pl": "Prąd wrócił. U gościa wszystko OK."
+  },
+  "It only asks|what only you|know.": {
+   "es": "Solo pregunta|lo que solo|tú sabes.",
+   "fr": "Il ne demande|que ce que vous|seul savez.",
+   "pl": "Pyta tylko|o to, co wiesz|tylko Ty."
+  },
+  "Right in WhatsApp or Telegram.": {
+   "es": "Directamente en WhatsApp o Telegram.",
+   "fr": "Directement sur WhatsApp ou Telegram.",
+   "pl": "Prosto na WhatsAppie lub Telegramie."
+  },
+  "10x less time": {
+   "es": "10x menos tiempo",
+   "fr": "10x moins de temps",
+   "pl": "10x mniej czasu"
+  },
+  "10x better quality": {
+   "es": "10x más calidad",
+   "fr": "10x plus de qualité",
+   "pl": "10x lepsza jakość"
+  },
+  "Your team gets": {
+   "es": "Tu equipo es",
+   "fr": "Votre équipe devient",
+   "pl": "Twój zespół jest"
+  },
+  "better.": {
+   "es": "mejor.",
+   "fr": "meilleure.",
+   "pl": "lepszy."
+  },
+  "Handled.": {
+   "es": "Resuelto.",
+   "fr": "Géré.",
+   "pl": "Załatwione."
+  }
+ },
+ "js": [
+  "Show all 150+",
+  "Show fewer",
+  "Start onboarding",
+  "Schedule a call",
+  "Enter a phone number, with the country code.",
+  "Fill in your company name, a valid email and a phone number.",
+  "Your details weren't sent. Try again, or email ",
+  "Pause",
+  "Play",
+  "Play the film again",
+  "Play the film, with sound",
+  "Mute",
+  "Unmute",
+  "Exit full screen",
+  "Full screen",
+  "Handled",
+  "Needs approval",
+  "Always your call",
+  "Lockbox is empty!",
+  "Can we stay one more night?",
+  "I want €200 back.",
+  "What's the Wi-Fi password?",
+  "We're 6, not 4!",
+  "Door code doesn't work",
+  "Hello???",
+  "Early check-in?",
+  "No hot water!!",
+  "Where do we park?",
+  "Hello?????",
+  "Running short-term rentals?",
+  "Every. Single. Day.",
+  "Refund threat",
+  "Bedbugs",
+  "Extra guests",
+  "Key not returned",
+  "Noisy neighbours",
+  "Wrong door code",
+  "Cleaner late",
+  "Bad review",
+  "Smart lock dead",
+  "Where to park?",
+  "Extra night",
+  "Pets allowed?",
+  "Missing towels",
+  "Brown water",
+  "Gas smell",
+  "Crib request",
+  "Elevator out",
+  "Paying in cash",
+  "Mid-stay cancel",
+  "Not registered",
+  "Leaking tap",
+  "Second key",
+  "Cleaner no-show",
+  "Booking pending",
+  "Lights out",
+  "\"Hello???\"",
+  "Owner visit",
+  "situations every rental runs into.",
+  "Guests",
+  "Your PMS",
+  "the AI operations manager for short-term rentals",
+  "Connected to your guests, your team and your PMS.",
+  "It already|knows what|to do.",
+  "Extra night request",
+  "Cleaner running late",
+  "Wrong door code sent",
+  "Guest wants €200 back",
+  "Pay or dispute?",
+  "The power's out in Nikis 54. Where's the fuse box?",
+  "Got it. Telling the guest now.",
+  "Power's back. The guest is all good.",
+  "It only asks|what only you|know.",
+  "Right in WhatsApp or Telegram.",
+  "10x less time",
+  "10x better quality",
+  "Your team gets",
+  "better.",
+  "Handled.",
+  "Lockbox empty",
+  "Late checkout",
+  "Same-day turnover",
+  "No hot water",
+  "Wi-Fi down",
+  "Delayed flight",
+  "Damage claim",
+  "Left something behind",
+  "Early check-in",
+  "Invoice request",
+  "Guest not answering",
+  "AC not working",
+  "Bags after checkout",
+  "Cleaner hasn't confirmed",
+  "15 minutes later",
+  "Behind the curtain, left of the shower door.",
+  "Your team",
+  "Your call",
+  "Lockbox empty.",
+  "Refund threat.",
+  "Extra night request."
+ ]
+}

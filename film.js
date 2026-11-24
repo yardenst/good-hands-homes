@@ -42,6 +42,7 @@
   const HAND = (w, s) => `${w} ${s}px Kalam, "Comic Sans MS", cursive`;
   const SANS = (w, s) => `${w} ${s}px "Schibsted Grotesk", system-ui, sans-serif`;
 
+  const tr = k => (window.FLX_T && window.FLX_T[k]) || k;
   const C = {
     paper: '#F6F5F2', navy: '#1D2124', ink: '#1D2124', soft: '#5B6166',
     aegean: '#9E2B1E', aegeanPale: '#F6DDD7',
@@ -54,18 +55,18 @@
 
   /* ───────────── The timeline (shared by the drawing and the soundtrack) ───────────── */
   const NOTIFS = [
-    { t: 1.5, x: 930, y: 232, rot: -0.05, text: 'Lockbox is empty!', c: 'pink' },
-    { t: 2.0, x: 1010, y: 330, rot: 0.06, text: 'Can we stay one more night?', c: 'aegean' },
-    { t: 2.5, x: 360, y: 214, rot: 0.03, text: 'I want €200 back.', c: 'pink' },
-    { t: 3.0, x: 975, y: 432, rot: -0.07, text: "Cleaner hasn't confirmed", c: 'green' },
-    { t: 3.375, x: 340, y: 326, rot: -0.04, text: "What's the Wi-Fi password?", c: 'aegean' },
-    { t: 3.75, x: 1090, y: 532, rot: 0.08, text: "We're 6, not 4!", c: 'pink' },
-    { t: 4.0, x: 315, y: 438, rot: 0.05, text: "Door code doesn't work", c: 'pink' },
-    { t: 4.25, x: 640, y: 214, rot: -0.09, text: 'Hello???', c: 'aegean' },
-    { t: 4.5, x: 930, y: 618, rot: 0.04, text: 'Early check-in?', c: 'green' },
-    { t: 4.75, x: 330, y: 558, rot: 0.07, text: 'No hot water!!', c: 'pink' },
-    { t: 5.0, x: 1100, y: 158, rot: -0.06, text: 'Where do we park?', c: 'aegean' },
-    { t: 5.25, x: 610, y: 292, rot: -0.04, text: 'Hello?????', c: 'pink' }
+    { t: 1.5, x: 930, y: 232, rot: -0.05, text: tr('Lockbox is empty!'), c: 'pink' },
+    { t: 2.0, x: 1010, y: 330, rot: 0.06, text: tr('Can we stay one more night?'), c: 'aegean' },
+    { t: 2.5, x: 360, y: 214, rot: 0.03, text: tr('I want €200 back.'), c: 'pink' },
+    { t: 3.0, x: 975, y: 432, rot: -0.07, text: tr("Cleaner hasn't confirmed"), c: 'green' },
+    { t: 3.375, x: 340, y: 326, rot: -0.04, text: tr("What's the Wi-Fi password?"), c: 'aegean' },
+    { t: 3.75, x: 1090, y: 532, rot: 0.08, text: tr("We're 6, not 4!"), c: 'pink' },
+    { t: 4.0, x: 315, y: 438, rot: 0.05, text: tr("Door code doesn't work"), c: 'pink' },
+    { t: 4.25, x: 640, y: 214, rot: -0.09, text: tr('Hello???'), c: 'aegean' },
+    { t: 4.5, x: 930, y: 618, rot: 0.04, text: tr('Early check-in?'), c: 'green' },
+    { t: 4.75, x: 330, y: 558, rot: 0.07, text: tr('No hot water!!'), c: 'pink' },
+    { t: 5.0, x: 1100, y: 158, rot: -0.06, text: tr('Where do we park?'), c: 'aegean' },
+    { t: 5.25, x: 610, y: 292, rot: -0.04, text: tr('Hello?????'), c: 'pink' }
   ];
   const NOTE_LABELS = [
     'Lockbox empty', 'Refund threat', 'Late checkout', 'Same-day turnover', 'Bedbugs', 'No hot water',
@@ -86,17 +87,17 @@
       y: 76 + row * 142 + (r() - 0.5) * 22,
       rot: (r() - 0.5) * 0.26,
       color: colors[Math.floor(r() * colors.length)],
-      label: NOTE_LABELS[k],
+      label: tr(NOTE_LABELS[k]),
       t: 6.5 + 2.8 * Math.pow(k / 39, 0.8)
     }));
   })();
-  const ITEMS = ['Lockbox empty', 'Extra night request', 'Cleaner running late', 'Same-day turnover', 'Wrong door code sent', 'Guest wants €200 back'];
+  const ITEMS = ['Lockbox empty', 'Extra night request', 'Cleaner running late', 'Same-day turnover', 'Wrong door code sent', 'Guest wants €200 back'].map(k => tr(k));
   const MSGS = [
-    { who: 'bot', text: "The power's out in Nikis 54. Where's the fuse box?", t: 32.0 },
-    { who: 'you', text: 'Behind the curtain, left of the shower door.', t: 33.5 },
-    { who: 'bot', text: 'Got it. Telling the guest now.', t: 35.0 },
-    { who: 'gap', text: '15 minutes later', t: 36.0 },
-    { who: 'bot', text: "Power's back. The guest is all good.", t: 37.0, tick: true }
+    { who: 'bot', text: tr("The power's out in Nikis 54. Where's the fuse box?"), t: 32.0 },
+    { who: 'you', text: tr('Behind the curtain, left of the shower door.'), t: 33.5 },
+    { who: 'bot', text: tr('Got it. Telling the guest now.'), t: 35.0 },
+    { who: 'gap', text: tr('15 minutes later'), t: 36.0 },
+    { who: 'bot', text: tr("Power's back. The guest is all good."), t: 37.0, tick: true }
   ];
   const T = {
     hundred: [9.5, 9.7, 9.9, 10.1],
@@ -275,12 +276,22 @@
     ctx.strokeStyle = 'rgba(120,100,60,0.12)'; ctx.lineWidth = 1; ctx.stroke();
     ctx.restore();
   }
-  // Handwriting that writes itself on from left to right as p goes 0 → 1
+  // Sets a sans font at `size`, or smaller if `text` would be wider than `max` (translations run longer)
+  function fitFont(text, weight, size, max) {
+    ctx.font = SANS(weight, size);
+    const w = ctx.measureText(text).width;
+    if (w > max) ctx.font = SANS(weight, Math.floor(size * max / w));
+  }
+  // Handwriting that writes itself on from left to right as p goes 0 → 1.
+  // Shrinks to fit: centred text within 1180px, left-aligned text up to the right edge (or o.max).
   function hand(text, x, y, size, color, o = {}) {
     const p = o.p === undefined ? 1 : o.p;
     if (p <= 0) return 0;
     ctx.save();
-    ctx.font = HAND(o.weight || 700, size); ctx.fillStyle = color; ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
+    ctx.font = HAND(o.weight || 700, size);
+    const max = o.max || (o.align === 'center' ? Math.min(1180, 2 * Math.min(x, W - x) - 40) : W - x - 40);
+    const mw = ctx.measureText(text).width;
+    if (mw > max) { size = Math.floor(size * max / mw); ctx.font = HAND(o.weight || 700, size); } ctx.fillStyle = color; ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
     const w = ctx.measureText(text).width, x0 = o.align === 'center' ? x - w / 2 : o.align === 'right' ? x - w : x;
     if (p < 1) { ctx.beginPath(); ctx.rect(x0 - 12, y - size * 1.3, (w + 24) * p, size * 2); ctx.clip(); }
     ctx.fillText(text, x0, y);
@@ -493,8 +504,14 @@
   function sticky(key, label, w, h, color, size) {
     piece(key, () => rect(w, h), color, { rough: 0.9, shadowA: 0.17 });
     ctx.fillStyle = 'rgba(0,0,0,0.05)'; ctx.fillRect(-w / 2 + 2, -h / 2 + 2, w - 4, 16);
-    ctx.font = HAND(700, size); ctx.fillStyle = C.ink; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-    const lines = wrapLines(label, w - 30), lh = size * 1.15;
+    ctx.fillStyle = C.ink; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    let lines, lh;
+    for (;;) { // shrink until every line fits the note
+      ctx.font = HAND(700, size);
+      lines = wrapLines(label, w - 30); lh = size * 1.15;
+      if (size <= 12 || (lines.every(l => ctx.measureText(l).width <= w - 20) && lines.length * lh <= h - 30)) break;
+      size -= 1;
+    }
     lines.forEach((l, i) => ctx.fillText(l, 0, 8 + (i - (lines.length - 1) / 2) * lh));
   }
 
@@ -587,10 +604,10 @@
     const out1 = P(t, 5.2, 0.25);
     if (out1 < 1) {
       ctx.save(); ctx.globalAlpha = 1 - out1;
-      caption('cap1', 'Running short-term rentals?', 640, 96, 52, C.ink, C.white, 0.2, t);
+      caption('cap1', tr('Running short-term rentals?'), 640, 96, 52, C.ink, C.white, 0.2, t);
       ctx.restore();
     }
-    if (t > 5.35) caption('cap2', 'Every. Single. Day.', 640, 96, 60, C.pink, C.white, 5.35, t);
+    if (t > 5.35) caption('cap2', tr('Every. Single. Day.'), 640, 96, 60, C.pink, C.white, 5.35, t);
 
     if (t >= NOTES[0].t - 0.05) drawNotes(t);
   }
@@ -598,6 +615,8 @@
     const s = pop(t, t0, 0.3);
     if (s <= 0) return;
     ctx.font = HAND(700, size);
+    const tw0 = ctx.measureText(text).width;
+    if (tw0 > 1100) { size = Math.floor(size * 1100 / tw0); ctx.font = HAND(700, size); }
     const w = ctx.measureText(text).width + 64, h = size * 1.5;
     ctx.save(); ctx.translate(cx, cy - size * 0.32); ctx.rotate(-0.015); ctx.scale(s, s);
     piece(key, () => rect(w, h), bg, { rough: 2.4, shadowA: 0.18 });
@@ -621,15 +640,15 @@
       tape(-300, -150, 90, -0.7, 21); tape(300, -150, 90, 0.7, 22);
       ctx.restore();
       ransom('150+', 640, 322, 150, T.hundred, t, 99);
-      hand('situations every rental runs into.', 640, 462, 40, C.ink, { align: 'center', p: easeOut(P(t, 10.4, 0.9)) });
+      hand(tr('situations every rental runs into.'), 640, 462, 40, C.ink, { align: 'center', p: easeOut(P(t, 10.4, 0.9)) });
     }
   }
 
   /* ───────────── Scene 3: meet Flixbnb ───────────── */
   const NODES = [
-    { label: 'Guests', x: 250, y: 300, icon: iconGuests },
-    { label: 'Your team', x: 1030, y: 300, icon: iconTeam },
-    { label: 'Your PMS', x: 640, y: 596, icon: iconPMS }
+    { label: tr('Guests'), x: 250, y: 300, icon: iconGuests },
+    { label: tr('Your team'), x: 1030, y: 300, icon: iconTeam },
+    { label: tr('Your PMS'), x: 640, y: 596, icon: iconPMS }
   ];
   function drawMeet(t) {
     ctx.drawImage(NAVY, 0, 0, W, H);
@@ -651,7 +670,7 @@
     const tagOut = P(t, 14.6, 0.3);
     if (t > 13.4 && tagOut < 1) {
       ctx.save(); ctx.globalAlpha = 1 - tagOut;
-      hand('the AI operations manager for short-term rentals', 640, 470, 38, C.white, { align: 'center', p: easeOut(P(t, 13.4, 1.1)) });
+      hand(tr('the AI operations manager for short-term rentals'), 640, 470, 38, C.white, { align: 'center', p: easeOut(P(t, 13.4, 1.1)) });
       ctx.restore();
     }
 
@@ -679,12 +698,12 @@
       ctx.restore();
       hand(n.label, n.x, n.y + 58, 26, C.ink, { align: 'center', p: s > 0.9 ? 1 : 0 });
     });
-    hand('Connected to your guests, your team and your PMS.', 640, 96, 40, C.white, { align: 'center', p: easeOut(P(t, 16.4, 1.3)) });
+    hand(tr('Connected to your guests, your team and your PMS.'), 640, 96, 40, C.white, { align: 'center', p: easeOut(P(t, 16.4, 1.3)) });
   }
 
   /* ───────────── Scene 4: it already knows (the legal pad) ───────────── */
   function knowsContent(t) {
-    ['It already', 'knows what', 'to do.'].forEach((s, i) => hand(s, 84, 250 + i * 82, 72, C.ink, { p: easeOut(P(t, 19.8 + i * 0.45, 0.5)) }));
+    tr('It already|knows what|to do.').split('|').forEach((s, i) => hand(s, 84, 250 + i * 82, 72, C.ink, { p: easeOut(P(t, 19.8 + i * 0.45, 0.5)) }));
     ink([[84, 432], [150, 428], [220, 433], [290, 427]], { color: C.green, width: 7, seed: 240, p: easeOut(P(t, 21.3, 0.4)) });
     const arrow = P(t, 21.6, 0.4);
     ink([[300, 520], [380, 540], [470, 490]], { width: 4, seed: 241, p: easeOut(arrow) });
@@ -704,7 +723,7 @@
     ITEMS.forEach((s, i) => {
       const y = top + 110 + i * 68, t0 = T.items[i], yours = i === 5;
       ink(rect(26, 26).map(([px, py]) => [px + left + 37, py + y - 11]), { closed: true, color: yours ? C.pink : C.ink, width: 2.6, seed: 400 + i, p: easeOut(P(t, t0 - 0.15, 0.25)) });
-      hand(s, left + 98, y, 34, C.ink, { weight: yours ? 700 : 400, p: easeOut(P(t, t0, 0.35)) });
+      hand(s, left + 98, y, 34, C.ink, { weight: yours ? 700 : 400, max: 340, p: easeOut(P(t, t0, 0.35)) });
       if (!yours) {
         const tk = T.ticks[i];
         ink([[left + 27, y - 14], [left + 37, y - 1], [left + 62, y - 40]], { color: C.green, width: 5, seed: 410 + i, jitter: 0.6, p: easeOut(P(t, tk, 0.18)) });
@@ -713,23 +732,23 @@
           ctx.save(); ctx.translate(-left - 86, y - 12); ctx.rotate(-0.07); ctx.scale(hp, hp);
           piece('hd' + i, () => roundPoly(128, 38, 18), C.greenPale, { rough: 0.8, shadowA: 0.12 });
           ctx.font = SANS(700, 19); ctx.fillStyle = C.green; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-          ctx.fillText('Handled', 10, 1);
+          fitFont(tr('Handled'), 700, 19, 96); ctx.fillText(tr('Handled'), 10, 1);
           ink([[-50, 0], [-45, 6], [-35, -6]], { color: C.green, width: 3, seed: 420 + i });
           ctx.restore();
         }
       } else {
         ctx.font = HAND(700, 34);
-        const tw = ctx.measureText(s).width;
+        const tw = Math.min(ctx.measureText(s).width, 340);
         ink(ellPts(left + 98 + tw / 2, y - 12, tw / 2 + 24, 30, 433, 0.15), { color: C.pink, width: 3.5, seed: 434, p: easeOut(P(t, T.call, 0.45)) });
         const cp = pop(t, T.call + 0.4, 0.3);
         if (cp > 0) {
           ctx.save(); ctx.translate(-left - 86, y + 40); ctx.rotate(-0.05); ctx.scale(cp, cp);
           piece('yourcall', () => roundPoly(132, 40, 19), C.pink, { rough: 0.8, shadowA: 0.18 });
           ctx.font = SANS(700, 19); ctx.fillStyle = C.white; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-          ctx.fillText('Your call', 0, 1);
+          fitFont(tr('Your call'), 700, 19, 116); ctx.fillText(tr('Your call'), 0, 1);
           ctx.restore();
         }
-        hand('Pay or dispute?', left + 98, y + 50, 32, C.pink, { p: easeOut(P(t, T.call + 0.55, 0.55)) });
+        hand(tr('Pay or dispute?'), left + 98, y + 50, 32, C.pink, { max: 236, p: easeOut(P(t, T.call + 0.55, 0.55)) });
       }
     });
     ctx.restore();
@@ -760,8 +779,13 @@
     poly(screen); ctx.fillStyle = '#F2F5F9'; ctx.fill(); ctx.clip();
     ctx.fillStyle = C.white; ctx.fillRect(-sw / 2, -sh / 2, sw, 74);
     ctx.fillStyle = 'rgba(16,24,40,0.1)'; ctx.fillRect(-sw / 2, -sh / 2 + 74, sw, 1);
-    dot(-112, -sh / 2 + 40, 17, C.aegean);
-    ctx.font = SANS(800, 17); ctx.fillStyle = C.white; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('F', -111, -sh / 2 + 41);
+    { // the house logo as the chat avatar
+      const ax = -112, ay = -sh / 2 + 40, k = 0.62, Q = (px, py) => [ax + (px - 24) * k, ay + (py - 24) * k];
+      ctx.beginPath(); [Q(24, 4), Q(44, 20), Q(44, 44), Q(4, 44), Q(4, 20)].forEach((q, i) => (i ? ctx.lineTo : ctx.moveTo).apply(ctx, q)); ctx.closePath();
+      ctx.fillStyle = C.aegean; ctx.fill();
+      ctx.lineWidth = 4.6 * k; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      [[8.5, C.white], [19.5, '#F0782F']].forEach(([x0, col]) => { ctx.strokeStyle = col; ctx.beginPath(); ctx.moveTo(...Q(x0, 31)); ctx.lineTo(...Q(x0 + 6, 37)); ctx.lineTo(...Q(x0 + 18, 23.5)); ctx.stroke(); });
+    }
     ctx.font = SANS(700, 19); ctx.fillStyle = C.ink; ctx.textAlign = 'left'; ctx.fillText('Flixbnb', -86, -sh / 2 + 41);
 
     chatLayout.forEach(m => {
@@ -782,7 +806,7 @@
       if (bot) { ctx.strokeStyle = 'rgba(16,24,40,0.1)'; ctx.lineWidth = 1; ctx.stroke(); }
       ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
       ctx.font = SANS(700, 12.5); ctx.fillStyle = bot ? C.aegean : 'rgba(255,255,255,0.8)';
-      ctx.fillText(bot ? 'Flixbnb' : 'Your team', 14, 20);
+      ctx.fillText(bot ? 'Flixbnb' : tr('Your team'), 14, 20);
       ctx.font = SANS(500, 17); ctx.fillStyle = bot ? C.ink : C.white;
       m.lines.forEach((l, i) => ctx.fillText(l, 14, 42 + i * 22));
       if (m.tick) {
@@ -816,9 +840,9 @@
     });
     ctx.restore();
     ctx.save(); ctx.translate(-ex * 900, 0);
-    ['It only asks', 'what only you', 'know.'].forEach((s, i) => hand(s, 84, 250 + i * 82, 68, C.ink, { p: easeOut(P(t, 30.9 + i * 0.45, 0.5)) }));
+    tr('It only asks|what only you|know.').split('|').forEach((s, i) => hand(s, 84, 250 + i * 82, 68, C.ink, { p: easeOut(P(t, 30.9 + i * 0.45, 0.5)) }));
     ink([[84, 430], [150, 426], [214, 431]], { color: C.pink, width: 7, seed: 530, p: easeOut(P(t, 32.3, 0.35)) });
-    hand('Right in WhatsApp or Telegram.', 86, 504, 34, C.soft, { weight: 400, p: easeOut(P(t, 32.6, 0.8)) });
+    hand(tr('Right in WhatsApp or Telegram.'), 86, 504, 34, C.soft, { weight: 400, p: easeOut(P(t, 32.6, 0.8)) });
     ctx.restore();
   }
 
@@ -828,7 +852,7 @@
     sun(1160, 112, pop(t, 40.4, 0.4), t);
     const hin = easeOutBack(P(t, 40.1, 0.55));
     host(270, 470 + (1 - hin) * 420, 0.95, t > T.hit - 0.2 ? 'happy' : 'calm', t, { coffee: true });
-    [['10x less time', 560, 168, -0.08, C.yellow], ['10x better quality', 1000, 186, 0.07, C.greenPale]].forEach(([label, x, y, rot, color], i) => {
+    [[tr('10x less time'), 560, 168, -0.08, C.yellow], [tr('10x better quality'), 1000, 186, 0.07, C.greenPale]].forEach(([label, x, y, rot, color], i) => {
       const s = pop(t, T.tenx[i], 0.35);
       if (s <= 0) return;
       ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.scale(s, s);
@@ -836,10 +860,10 @@
       tape(0, -72, 80, 0.06 * (i ? -1 : 1), 30 + i);
       ctx.restore();
     });
-    hand('Your team gets', 790, 330, 56, C.ink, { align: 'center', p: easeOut(P(t, T.yourTeam, 0.6)) });
+    hand(tr('Your team gets'), 790, 330, 56, C.ink, { align: 'center', p: easeOut(P(t, T.yourTeam, 0.6)) });
     ransom('100X', 790, 456, 130, T.hundredX, t, 7);
     confetti(t, T.hit + 0.05, 790, 456);
-    hand('better.', 790, 612, 72, C.ink, { align: 'center', p: easeOut(P(t, T.better, 0.45)) });
+    hand(tr('better.'), 790, 612, 72, C.ink, { align: 'center', p: easeOut(P(t, T.better, 0.45)) });
     ink([[700, 632], [770, 628], [840, 634], [880, 629]], { color: C.green, width: 7, seed: 610, p: easeOut(P(t, T.better + 0.45, 0.35)) });
   }
 
@@ -862,8 +886,10 @@
     ctx.save(); ctx.translate(cx, cy); ctx.rotate(-0.08); ctx.scale(f < 1 ? lerp(2.2, 1, easeIn(f)) : 1, f < 1 ? lerp(2.2, 1, easeIn(f)) : 1);
     ctx.globalAlpha = clamp(f * 3);
     ctx.font = SANS(800, 124); ctx.fillStyle = C.greenLight; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-    const tw = ctx.measureText('Handled.').width;
-    ctx.fillText('Handled.', 0, 8);
+    const stamp = tr('Handled.');
+    fitFont(stamp, 800, 124, 560);
+    const tw = ctx.measureText(stamp).width;
+    ctx.fillText(stamp, 0, 8);
     ink(rect(tw + 64, 172), { closed: true, color: C.greenLight, width: 7, seed: 701, jitter: 2 });
     const r = rng(702);
     for (let i = 0; i < 60; i++) dot((r() - 0.5) * (tw + 40), (r() - 0.5) * 150, 1 + r() * 2.6, 'rgba(15,35,66,0.55)');
@@ -872,7 +898,7 @@
   }
   function drawEnd(t) {
     ctx.drawImage(NAVY, 0, 0, W, H);
-    ['Lockbox empty.', 'Refund threat.', 'Extra night request.'].forEach((s, i) => strip(s, 110, 178 + i * 90, t, T.strips[i], i));
+    ['Lockbox empty.', 'Refund threat.', 'Extra night request.'].map(k => tr(k)).forEach((s, i) => strip(s, 110, 178 + i * 90, t, T.strips[i], i));
     handledStamp(395, 520, t, T.handled);
     logo(930, 300, 0.62 * pop(t, T.logo, 0.4));
     if (t > T.logo + 0.2) hand('flixbnb.com', 930, 420, 46, C.white, { align: 'center', p: easeOut(P(t, T.logo + 0.2, 0.6)) });
@@ -881,7 +907,7 @@
       ctx.save(); ctx.translate(930, 508); ctx.rotate(-0.02); ctx.scale(bp, bp);
       piece('btn', () => roundPoly(330, 72, 14), C.white, { rough: 1, shadowA: 0.35 });
       ctx.font = SANS(700, 28); ctx.fillStyle = C.navy; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillText('Start onboarding', 0, 2);
+      fitFont(tr('Start onboarding'), 700, 28, 296); ctx.fillText(tr('Start onboarding'), 0, 2);
       ctx.restore();
     }
     ink(ellPts(930, 508, 210, 62, 51, 0.15), { color: C.greenLight, width: 4, seed: 52, p: easeOut(P(t, T.circle, 0.5)) });
@@ -1250,8 +1276,8 @@
 
   function setState(s) {
     state = s; root.dataset.state = s;
-    toggleBtn.setAttribute('aria-label', s === 'playing' ? 'Pause' : 'Play');
-    playBtn.setAttribute('aria-label', s === 'ended' ? 'Play the film again' : 'Play the film, with sound');
+    toggleBtn.setAttribute('aria-label', tr(s === 'playing' ? 'Pause' : 'Play'));
+    playBtn.setAttribute('aria-label', tr(s === 'ended' ? 'Play the film again' : 'Play the film, with sound'));
   }
   function now() {
     if (state !== 'playing') return offset;
@@ -1324,7 +1350,7 @@
   muteBtn.addEventListener('click', () => {
     muted = !muted;
     muteBtn.setAttribute('aria-pressed', String(muted));
-    muteBtn.setAttribute('aria-label', muted ? 'Unmute' : 'Mute');
+    muteBtn.setAttribute('aria-label', tr(muted ? 'Unmute' : 'Mute'));
     if (master) master.gain.value = muted ? 0 : 1;
   });
   // Full screen. iPhones only allow it for their own video player, so there the film fills the
@@ -1332,7 +1358,7 @@
   function fakeFull(on) {
     root.classList.toggle('is-full', on);
     document.documentElement.classList.toggle('film-locked', on);
-    fullBtn.setAttribute('aria-label', on ? 'Exit full screen' : 'Full screen');
+    fullBtn.setAttribute('aria-label', tr(on ? 'Exit full screen' : 'Full screen'));
     fit(); if (ready && state !== 'playing') render(offset);
   }
   fullBtn.addEventListener('click', () => {
@@ -1363,7 +1389,7 @@
   document.addEventListener('fullscreenchange', () => { fit(); if (ready && state !== 'playing') render(offset); });
 
   const fonts = [HAND(700, 40), HAND(400, 40), SANS(500, 20), SANS(600, 20), SANS(700, 40), SANS(800, 40)];
-  Promise.all(fonts.map(f => (document.fonts ? document.fonts.load(f) : null))).catch(() => {}).then(() => {
+  Promise.all(fonts.map(f => (document.fonts ? document.fonts.load(f, 'AaĄąĘęŁłŻżŹźŚśĆćŃńÓóÀàÉéÈèÇçÑñ¿¡€') : null))).catch(() => {}).then(() => {
     makeTextures(); fit(); ready = true; setState('idle'); render(POSTER);
   });
 

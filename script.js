@@ -1,5 +1,8 @@
 // Flixbnb: small interactions (no dependencies)
 
+// Translations: the /es/ /fr/ /pl/ pages set window.FLX_T; English is the fallback.
+const t = k => (window.FLX_T && window.FLX_T[k]) || k;
+
 // Tabs (the four sizes), with arrow-key support.
 function initTabs(list) {
   const tabs = [...list.querySelectorAll('[role="tab"]')];
@@ -47,7 +50,7 @@ document.querySelectorAll('[role="tablist"]').forEach(list => {
   more.addEventListener('click', () => {
     const open = cloud.classList.toggle('is-collapsed') === false;
     more.setAttribute('aria-expanded', open);
-    more.textContent = open ? 'Show fewer' : 'Show all 150+';
+    more.textContent = t(open ? 'Show fewer' : 'Show all 150+');
   });
 })();
 
@@ -69,8 +72,8 @@ const LEAD_EMAIL = 'hello@flixbnb.com'; // shown to visitors; form leads still g
   const title = form.querySelector('.lead-title');
 
   const kinds = {
-    onboarding: { title: 'Start onboarding', button: 'Start onboarding', subject: 'Start onboarding' },
-    call: { title: 'Schedule a call', button: 'Schedule a call', subject: 'Schedule a call' }
+    onboarding: { title: t('Start onboarding'), button: t('Start onboarding'), subject: 'Start onboarding' },
+    call: { title: t('Schedule a call'), button: t('Schedule a call'), subject: 'Schedule a call' }
   };
 
   function open(kind) {
@@ -100,7 +103,7 @@ const LEAD_EMAIL = 'hello@flixbnb.com'; // shown to visitors; form leads still g
   // A phone number is anything with at least 6 digits; spaces, dashes and a leading + are fine
   function checkPhone() {
     const digits = form.phone.value.replace(/\D/g, '').length;
-    form.phone.setCustomValidity(digits >= 6 ? '' : 'Enter a phone number, with the country code.');
+    form.phone.setCustomValidity(digits >= 6 ? '' : t('Enter a phone number, with the country code.'));
   }
 
   function valid() {
@@ -118,7 +121,7 @@ const LEAD_EMAIL = 'hello@flixbnb.com'; // shown to visitors; form leads still g
     e.preventDefault();
     error.hidden = true;
     if (!valid()) {
-      error.textContent = 'Fill in your company name, a valid email and a phone number.';
+      error.textContent = t('Fill in your company name, a valid email and a phone number.');
       error.hidden = false;
       return;
     }
@@ -131,13 +134,13 @@ const LEAD_EMAIL = 'hello@flixbnb.com'; // shown to visitors; form leads still g
         const res = await fetch(LEAD_ENDPOINT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({ ...data, _subject: k.subject + ': ' + data.company, _template: 'table' })
+          body: JSON.stringify({ ...data, language: document.documentElement.lang, _subject: k.subject + ': ' + data.company, _template: 'table' })
         });
         // FormSubmit answers 200 with success "false" while the form isn't activated yet
         const reply = await res.json().catch(() => ({}));
         if (!res.ok || String(reply.success) !== 'true') throw new Error(reply.message || res.status);
       } catch (err) {
-        error.textContent = 'Your details weren\'t sent. Try again, or email ' + LEAD_EMAIL + '.';
+        error.textContent = t('Your details weren\'t sent. Try again, or email ') + LEAD_EMAIL + '.';
         error.hidden = false;
         submit.disabled = false;
         return;

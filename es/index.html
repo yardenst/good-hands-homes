@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flixbnb · El gestor de operaciones con IA para alquileres vacacionales</title>
+  <meta name="description" content="Flixbnb es el gestor de operaciones con IA para alquileres vacacionales. Conectado con tus huéspedes, tu equipo y tu PMS, sabe cómo llevar un negocio de alquiler vacacional y a tu equipo solo le deja las decisiones." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=2" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+  <link rel="alternate" hreflang="en" href="https://flixbnb.com/" />
+  <link rel="alternate" hreflang="es" href="https://flixbnb.com/es/" />
+  <link rel="alternate" hreflang="fr" href="https://flixbnb.com/fr/" />
+  <link rel="alternate" hreflang="pl" href="https://flixbnb.com/pl/" />
+  <link rel="alternate" hreflang="x-default" href="https://flixbnb.com/" />
+  <link rel="stylesheet" href="/styles.css?v=20261124f" />
+  <script>window.FLX_T = {"Show all 150+": "Ver las 150+", "Show fewer": "Ver menos", "Start onboarding": "Empezar el onboarding", "Schedule a call": "Agendar una llamada", "Enter a phone number, with the country code.": "Escribe un teléfono, con el prefijo del país.", "Fill in your company name, a valid email and a phone number.": "Rellena el nombre de tu empresa, un email válido y un teléfono.", "Your details weren't sent. Try again, or email ": "Tus datos no se enviaron. Inténtalo de nuevo o escribe a ", "Pause": "Pausa", "Play": "Reproducir", "Play the film again": "Ver el vídeo otra vez", "Play the film, with sound": "Ver el vídeo, con sonido", "Mute": "Silenciar", "Unmute": "Activar sonido", "Exit full screen": "Salir de pantalla completa", "Full screen": "Pantalla completa", "Handled": "Resuelto", "Needs approval": "Necesita aprobación", "Always your call": "Siempre decides tú", "Lockbox is empty!": "¡La caja de llaves está vacía!", "Can we stay one more night?": "¿Podemos quedarnos una noche más?", "I want €200 back.": "Quiero que me devuelvan 200 €.", "What's the Wi-Fi password?": "¿Cuál es la contraseña del Wi-Fi?", "We're 6, not 4!": "¡Somos 6, no 4!", "Door code doesn't work": "El código de la puerta no funciona", "Hello???": "¿¿¿Hola???", "Early check-in?": "¿Entrada anticipada?", "No hot water!!": "¡¡No hay agua caliente!!", "Where do we park?": "¿Dónde aparcamos?", "Hello?????": "¿¿¿Hola?????", "Running short-term rentals?": "¿Gestionas alquileres vacacionales?", "Every. Single. Day.": "Todos. Los. Días.", "Refund threat": "Amenaza de reembolso", "Bedbugs": "Chinches", "Extra guests": "Huéspedes de más", "Key not returned": "Llave no devuelta", "Noisy neighbours": "Vecinos ruidosos", "Wrong door code": "Código equivocado", "Cleaner late": "Limpieza tarde", "Bad review": "Mala reseña", "Smart lock dead": "Cerradura sin batería", "Where to park?": "¿Dónde aparcar?", "Extra night": "Noche extra", "Pets allowed?": "¿Se admiten mascotas?", "Missing towels": "Faltan toallas", "Brown water": "Agua marrón", "Gas smell": "Olor a gas", "Crib request": "Piden una cuna", "Elevator out": "Ascensor roto", "Paying in cash": "Pago en efectivo", "Mid-stay cancel": "Cancela a mitad", "Not registered": "Sin registrar", "Leaking tap": "Grifo que gotea", "Second key": "Segunda llave", "Cleaner no-show": "La limpieza no viene", "Booking pending": "Reserva pendiente", "Lights out": "Sin luz", "\"Hello???\"": "\"¿¿¿Hola???\"", "Owner visit": "Visita del propietario", "situations every rental runs into.": "situaciones que vive cualquier alquiler.", "Guests": "Huéspedes", "Your PMS": "Tu PMS", "the AI operations manager for short-term rentals": "el gestor de operaciones con IA para alquileres vacacionales", "Connected to your guests, your team and your PMS.": "Conectado con tus huéspedes, tu equipo y tu PMS.", "It already|knows what|to do.": "Ya sabe|qué hay|que hacer.", "Extra night request": "Petición de noche extra", "Cleaner running late": "La limpieza llega tarde", "Wrong door code sent": "Código de puerta equivocado", "Guest wants €200 back": "El huésped quiere 200 €", "Pay or dispute?": "¿Pagar o reclamar?", "The power's out in Nikis 54. Where's the fuse box?": "Se ha ido la luz en Nikis 54. ¿Dónde está el cuadro eléctrico?", "Got it. Telling the guest now.": "Entendido. Se lo digo al huésped.", "Power's back. The guest is all good.": "Ha vuelto la luz. El huésped está bien.", "It only asks|what only you|know.": "Solo pregunta|lo que solo|tú sabes.", "Right in WhatsApp or Telegram.": "Directamente en WhatsApp o Telegram.", "10x less time": "10x menos tiempo", "10x better quality": "10x más calidad", "Your team gets": "Tu equipo es", "better.": "mejor.", "Handled.": "Resuelto.", "Lockbox empty": "Caja de llaves vacía", "Late checkout": "Salida tardía", "Same-day turnover": "Cambio de huéspedes el mismo día", "No hot water": "Sin agua caliente", "Wi-Fi down": "Wi-Fi caído", "Delayed flight": "Vuelo retrasado", "Damage claim": "Reclamación por daños", "Left something behind": "Se dejó algo olvidado", "Early check-in": "Entrada anticipada", "Invoice request": "Petición de factura", "Guest not answering": "El huésped no contesta", "AC not working": "El aire acondicionado no funciona", "Bags after checkout": "Maletas después de la salida", "Cleaner hasn't confirmed": "La limpieza no ha confirmado", "15 minutes later": "15 minutos después", "Behind the curtain, left of the shower door.": "Detrás de la cortina, a la izquierda de la puerta de la ducha.", "Your team": "Tu equipo", "Your call": "Tú decides", "Lockbox empty.": "Caja de llaves vacía.", "Refund threat.": "Piden reembolso.", "Extra night request.": "¿Una noche más?"};</script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" width="24" height="24"><path d="M24 3.5 L44.5 19.5 L44.5 44.5 L3.5 44.5 L3.5 19.5 Z" fill="#9E2B1E" stroke="#9E2B1E" stroke-width="3" stroke-linejoin="round"/><path d="M8.5 31 L14.5 37 L26.5 23.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 31 L25.5 37 L37.5 23.5" fill="none" stroke="#F0782F" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-name">Flixbnb</span>
+        <span class="brand-line">Está resuelto. A la perfección.</span>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#knows">Lo que sabemos</a>
+        <a href="#setup">Cómo funciona</a>
+        <a href="mailto:hello@flixbnb.com?subject=Start%20onboarding" class="btn btn-small" data-lead="onboarding">Empezar el onboarding</a>
+      </nav>
+      <nav class="langs" aria-label="Idioma">
+        <a href="/" hreflang="en" lang="en" title="English"><svg viewBox="0 0 60 30" width="24" height="16" aria-hidden="true"><clipPath id="uk-c"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="uk-t"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#uk-c)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#uk-t)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg><span class="visually-hidden">English</span></a>
+        <a href="/es/" hreflang="es" lang="es" class="is-on" aria-current="page" title="Español"><svg viewBox="0 0 3 2" width="24" height="16" aria-hidden="true"><path fill="#AA151B" d="M0 0h3v2H0z"/><path fill="#F1BF00" d="M0 .5h3v1H0z"/></svg><span class="visually-hidden">Español</span></a>
+        <a href="/fr/" hreflang="fr" lang="fr" title="Français"><svg viewBox="0 0 3 2" width="24" height="16" aria-hidden="true"><path fill="#002654" d="M0 0h1v2H0z"/><path fill="#fff" d="M1 0h1v2H1z"/><path fill="#CE1126" d="M2 0h1v2H2z"/></svg><span class="visually-hidden">Français</span></a>
+        <a href="/pl/" hreflang="pl" lang="pl" title="Polski"><svg viewBox="0 0 8 5" width="24" height="16" aria-hidden="true"><path fill="#fff" d="M0 0h8v2.5H0z"/><path fill="#DC143C" d="M0 2.5h8V5H0z"/></svg><span class="visually-hidden">Polski</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <a class="video-cue" href="#film"><span class="video-cue-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M9 6.5v11L18 12z"/></svg></span>Mira el vídeo de 1 minuto</a>
+          <p class="kicker">Tu equipo, 100X mejor.</p>
+          <h1><span class="line">Caja de llaves vacía.</span> <span class="line">Piden reembolso.</span> <span class="line">¿Una noche más?</span> <span class="h1-you">Resuelto. Perfecto.</span></h1>
+          <p class="lede">Flixbnb ya conoce las <strong class="hl">150+ situaciones</strong> que vive un alquiler vacacional, y exactamente cómo resolver cada una. Conéctalo a tu empresa: se acaban los errores operativos, tu equipo mejora 100X y tus reseñas lo reflejan.</p>
+          <div class="actions">
+            <a href="mailto:hello@flixbnb.com?subject=Start%20onboarding" class="btn" data-lead="onboarding">Empezar el onboarding</a>
+            <a href="mailto:hello@flixbnb.com?subject=Schedule%20a%20call" class="btn btn-ghost" data-lead="call">Agendar una llamada</a>
+          </div>
+          <p class="cta-note">Aún no hace falta tarjeta de crédito.</p>
+        </div>
+
+        <div class="hero-film" id="film">
+          <div class="film" data-state="idle" aria-describedby="film-story">
+            <canvas aria-hidden="true"></canvas>
+            <button type="button" class="film-close" aria-label="Salir de pantalla completa"><svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+            <button type="button" class="film-play" aria-label="Ver el vídeo, con sonido">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M8 5.2v13.6L19 12z" /></svg>
+            </button>
+            <div class="film-bar">
+              <button type="button" class="film-btn film-toggle" aria-label="Pausa">
+                <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M8 5v14M16 5v14" /></svg>
+                <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M8 5.2v13.6L19 12z" /></svg>
+              </button>
+              <input class="film-seek" type="range" min="0" max="52" step="0.05" value="0" aria-label="Posición en el vídeo" />
+              <button type="button" class="film-btn film-mute" aria-pressed="false" aria-label="Silenciar">
+                <svg class="i-sound" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4zM15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" /></svg>
+                <svg class="i-muted" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4zM16 9.5l5 5M21 9.5l-5 5" /></svg>
+              </button>
+              <button type="button" class="film-btn film-full" aria-label="Pantalla completa">
+                <svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" /></svg>
+              </button>
+            </div>
+          </div>
+          <p class="visually-hidden" id="film-story">El vídeo: gestionando alquileres vacacionales, todos los días, un anfitrión se ahoga en mensajes de huéspedes, de una caja de llaves vacía a una petición de reembolso, y luego en 150+ notas de todo lo que vive un alquiler. La página se rasga y aparece Flixbnb, conectado con tus huéspedes, tu equipo y tu PMS. Una lista amarilla se va marcando: caja de llaves vacía, noche extra, limpieza con retraso, cambio el mismo día y código de puerta equivocado quedan resueltos, y solo el reembolso de 200 € llega a ti. En un chat, Flixbnb pregunta dónde está el cuadro eléctrico, recibe una respuesta de una línea y avisa de que vuelve la luz. Tu equipo mejora 100X. Caja de llaves vacía. Amenaza de reembolso. Petición de una noche extra. Resuelto. flixbnb.com.</p>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="wrap">
+          <p class="hero-foot-lbl">Funciona con</p>
+          <ul class="connectors" aria-label="Funciona con">
+            <li>Hostaway</li>
+            <li>Airbnb</li>
+            <li>Booking.com</li>
+            <li>WhatsApp</li>
+            <li>Chekin</li>
+            <li>Telegram</li>
+            <li>Gmail</li>
+            <li>Google Maps</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- YOU KNOW THESE PROBLEMS. WE KNOW THE ANSWERS. -->
+    <section class="section knows" id="knows">
+      <div class="wrap">
+        <div class="knows-grid">
+          <div class="knows-head">
+            <h2><span class="line">Conoces estos problemas.</span> <span class="line h2-answer">Sabemos cómo resolverlos. A la perfección.</span></h2>
+            <p class="lede"><strong class="hl">150+ situaciones</strong> que vive un alquiler vacacional, y la mejor forma de resolver cada una, ya integradas.</p>
+          </div>
+          <div class="cloud-wrap">
+            <ul class="cloud" id="cloud" aria-label="Situaciones que Flixbnb sabe resolver">
+            <li class="k1">El huésped no puede entrar</li>
+            <li class="k3">Cambio de reserva</li>
+            <li class="k2">Wi-Fi caído</li>
+            <li class="k1">Exigen un reembolso</li>
+            <li class="k2">"No se parece a las fotos"</li>
+            <li class="k3">"¿Cómo entramos?"</li>
+            <li class="k1">"El apartamento está sucio"</li>
+            <li class="k3">Petición de factura</li>
+            <li class="k2">Electrodoméstico averiado</li>
+            <li class="k1">Apartamento sin preparar</li>
+            <li class="k2">Queja por ruido</li>
+            <li class="k3">Petición de precio o descuento</li>
+            <li class="k1">Plagas o chinches</li>
+            <li class="k3">Se dejó algo olvidado</li>
+            <li class="k2">Ascensor averiado</li>
+            <li class="k1">Sin agua caliente</li>
+            <li class="k2">Faltan toallas o productos</li>
+            <li class="k3">Pregunta sobre la zona</li>
+            <li class="k1">El huésped se fue tras una queja</li>
+            <li class="k2">Disputa por la hora de entrada o salida</li>
+            <li class="k2">Salida anticipada</li>
+            <li class="k3">Pequeño comentario, huésped contento</li>
+            <li class="b-l">Caja de llaves vacía</li>
+            <li>Entrada anticipada</li>
+            <li class="b-l">Los huéspedes anteriores siguen dentro</li>
+            <li>Grifo que gotea a las 3 de la mañana</li>
+            <li class="b-l">Cambio de huéspedes el mismo día</li>
+            <li>Reclamación en el Centro de Resoluciones</li>
+            <li>Salida tardía</li>
+            <li>La limpieza no ha confirmado</li>
+            <li>"¿¿¿Hola???" cinco veces</li>
+            <li>Reclamación por daños</li>
+            <li>Vuelo retrasado</li>
+            <li>Preparado para 4, llegan 6</li>
+            <li class="b-l">La limpieza va con retraso</li>
+            <li class="b-l">Código de puerta equivocado</li>
+            <li class="b-l">Olor a gas o una fuga</li>
+            <li class="b-l">Nadie de guardia</li>
+            <li>La misma queja en cada estancia</li>
+            <li>La IA nombra la ciudad equivocada</li>
+            <li>Fotos del pasaporte para el edificio</li>
+            <li>¿Dónde está la limpieza?</li>
+            <li class="b-l">El huésped tiene que cambiarse una noche</li>
+            <li>Suena el teléfono a quien libra</li>
+            <li>Llamada desconocida</li>
+            <li>Cuando la IA falla</li>
+            <li class="b-l">Plazo del soporte de la plataforma</li>
+            <li>Petición de cuna o trona</li>
+            <li>Cambio de fechas por Booking.com</li>
+            <li>"¿A qué hora llegan?"</li>
+            <li>Hace falta el visto bueno del propietario</li>
+            <li>Mensajes robóticos</li>
+            <li>Cancelada, pero todo sigue en marcha</li>
+            <li>"¿Este WhatsApp es una estafa?"</li>
+            <li>La IA repite un error</li>
+            <li>Alargar la estancia</li>
+            <li>Cuna o sofá cama olvidado</li>
+            <li>La nueva limpiadora no encuentra el piso</li>
+            <li class="b-l">La reserva pasó a pendiente y volvió</li>
+            <li>El aire acondicionado no funciona</li>
+            <li>"Arreglado", pero sigue roto</li>
+            <li>Maletas después de la salida</li>
+            <li>Estancias de una noche bloqueadas sin avisar</li>
+            <li>El huésped no leyó las instrucciones</li>
+            <li>El equipo no puede entrar en la app</li>
+            <li>Comida vieja en la nevera</li>
+            <li>Qué limpiador provoca quejas</li>
+            <li>Hora de salida olvidada</li>
+            <li>WhatsApp falla sin avisar</li>
+            <li>Huésped descontento que no dice nada</li>
+            <li>Contraseña de Wi-Fi antigua en el anuncio</li>
+            <li>Se llevaron la llave de la caja</li>
+            <li>La IA atascada y nadie sabe por qué</li>
+            <li>Número de reserva dentro de una foto</li>
+            <li>Acordar la hora de una reparación</li>
+            <li class="b-l">La limpieza entra con el huésped dentro</li>
+            <li>Queja a Booking.com</li>
+            <li>Reparación con el huésped dentro</li>
+            <li>Mensaje de un número desconocido</li>
+            <li>Preguntas antes de reservar</li>
+            <li>Responder a una mala reseña</li>
+            <li>Reserva cambiada con la limpieza ya fijada</li>
+            <li>Mensajes confusos al equipo</li>
+            <li>Demasiadas alertas</li>
+            <li>Tarea que nadie cogió</li>
+            <li>Reseñas solo de huéspedes contentos</li>
+            <li>El huésped escribe en otro idioma</li>
+            <li>Mensaje aprobado modificado</li>
+            <li>Nuevo código de puerta sin actualizar</li>
+            <li class="b-l">Llegada de madrugada, sin nadie</li>
+            <li>El enlace de check-in no abre</li>
+            <li>Mensajes del equipo sin respuesta</li>
+            <li>Pregunta escondida en un "gracias"</li>
+            <li>Fotos en el chat de Booking.com</li>
+            <li>Llegada a medianoche, noche equivocada</li>
+            <li>Petición de cancelación gratuita</li>
+            <li>La IA dice que hizo algo que no hizo</li>
+            <li class="b-l">El huésped no encuentra la caja de llaves</li>
+            <li class="b-l">La app de la cerradura inteligente no funciona</li>
+            <li>Promesa olvidada</li>
+            <li>Recomendaciones de restaurantes y parking</li>
+            <li>"Mejor escríbeme un email"</li>
+            <li>El propietario se aloja en su piso</li>
+            <li>Huésped aún sin registrar</li>
+            <li>Limpiadores que no hablan inglés</li>
+            <li>El huésped cancela a mitad de estancia</li>
+            <li class="b-l">Agua marrón del grifo</li>
+            <li>Tres mensajes en vez de uno</li>
+            <li>Una traducción que cambia el sentido</li>
+            <li>Mensajes de IA que nadie revisó</li>
+            <li>"Listo" cuando no lo está</li>
+            <li>Limpieza sin marcar como empezada</li>
+            <li>Salida anticipada, limpieza a la hora antigua</li>
+            <li>Problema abierto tomado por "todo bien"</li>
+            <li class="b-l">Una emergencia real</li>
+            <li>Código de puerta una semana antes</li>
+            <li>Cómo debe quedar el apartamento</li>
+            <li>Devolver un reembolso</li>
+            <li class="b-l">La limpieza llega demasiado pronto</li>
+            <li class="b-l">Sin limpieza asignada</li>
+            <li>Cómo fue de verdad la estancia</li>
+            <li>Despertar al equipo para nada</li>
+            <li>Petición de una segunda llave</li>
+            <li>El técnico no aparece</li>
+            <li>Nota interna enviada a un huésped</li>
+            <li>El huésped no contesta</li>
+            <li>Respuesta enviada demasiado tarde</li>
+            <li>Agradecer cada reseña de 5 estrellas</li>
+            <li>Silencio hasta la llegada</li>
+            <li>Regateo del precio</li>
+            <li>Mensaje que nunca se envió</li>
+            <li>"Nadie limpió durante nuestra estancia"</li>
+            <li>La IA da por hecho que el huésped lo leyó</li>
+            <li class="b-l">Emergencia perdida, sistema caído</li>
+            <li>Hora de llegada desconocida</li>
+            <li>La IA se inventa una norma</li>
+            <li>Pagar más tarde, en efectivo</li>
+            <li>Llave no devuelta</li>
+            <li>Ofrecer algo a cambio de una reseña</li>
+            <li>Salida tardía aprobada por error</li>
+            <li>Prórroga: ¿limpiar o no?</li>
+            <li class="b-l">Llave cerrada dentro</li>
+            <li>"¿Alguien nos recibirá?"</li>
+            <li>Reserva directa sin pagar</li>
+            <li>Petición tardía de limpieza del propietario</li>
+            <li>Datos de acceso antes del registro</li>
+            <li>Invitación de la cerradura sin email</li>
+            <li>El mismo trabajo enviado dos veces</li>
+            <li>Pequeño problema a las 2 de la mañana</li>
+            <li>La IA aprueba un reembolso</li>
+            <li>Huéspedes de más</li>
+            <li>Problema de la primera noche que nadie avisó</li>
+            <li>IA demasiado prudente</li>
+            <li>Descuento olvidado</li>
+            <li>Daños "vistos" en una foto inocente</li>
+            <li>Aparcar después de la salida</li>
+            <li>Un desperfecto que puede esperar</li>
+            <li>Decir demasiado en una disputa</li>
+            <li>Emails del soporte de la plataforma perdidos</li>
+            </ul>
+            <button type="button" class="cloud-more" aria-controls="cloud" aria-expanded="true" hidden>Ver las 150+</button>
+          </div>
+        </div>
+
+        <div class="answers">
+          <div class="answers-head">
+            <h3>Otros bots responden al huésped. Flixbnb arregla el problema.</h3>
+            <p class="answers-example">Una caja de llaves vacía, de noche. Mira lo que hace Flixbnb, sin que nadie tenga que pedírselo.</p>
+          </div>
+          <figure class="actlog" aria-label="Ejemplo: lo que hace Flixbnb con una caja de llaves vacía">
+            <div class="actlog-head"><span class="actlog-alert" aria-hidden="true"></span><b>Caja de llaves vacía</b><span>Nikis 54 · 23:40</span></div>
+            <ol class="actlog-list">
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M4 5h16v11H9l-5 4z"/></svg></span><span class="act-what">Escribió al huésped, en alemán</span><span class="act-st"><span class="act-time">23:41</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M6.5 4h3l1.5 4-2 1.2a10 10 0 0 0 4.8 4.8L15 12l4 1.5v3A2 2 0 0 1 17 18.5 13.5 13.5 0 0 1 4.5 6 2 2 0 0 1 6.5 4z"/></svg></span><span class="act-what">Llamó a Maria, que está de guardia esta noche</span><span class="act-st"><span class="act-time">23:41</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><circle cx="12" cy="12" r="8"/><path d="M12 7.5V12l3 2"/></svg></span><span class="act-what">Comprueba cada minuto hasta que el huésped entra</span><span class="act-st"><span class="act-time">23:52</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span><span class="act-what">Añadió una nota a la reserva en Hostaway</span><span class="act-st"><span class="act-time">23:53</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg></span><span class="act-what">Abrió una tarea: reponer la caja de llaves mañana</span><span class="act-st"><span class="act-time">23:53</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5h4"/></svg></span><span class="act-what">Puso un recordatorio: preguntar al huésped qué tal la noche, con una disculpa</span><span class="act-st"><span class="act-time">08:30</span></span></li>
+            </ol>
+            <div class="actlog-foot"><span class="actlog-done">✓ Resuelto.</span> Huésped dentro a las 23:52.</div>
+          </figure>
+          <script>
+            // The actions run one after another once the log is on screen: each one spins, then gets its tick.
+            (function () {
+              if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+              var log = document.querySelector('.actlog');
+              var rows = Array.prototype.slice.call(log.querySelectorAll('.act'));
+              log.classList.add('is-waiting');
+              rows.forEach(function (r) { r.dataset.state = 'queued'; });
+              function play() {
+                var t = 400;
+                rows.forEach(function (r, i) {
+                  setTimeout(function () { r.dataset.state = 'running'; }, t);
+                  t += i === 2 ? 2200 : 900;
+                  setTimeout(function () { r.dataset.state = 'done'; }, t);
+                  t += 150;
+                });
+                setTimeout(function () { log.classList.remove('is-waiting'); }, t + 200);
+              }
+              new IntersectionObserver(function (entries, obs) {
+                if (!entries[0].isIntersecting) return;
+                obs.disconnect();
+                play();
+              }, { threshold: 0.45 }).observe(log);
+            })();
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROL: your team decides what is handled on its own -->
+    <section class="section native" id="native">
+      <div class="wrap">
+        <!-- Control: one slider decides what Flixbnb does on its own and what it checks with your team first -->
+        <div class="control">
+          <div class="control-head">
+            <h2>Tu equipo mantiene todo el <span class="h2-hl">control</span> que quiera.</h2>
+            <p>Flixbnb no sustituye a tu equipo. Trabaja para él. Desliza para elegir qué hace por su cuenta y qué consulta antes con ellos.</p>
+          </div>
+          <div class="control-slider">
+            <div class="control-ends" aria-hidden="true"><span>Más supervisión</span><span>Más automático</span></div>
+            <input type="range" id="control-level" min="0" max="3" step="1" value="2" aria-label="Cuánto hace Flixbnb por su cuenta" aria-valuetext="Most things on its own">
+            <ol class="control-stops" aria-hidden="true">
+              <li>Tú lo apruebas todo</li>
+              <li>Lo rutinario, solo</li>
+              <li>Casi todo, solo</li>
+              <li>Todo menos el dinero</li>
+            </ol>
+          </div>
+          <ul class="control-list" aria-live="polite">
+            <li data-at="1"><span class="control-what">Responder "¿Cuál es la contraseña del Wi-Fi?"</span><span class="control-st"></span></li>
+            <li data-at="1"><span class="control-what">Recordar a la limpieza la noche antes</span><span class="control-st"></span></li>
+            <li data-at="2"><span class="control-what">Enviar el código de la puerta cuando el huésped esté registrado</span><span class="control-st"></span></li>
+            <li data-at="2"><span class="control-what">Aceptar una salida tardía si el siguiente huésped llega tarde</span><span class="control-st"></span></li>
+            <li data-at="3"><span class="control-what">Mover la limpieza tras un cambio de fechas</span><span class="control-st"></span></li>
+            <li data-at="3"><span class="control-what">Ofrecer una noche extra a tu precio</span><span class="control-st"></span></li>
+            <li data-at="9"><span class="control-what">Devolver 200 € a un huésped</span><span class="control-st"></span></li>
+          </ul>
+        </div>
+        <script>
+          // The control slider: each task is handled on its own once the slider reaches its level; the rest go to your team.
+          (function () {
+            var t = function (k) { return (window.FLX_T && window.FLX_T[k]) || k; };
+            var range = document.getElementById('control-level');
+            var items = Array.prototype.slice.call(document.querySelectorAll('.control-list li'));
+            var stops = Array.prototype.slice.call(document.querySelectorAll('.control-stops li'));
+            function update() {
+              var v = +range.value;
+              items.forEach(function (li) {
+                var auto = v >= +li.dataset.at;
+                li.dataset.state = auto ? 'auto' : 'you';
+                li.querySelector('.control-st').textContent = t(auto ? 'Handled' : (li.dataset.at === '9' ? 'Always your call' : 'Needs approval'));
+              });
+              stops.forEach(function (s, i) { s.classList.toggle('is-on', i === v); });
+              range.setAttribute('aria-valuetext', stops[v].textContent);
+              range.style.setProperty('--fill', (v / 3 * 100) + '%');
+            }
+            range.addEventListener('input', update);
+            stops.forEach(function (st, i) { st.addEventListener('click', function () { range.value = i; update(); }); });
+            update();
+          })();
+        </script>
+      </div>
+    </section>
+
+    <!-- IT WORKS IN CHAT: WHATSAPP OR TELEGRAM -->
+    <section class="section in-chat" id="chat">
+      <div class="wrap chat-grid">
+        <div>
+          <h2>Te habla como un compañero, por WhatsApp o Telegram.</h2>
+          <p class="lede">Cuando necesita algo que solo tú sabes, te pregunta. Respondes en una línea y se encarga del resto.</p>
+          <p class="lede no-app"><strong>Ningún software nuevo que aprender.</strong> Si tu equipo sabe usar WhatsApp, sabe usar Flixbnb.</p>
+        </div>
+        <figure class="chat wa" aria-label="Ejemplo de chat de WhatsApp con Flixbnb">
+          <div class="wa-head">
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M15 5l-7 7 7 7"/></svg>
+            <span class="chat-avatar" aria-hidden="true"><img src="/favicon.svg" alt=""></span>
+            <span class="wa-who"><span class="chat-name">Flixbnb</span><span class="wa-status"><span class="wa-online">en línea</span><span class="wa-typing">escribiendo…</span></span></span>
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><rect x="3" y="7" width="12" height="10" rx="2"/><path d="M15 10.5l5-3v9l-5-3"/></svg>
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path d="M6.5 4h3l1.5 4-2 1.2a10 10 0 0 0 4.8 4.8L15 12l4 1.5v3A2 2 0 0 1 17 18.5 13.5 13.5 0 0 1 4.5 6 2 2 0 0 1 6.5 4z"/></svg>
+          </div>
+          <ol class="chat-msgs">
+            <li class="wa-day" aria-hidden="true"><span>Hoy</span></li>
+            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>Se ha ido la luz en Nikis 54. ¿Dónde está el cuadro eléctrico, para decirle al huésped que lo revise?</p><time>14:32</time></div></li>
+            <li class="msg from-you"><div class="bubble"><span class="sender">Tu equipo</span><p>Detrás de la cortina, a la izquierda de la puerta de la ducha.</p><time>14:33 <svg class="wa-read" viewBox="0 0 18 11" aria-label="leído" width="24" height="24"><path d="M1 6l3 3 6.5-7.5M7.5 8.6L8 9l6.5-7.5"/></svg></time></div></li>
+            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>Entendido. Se lo digo al huésped ahora. En unos 15 minutos le pregunto si todo va bien y te aviso si hace falta más ayuda.</p><time>14:33</time></div></li>
+            <li class="chat-gap"><span>15 minutos después</span></li>
+            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>Ha vuelto la luz, el huésped está bien ✅</p><time>14:48</time></div></li>
+          </ol>
+          <div class="wa-foot" aria-hidden="true">
+            <span class="wa-input"><svg class="wa-ico" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 14a4 4 0 0 0 7 0M9.5 9.5h.01M14.5 9.5h.01"/></svg>Mensaje</span>
+            <span class="wa-mic"><svg viewBox="0 0 24 24" width="24" height="24"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M6 11.5a6 6 0 0 0 12 0M12 17.5v3"/></svg></span>
+          </div>
+        </figure>
+        <script>
+          // The chat plays out once it's on screen, the way WhatsApp shows it: "typing…" under the name, then the message.
+          (function () {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var chat = document.querySelector('.chat');
+            var msgs = Array.prototype.slice.call(chat.querySelectorAll('.chat-msgs > li:not(.wa-day)'));
+            msgs.forEach(function (m) { m.dataset.state = 'wait'; });
+            function play() {
+              var t = 300;
+              msgs.forEach(function (m) {
+                if (m.classList.contains('from-bot')) {
+                  setTimeout(function () { chat.classList.add('is-typing'); }, t);
+                  t += 1400;
+                } else {
+                  t += 900;
+                }
+                setTimeout(function () { chat.classList.remove('is-typing'); m.dataset.state = 'shown'; }, t);
+                t += 700;
+              });
+            }
+            new IntersectionObserver(function (entries, obs) {
+              if (!entries[0].isIntersecting) return;
+              obs.disconnect();
+              play();
+            }, { threshold: 0.5 }).observe(chat);
+          })();
+        </script>
+      </div>
+    </section>
+
+    <!-- ONBOARDING -->
+    <section class="section setup" id="setup">
+      <div class="wrap">
+        <h2>El onboarding es corto. Tus chats antiguos hacen casi todo.</h2>
+
+        <ol class="steps">
+          <li>
+            <h3>Escaneamos tu PMS</h3>
+            <dl class="demo facts" aria-label="Ejemplo: lo que encuentra el escaneo">
+              <div><dt>Caja de llaves</dt><dd>Junto a la entrada</dd></div>
+              <div><dt>Entrada anticipada</dt><dd>Desde las 13:00</dd></div>
+              <div class="ask"><dt>Mascotas</dt><dd>Tú confirmas</dd></div>
+            </dl>
+          </li>
+          <li>
+            <h3>Tú dices quién hace qué</h3>
+            <div class="demo who" aria-label="Ejemplo: quién hace qué">
+              <p>¿Huésped atascado? Avisa a <span class="blank">Maria</span>.</p>
+              <p>¿Limpieza con retraso? Avisa a <span class="blank">Nikos</span>.</p>
+              <p>¿Reembolso? <span class="blank">Tú</span> decides.</p>
+            </div>
+          </li>
+          <li>
+            <h3>Se pone en marcha</h3>
+            <ul class="demo runs" aria-label="Ejemplo: en marcha">
+              <li><span>Entrada anticipada: ofrecidas las 13:00</span><span class="tag tag-done">Resuelto</span></li>
+              <li><span>Limpieza con retraso: avisado Nikos</span><span class="tag tag-done">Resuelto</span></li>
+              <li><span>Reembolso: te lo enviamos a ti</span><span class="tag tag-you">Tú decides</span></li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- THE THREE PARTS -->
+    <section class="section parts">
+      <div class="wrap">
+        <h2 class="visually-hidden">Cómo encaja todo</h2>
+        <div class="parts-grid">
+          <div class="part">
+            <p class="part-line">Los modelos de IA aportan la inteligencia.</p>
+            <p class="part-note">Los mismos modelos a los que todos tienen acceso.</p>
+          </div>
+          <div class="part">
+            <p class="part-line">Tú aportas el conocimiento local.</p>
+            <p class="part-note">Tus códigos de puerta, tus normas de la casa, tu equipo de limpieza, tu forma de hablar con los huéspedes.</p>
+          </div>
+          <div class="part part-us">
+            <p class="part-line">Flixbnb aporta la experiencia.</p>
+            <p class="part-note"><strong class="hl">150+ situaciones</strong> y exactamente cómo resolver cada una, y se asegura de que cada paso se cumpla de verdad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIZES -->
+    <section class="section sizes" id="sizes">
+      <div class="wrap sizes-grid">
+        <h2>Trabajamos con empresas de cualquier tamaño.</h2>
+        <p class="lede">Gestionamos muchos compañeros, muchos limpiadores, cambios de turno y <span class="nowrap">cada caso límite.</span></p>
+      </div>
+    </section>
+
+    <!-- TALK -->
+    <section class="section talk on-dark" id="talk">
+      <div class="wrap">
+        <h2>Míralo funcionar en tus propios alojamientos.</h2>
+        <p>Empieza el onboarding o, primero, agenda una llamada con nuestro equipo.</p>
+        <div class="actions">
+          <a href="mailto:hello@flixbnb.com?subject=Start%20onboarding" class="btn" data-lead="onboarding">Empezar el onboarding</a>
+          <a href="mailto:hello@flixbnb.com?subject=Schedule%20a%20call" class="btn btn-ghost" data-lead="call">Agendar una llamada</a>
+        </div>
+        <p class="cta-note">Aún no hace falta tarjeta de crédito.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span><b>Flixbnb</b>, el gestor de operaciones con IA para alquileres vacacionales</span>
+      <a href="mailto:hello@flixbnb.com">hello@flixbnb.com</a>
+    </div>
+  </footer>
+
+  <!-- LEAD FORM: opened by every "Start onboarding" and "Schedule a call" button -->
+  <dialog class="lead" id="lead" aria-labelledby="lead-title">
+    <button type="button" class="lead-close" aria-label="Cerrar" data-close>&times;</button>
+    <form class="lead-form" novalidate>
+      <h2 id="lead-title" class="lead-title">Empezar el onboarding</h2>
+      <p class="lead-sub">Déjanos tus datos y alguien de nuestro equipo te contactará en menos de una hora.</p>
+      <input type="hidden" name="request" value="onboarding" />
+      <!-- Spam trap: people never see it, bots fill it in, and FormSubmit drops those -->
+      <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+      <label class="field">
+        <span>Nombre de la empresa</span>
+        <input type="text" name="company" autocomplete="organization" required autofocus />
+      </label>
+      <label class="field">
+        <span>Email</span>
+        <input type="email" name="email" autocomplete="email" required />
+      </label>
+      <label class="field">
+        <span>Teléfono</span>
+        <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required />
+      </label>
+
+      <p class="lead-error" role="alert" hidden></p>
+      <button type="submit" class="btn lead-submit">Empezar el onboarding</button>
+      <p class="lead-note">Aún no hace falta tarjeta de crédito.</p>
+    </form>
+
+    <div class="lead-done" hidden>
+      <span class="lead-done-icon" aria-hidden="true"></span>
+      <h2 class="lead-title" tabindex="-1">Gracias, lo hemos recibido.</h2>
+      <p class="lead-sub">Alguien de nuestro equipo te contactará en menos de una hora.</p>
+      <button type="button" class="btn btn-ghost lead-ok" data-close>Cerrar</button>
+    </div>
+  </dialog>
+
+  <script src="/script.js?v=20261124f" defer></script>
+  <script src="/film.js?v=20261124f" defer></script>
+</body>
+</html>
