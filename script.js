@@ -51,12 +51,12 @@ document.querySelectorAll('[role="tablist"]').forEach(list => {
   });
 })();
 
-// The lead form: every "Start onboarding" and "Free PMS scan" button opens it.
+// The lead form: every "Start onboarding" and "Schedule a call" button opens it.
 // Submissions go to FormSubmit, which emails each one to Sharon. The very first submission
 // sends Sharon an "Activate Form" email; until that link is clicked, sends fail and the visitor
 // is told to email instead. If LEAD_ENDPOINT is emptied, the form opens a ready-to-send email.
 const LEAD_ENDPOINT = 'https://formsubmit.co/ajax/sharon@flixbnb.com';
-const LEAD_EMAIL = 'sharon@flixbnb.com';
+const LEAD_EMAIL = 'hello@flixbnb.com'; // shown to visitors; form leads still go to LEAD_ENDPOINT
 
 (function () {
   const dialog = document.getElementById('lead');
@@ -70,7 +70,7 @@ const LEAD_EMAIL = 'sharon@flixbnb.com';
 
   const kinds = {
     onboarding: { title: 'Start onboarding', button: 'Start onboarding', subject: 'Start onboarding' },
-    scan: { title: 'Get your free PMS scan', button: 'Get my free scan', subject: 'Free PMS scan' }
+    call: { title: 'Schedule a call', button: 'Schedule a call', subject: 'Schedule a call' }
   };
 
   function open(kind) {

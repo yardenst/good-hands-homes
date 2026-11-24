@@ -16,17 +16,17 @@
 <body>
 
   <!-- NAV -->
-  <header class="nav on-dark">
+  <header class="nav">
     <div class="wrap">
       <a href="#top" class="brand">
-        <span class="brand-mark" aria-hidden="true">F</span>
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3.5 L44.5 19.5 L44.5 44.5 L3.5 44.5 L3.5 19.5 Z" fill="#9E2B1E" stroke="#9E2B1E" stroke-width="3" stroke-linejoin="round"/><path d="M8.5 31 L14.5 37 L26.5 23.5" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 31 L25.5 37 L37.5 23.5" fill="none" stroke="#F0782F" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="brand-name">Flixbnb</span>
-        <span class="brand-line">It is handled.</span>
+        <span class="brand-line">It is handled. Perfectly.</span>
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#knows">What we know</a>
         <a href="#setup">How it works</a>
-        <a href="mailto:sharon@flixbnb.com?subject=Start%20onboarding" class="btn btn-small" data-lead="onboarding">Start onboarding</a>
+        <a href="mailto:hello@flixbnb.com?subject=Start%20onboarding" class="btn btn-small" data-lead="onboarding">Start onboarding</a>
       </nav>
     </div>
   </header>
@@ -34,62 +34,42 @@
   <main>
 
     <!-- HERO -->
-    <section class="hero on-dark" id="top">
+    <section class="hero" id="top">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <h1><span class="line">Lockbox empty.</span> <span class="line">Refund threat.</span> <span class="line">Extra night request.</span> <span class="h1-you">Handled.</span></h1>
-          <p class="lede">Flixbnb already knows the 150+ situations a short-term rental runs into, and exactly how to handle each one. Plug it into your company and the ops mistakes stop, your team gets 100X better, and your reviews show it.</p>
+          <p class="kicker">Your team, 100X better.</p>
+          <h1><span class="line">Lockbox empty.</span> <span class="line">Refund threat.</span> <span class="line">Extra night request.</span> <span class="h1-you">Handled. Perfectly.</span></h1>
+          <p class="lede">Flixbnb already knows the <strong class="hl">150+ situations</strong> a short-term rental runs into, and exactly how to handle each one. Plug it into your company and the ops mistakes stop, your team gets 100X better, and your reviews show it.</p>
           <div class="actions">
-            <a href="mailto:sharon@flixbnb.com?subject=Start%20onboarding" class="btn" data-lead="onboarding">Start onboarding</a>
-            <a href="mailto:sharon@flixbnb.com?subject=Free%20PMS%20scan" class="btn btn-ghost" data-lead="scan">Free PMS scan</a>
+            <a href="mailto:hello@flixbnb.com?subject=Start%20onboarding" class="btn" data-lead="onboarding">Start onboarding</a>
+            <a href="mailto:hello@flixbnb.com?subject=Schedule%20a%20call" class="btn btn-ghost" data-lead="call">Schedule a call</a>
           </div>
           <p class="cta-note">No credit card required yet.</p>
         </div>
 
-        <div class="sheet" aria-label="Example: Flixbnb handles five situations and asks you about one">
-          <ol class="cases">
-            <li class="case" data-state="done" data-label="Handled"><span class="box" aria-hidden="true"></span><p class="case-what">Previous guests still inside when the new ones arrive</p><span class="st">Handled</span></li>
-            <li class="case" data-state="done" data-label="Handled"><span class="box" aria-hidden="true"></span><p class="case-what">Late checkout agreed in chat, but the cleaner is on the way</p><span class="st">Handled</span></li>
-            <li class="case" data-state="done" data-label="Handled"><span class="box" aria-hidden="true"></span><p class="case-what">Last-minute booking on a same-day turnover</p><span class="st">Handled</span></li>
-            <li class="case" data-state="done" data-label="Handled"><span class="box" aria-hidden="true"></span><p class="case-what">Guest landing after midnight thinks the booking starts tonight</p><span class="st">Handled</span></li>
-            <li class="case" data-state="done" data-label="Handled"><span class="box" aria-hidden="true"></span><p class="case-what">Apartment set up for 4, but 6 guests are arriving</p><span class="st">Handled</span></li>
-            <li class="case" data-state="you" data-label="Your call">
-              <span class="box" aria-hidden="true"></span>
-              <div>
-                <p class="case-what">Guest asks for €200 back through Airbnb's Resolution Center</p>
-                <p class="case-call">Pay it, or dispute it?</p>
-              </div>
-              <span class="st">Your call</span>
-            </li>
-          </ol>
+        <div class="hero-film" id="film">
+          <div class="film" data-state="idle" aria-describedby="film-story">
+            <canvas aria-hidden="true"></canvas>
+            <button type="button" class="film-play" aria-label="Play the film, with sound">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.2v13.6L19 12z" /></svg>
+            </button>
+            <div class="film-bar">
+              <button type="button" class="film-btn film-toggle" aria-label="Pause">
+                <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" /></svg>
+                <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.2v13.6L19 12z" /></svg>
+              </button>
+              <input class="film-seek" type="range" min="0" max="52" step="0.05" value="0" aria-label="Position in the film" />
+              <button type="button" class="film-btn film-mute" aria-pressed="false" aria-label="Mute">
+                <svg class="i-sound" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4zM15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" /></svg>
+                <svg class="i-muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4zM16 9.5l5 5M21 9.5l-5 5" /></svg>
+              </button>
+              <button type="button" class="film-btn film-full" aria-label="Full screen">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" /></svg>
+              </button>
+            </div>
+          </div>
+          <p class="visually-hidden" id="film-story">The film: a host at 3am is buried in guest messages, from an empty lockbox to a refund demand, then in 150+ sticky notes of everything a rental runs into. The page rips open on Flixbnb, connected to your guests, your team and your PMS. A yellow checklist gets ticked: lockbox empty, extra night request, cleaner running late, same-day turnover and a wrong door code are all handled, and only the €200 refund comes to you. In a chat, Flixbnb asks where the fuse box is, gets a one-line answer, and reports the power is back. Your team gets 100X better. Lockbox empty. Refund threat. Extra night request. Handled. flixbnb.com.</p>
         </div>
-        <script>
-          // Each case gets handled in turn, and only the last one lands on your desk.
-          (function () {
-            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-            var sheet = document.querySelector('.sheet');
-            var cases = Array.prototype.slice.call(sheet.querySelectorAll('.case'));
-            cases.forEach(function (c) {
-              c.dataset.final = c.dataset.state;
-              c.dataset.state = 'open';
-              c.querySelector('.st').textContent = 'Open';
-            });
-            function play() {
-              cases.forEach(function (c, i) {
-                setTimeout(function () {
-                  c.dataset.state = c.dataset.final;
-                  c.querySelector('.st').textContent = c.dataset.label;
-                }, 700 + i * 650);
-              });
-            }
-            // Start once the sheet is on screen (on phones it sits below the fold).
-            new IntersectionObserver(function (entries, obs) {
-              if (!entries[0].isIntersecting) return;
-              obs.disconnect();
-              play();
-            }, { threshold: 0.35 }).observe(sheet);
-          })();
-        </script>
       </div>
       <div class="hero-foot">
         <div class="wrap">
@@ -108,82 +88,65 @@
       </div>
     </section>
 
-    <!-- THE FILM: Flixbnb in under a minute (drawn and scored live by film.js) -->
-    <section class="section film-sec" id="film">
-      <div class="wrap">
-        <h2>Flixbnb in under a minute.</h2>
-        <div class="film" data-state="idle" aria-describedby="film-story">
-          <canvas aria-hidden="true"></canvas>
-          <button type="button" class="film-play" aria-label="Play the film, with sound">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.2v13.6L19 12z" /></svg>
-          </button>
-          <div class="film-bar">
-            <button type="button" class="film-btn film-toggle" aria-label="Pause">
-              <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" /></svg>
-              <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.2v13.6L19 12z" /></svg>
-            </button>
-            <input class="film-seek" type="range" min="0" max="52" step="0.05" value="0" aria-label="Position in the film" />
-            <button type="button" class="film-btn film-mute" aria-pressed="false" aria-label="Mute">
-              <svg class="i-sound" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4zM15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" /></svg>
-              <svg class="i-muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4zM16 9.5l5 5M21 9.5l-5 5" /></svg>
-            </button>
-            <button type="button" class="film-btn film-full" aria-label="Full screen">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" /></svg>
-            </button>
-          </div>
-        </div>
-        <p class="visually-hidden" id="film-story">The film: a host at 3am is buried in guest messages, from an empty lockbox to a refund demand, then in 150+ sticky notes of everything a rental runs into. The page rips open on Flixbnb, connected to your guests, your team and your PMS. A yellow checklist gets ticked: lockbox empty, extra night request, cleaner running late, same-day turnover and a wrong door code are all handled, and only the €200 refund comes to you. In a chat, Flixbnb asks where the fuse box is, gets a one-line answer, and reports the power is back. Your team gets 100X better. Lockbox empty. Refund threat. Extra night request. Handled. flixbnb.com.</p>
-      </div>
-    </section>
-
     <!-- YOU KNOW THESE PROBLEMS. WE KNOW THE ANSWERS. -->
     <section class="section knows" id="knows">
       <div class="wrap">
         <div class="knows-grid">
           <div class="knows-head">
-            <h2><span class="line">You know these problems.</span> <span class="line h2-answer">We know the answers.</span></h2>
-            <p class="lede">150+ situations a short-term rental runs into, and the best way to handle every one of them, already built in.</p>
+            <h2><span class="line">You know these problems.</span> <span class="line h2-answer">We know how to handle them. Perfectly.</span></h2>
+            <p class="lede"><strong class="hl">150+ situations</strong> a short-term rental runs into, and the best way to handle every one of them, already built in.</p>
           </div>
           <div class="cloud-wrap">
             <ul class="cloud" id="cloud" aria-label="Situations Flixbnb knows how to handle">
-            <li class="b-xl">Lockbox empty</li>
-            <li class="b-l">Refund threat</li>
+            <li class="k1">Guest can't get in</li>
+            <li class="k3">Booking change request</li>
+            <li class="k2">Wi-Fi down</li>
+            <li class="k1">Refund demand</li>
+            <li class="k2">"Doesn't look like the photos"</li>
+            <li class="k3">"How do we get in?"</li>
+            <li class="k1">"The apartment is dirty"</li>
+            <li class="k3">Invoice request</li>
+            <li class="k2">Broken appliance</li>
+            <li class="k1">Apartment not ready</li>
+            <li class="k2">Noise complaint</li>
+            <li class="k3">Price or discount request</li>
+            <li class="k1">Pests or bedbugs</li>
+            <li class="k3">Left something behind</li>
+            <li class="k2">Elevator out of service</li>
+            <li class="k1">No hot water</li>
+            <li class="k2">Missing towels or amenities</li>
+            <li class="k3">Question about the area</li>
+            <li class="k1">Guest left after a complaint</li>
+            <li class="k2">Check-in or checkout time dispute</li>
+            <li class="k2">Early departure</li>
+            <li class="k3">Small feedback, happy guest</li>
+            <li class="b-l">Lockbox empty</li>
             <li>Early check-in</li>
-            <li class="b-xl">Previous guests still inside</li>
-            <li class="b-l">"The apartment is dirty"</li>
+            <li class="b-l">Previous guests still inside</li>
             <li>3am dripping tap</li>
-            <li class="b-xl">Same-day turnover</li>
-            <li class="b-l">Resolution Center claim</li>
+            <li class="b-l">Same-day turnover</li>
+            <li>Resolution Center claim</li>
             <li>Late checkout</li>
-            <li class="b-xl">Guest can't get in</li>
-            <li class="b-l">Cleaner hasn't confirmed</li>
+            <li>Cleaner hasn't confirmed</li>
             <li>"Hello???" five times</li>
-            <li class="b-xl">No hot water</li>
-            <li class="b-l">Damage claim</li>
+            <li>Damage claim</li>
             <li>Delayed flight</li>
-            <li class="b-xl">Bedbugs</li>
-            <li class="b-l">Set up for 4, 6 arriving</li>
-            <li>Left something behind</li>
-            <li class="b-xl">Cleaning running late</li>
-            <li class="b-l">"Doesn't look like the photos"</li>
-            <li class="b-xl">Wrong door code sent</li>
-            <li class="b-xl">Gas smell or a leak</li>
-            <li class="b-xl">Nobody on shift</li>
-            <li>Price-change request</li>
-            <li>Invoice request</li>
-            <li class="b-l">Wi-Fi down</li>
-            <li>Question the listing doesn't answer</li>
-            <li class="b-l">Same complaint every stay</li>
+            <li>Set up for 4, 6 arriving</li>
+            <li class="b-l">Cleaning running late</li>
+            <li class="b-l">Wrong door code sent</li>
+            <li class="b-l">Gas smell or a leak</li>
+            <li class="b-l">Nobody on shift</li>
+            <li>Same complaint every stay</li>
             <li>AI naming the wrong city</li>
             <li>Passport photos for the building</li>
             <li>Where are the cleaners?</li>
-            <li class="b-xl">Guest has to move out for a night</li>
+            <li class="b-l">Guest has to move out for a night</li>
             <li>Phone ringing for the off-shift</li>
             <li>Unknown caller</li>
             <li>When the AI breaks</li>
-            <li class="b-xl">Platform support deadline</li>
+            <li class="b-l">Platform support deadline</li>
             <li>Crib or high chair request</li>
-            <li class="b-l">Date change through Booking.com</li>
+            <li>Date change through Booking.com</li>
             <li>"What time do they arrive?"</li>
             <li>Owner approval needed</li>
             <li>Robotic messages</li>
@@ -191,105 +154,100 @@
             <li>"Is this WhatsApp a scam?"</li>
             <li>AI repeating a mistake</li>
             <li>Extending the stay</li>
-            <li class="b-l">Crib or sofa bed forgotten</li>
+            <li>Crib or sofa bed forgotten</li>
             <li>New cleaner can't find the place</li>
-            <li class="b-l">Refund request</li>
-            <li class="b-xl">Booking went pending and back</li>
-            <li class="b-l">AC not working</li>
-            <li class="b-l">"Fixed", but still broken</li>
+            <li class="b-l">Booking went pending and back</li>
+            <li>AC not working</li>
+            <li>"Fixed", but still broken</li>
             <li>Bags after checkout</li>
             <li>One-night stays quietly blocked</li>
-            <li class="b-l">Guest never read the instructions</li>
+            <li>Guest never read the instructions</li>
             <li>Staff locked out of the app</li>
             <li>Old food in the fridge</li>
             <li>Which cleaner causes complaints</li>
             <li>Forgotten checkout time</li>
-            <li class="b-l">WhatsApp failing silently</li>
-            <li class="b-l">Unhappy guest who stays quiet</li>
+            <li>WhatsApp failing silently</li>
+            <li>Unhappy guest who stays quiet</li>
             <li>Old Wi-Fi password in the listing</li>
             <li>Key taken from the lockbox</li>
-            <li class="b-xl">Apartment not ready</li>
             <li>AI stuck, nobody knows why</li>
             <li>Booking ID inside a photo</li>
             <li>Agreeing a repair time</li>
-            <li>Missing towels or sheets</li>
-            <li class="b-xl">Cleaner walks in on the guest</li>
-            <li class="b-l">Complaint to Booking.com</li>
+            <li class="b-l">Cleaner walks in on the guest</li>
+            <li>Complaint to Booking.com</li>
             <li>Repair with the guest inside</li>
             <li>Message from an unknown number</li>
             <li>Questions before booking</li>
-            <li class="b-l">Replying to a bad review</li>
+            <li>Replying to a bad review</li>
             <li>Booking changed after cleaning was set</li>
             <li>Confusing staff messages</li>
             <li>Too many alerts</li>
-            <li class="b-l">Task nobody picked up</li>
+            <li>Task nobody picked up</li>
             <li>Reviews only from happy guests</li>
             <li>Guest writes in another language</li>
             <li>Approved message changed</li>
             <li>New door code nobody updated</li>
-            <li class="b-xl">Late-night arrival, nobody around</li>
+            <li class="b-l">Late-night arrival, nobody around</li>
             <li>Check-in link won't open</li>
             <li>Unanswered staff messages</li>
             <li>Question hidden in a "thanks"</li>
             <li>Photos in Booking.com chat</li>
             <li>Midnight arrival, wrong night</li>
-            <li class="b-l">Free-cancellation request</li>
-            <li class="b-l">AI saying it did something it didn't</li>
-            <li class="b-xl">Guest can't find the key holder</li>
-            <li class="b-xl">Smart-lock app won't work</li>
-            <li class="b-l">Forgotten promise</li>
+            <li>Free-cancellation request</li>
+            <li>AI saying it did something it didn't</li>
+            <li class="b-l">Guest can't find the key holder</li>
+            <li class="b-l">Smart-lock app won't work</li>
+            <li>Forgotten promise</li>
             <li>Restaurant tips and parking</li>
             <li>"Email me instead"</li>
             <li>Owner staying in their own place</li>
-            <li class="b-l">Guest not registered yet</li>
+            <li>Guest not registered yet</li>
             <li>Cleaners who don't speak English</li>
-            <li class="b-l">Guest cancels mid-stay</li>
-            <li class="b-xl">Brown water from the tap</li>
+            <li>Guest cancels mid-stay</li>
+            <li class="b-l">Brown water from the tap</li>
             <li>Three messages instead of one</li>
-            <li class="b-l">Translation changing the meaning</li>
-            <li class="b-l">AI messages nobody checked</li>
-            <li class="b-l">"Ready" when it isn't</li>
+            <li>Translation changing the meaning</li>
+            <li>AI messages nobody checked</li>
+            <li>"Ready" when it isn't</li>
             <li>Cleaning not marked as started</li>
             <li>Early departure, cleaner on the old time</li>
-            <li class="b-l">Open problem taken for "all good"</li>
-            <li class="b-xl">A real emergency</li>
+            <li>Open problem taken for "all good"</li>
+            <li class="b-l">A real emergency</li>
             <li>Door code a week early</li>
             <li>How the apartment should look</li>
             <li>Paying back a refund</li>
-            <li class="b-xl">Cleaner at the door too early</li>
-            <li class="b-xl">No cleaner assigned</li>
+            <li class="b-l">Cleaner at the door too early</li>
+            <li class="b-l">No cleaner assigned</li>
             <li>How the stay really went</li>
             <li>Staff woken for nothing</li>
             <li>Second key request</li>
-            <li class="b-l">Technician no-show</li>
-            <li class="b-l">Internal note sent to a guest</li>
+            <li>Technician no-show</li>
+            <li>Internal note sent to a guest</li>
             <li>Guest not answering</li>
             <li>Reply sent too late</li>
             <li>Thanking every 5-star review</li>
             <li>Silence until arrival</li>
             <li>Haggling over the price</li>
-            <li class="b-l">Message never sent</li>
+            <li>Message never sent</li>
             <li>"Nobody cleaned during our stay"</li>
             <li>AI assuming the guest read it</li>
-            <li class="b-xl">Emergency missed, system down</li>
+            <li class="b-l">Emergency missed, system down</li>
             <li>Unknown arrival time</li>
-            <li>Elevator out of service</li>
-            <li class="b-l">AI inventing a policy</li>
+            <li>AI inventing a policy</li>
             <li>Paying later, in cash</li>
             <li>Key not returned</li>
             <li>Offering something for a review</li>
-            <li class="b-l">Late checkout approved by mistake</li>
+            <li>Late checkout approved by mistake</li>
             <li>Extension: clean or not?</li>
-            <li class="b-xl">Key locked inside</li>
+            <li class="b-l">Key locked inside</li>
             <li>"Will someone meet us?"</li>
             <li>Unpaid direct booking</li>
             <li>Owner's late cleaning request</li>
-            <li class="b-l">Entry details before registration</li>
-            <li class="b-l">Noisy neighbours</li>
-            <li class="b-l">Smart-lock invite without an email</li>
-            <li class="b-l">Same job sent twice</li>
+            <li>Entry details before registration</li>
+            <li>Smart-lock invite without an email</li>
+            <li>Same job sent twice</li>
             <li>Small problem at 2am</li>
-            <li class="b-l">AI approving a refund</li>
+            <li>AI approving a refund</li>
             <li>Extra guests</li>
             <li>First-night problem nobody reported</li>
             <li>Over-cautious AI</li>
@@ -297,7 +255,7 @@
             <li>Damage "seen" in an innocent photo</li>
             <li>Parking after checkout</li>
             <li>Defect that can wait</li>
-            <li class="b-l">Saying too much in a dispute</li>
+            <li>Saying too much in a dispute</li>
             <li>Lost platform support emails</li>
             </ul>
             <button type="button" class="cloud-more" aria-controls="cloud" aria-expanded="true" hidden>Show all 150+</button>
@@ -306,23 +264,160 @@
 
         <div class="answers">
           <div class="answers-head">
-            <h3>Our answers aren't just replies. They're actions.</h3>
-            <p class="answers-example">One empty lockbox can mean a message to the guest in their language, a call to whoever is on shift, a check every minute until the guest is inside, and a note in the PMS. All of it, without anyone having to ask.</p>
+            <h3>Other bots answer the guest. Flixbnb fixes the problem.</h3>
+            <p class="answers-example">Here's one empty lockbox, late at night. Watch what Flixbnb does about it, without anyone having to ask.</p>
           </div>
-          <ul class="verbs" aria-label="What Flixbnb can do">
-            <li>Message the guest</li>
-            <li>Message your staff</li>
-            <li>Make phone calls</li>
-            <li>Set reminders</li>
-            <li>Check every minute</li>
-            <li>Update the PMS</li>
-            <li>Page whoever is on shift</li>
-            <li>Translate both ways</li>
-            <li>Hold back the door code</li>
-            <li>Open a task for the right person</li>
-            <li>Answer reviews</li>
+          <figure class="actlog" aria-label="Example: what Flixbnb does about an empty lockbox">
+            <div class="actlog-head"><span class="actlog-alert" aria-hidden="true"></span><b>Lockbox empty</b><span>Nikis 54 · 23:40</span></div>
+            <ol class="actlog-list">
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></span><span class="act-what">Messaged the guest, in German</span><span class="act-st"><span class="act-time">23:41</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4h3l1.5 4-2 1.2a10 10 0 0 0 4.8 4.8L15 12l4 1.5v3A2 2 0 0 1 17 18.5 13.5 13.5 0 0 1 4.5 6 2 2 0 0 1 6.5 4z"/></svg></span><span class="act-what">Called Maria, who is on shift tonight</span><span class="act-st"><span class="act-time">23:41</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7.5V12l3 2"/></svg></span><span class="act-what">Checking every minute until the guest is inside</span><span class="act-st"><span class="act-time">23:52</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span><span class="act-what">Added a note to the booking in Hostaway</span><span class="act-st"><span class="act-time">23:53</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg></span><span class="act-what">Opened a task: refill the lockbox tomorrow</span><span class="act-st"><span class="act-time">23:53</span></span></li>
+              <li class="act"><span class="act-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5h4"/></svg></span><span class="act-what">Set a reminder: ask the guest how the night went, with an apology</span><span class="act-st"><span class="act-time">08:30</span></span></li>
+            </ol>
+            <div class="actlog-foot"><span class="actlog-done">✓ Handled.</span> Guest inside at 23:52.</div>
+          </figure>
+          <script>
+            // The actions run one after another once the log is on screen: each one spins, then gets its tick.
+            (function () {
+              if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+              var log = document.querySelector('.actlog');
+              var rows = Array.prototype.slice.call(log.querySelectorAll('.act'));
+              log.classList.add('is-waiting');
+              rows.forEach(function (r) { r.dataset.state = 'queued'; });
+              function play() {
+                var t = 400;
+                rows.forEach(function (r, i) {
+                  setTimeout(function () { r.dataset.state = 'running'; }, t);
+                  t += i === 2 ? 2200 : 900;
+                  setTimeout(function () { r.dataset.state = 'done'; }, t);
+                  t += 150;
+                });
+                setTimeout(function () { log.classList.remove('is-waiting'); }, t + 200);
+              }
+              new IntersectionObserver(function (entries, obs) {
+                if (!entries[0].isIntersecting) return;
+                obs.disconnect();
+                play();
+              }, { threshold: 0.45 }).observe(log);
+            })();
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROL: your team decides what is handled on its own -->
+    <section class="section native" id="native">
+      <div class="wrap">
+        <!-- Control: one slider decides what Flixbnb does on its own and what it checks with your team first -->
+        <div class="control">
+          <div class="control-head">
+            <h2>Your team stays in as much <span class="h2-hl">control</span> as they want.</h2>
+            <p>Flixbnb doesn't replace your team. It works for them. Slide to choose what it does on its own, and what it checks with them first.</p>
+          </div>
+          <div class="control-slider">
+            <div class="control-ends" aria-hidden="true"><span>More supervision</span><span>More automatic</span></div>
+            <input type="range" id="control-level" min="0" max="3" step="1" value="2" aria-label="How much Flixbnb does on its own" aria-valuetext="Most things on its own">
+            <ol class="control-stops" aria-hidden="true">
+              <li>You approve everything</li>
+              <li>Routine on its own</li>
+              <li>Most things on its own</li>
+              <li>Everything but money</li>
+            </ol>
+          </div>
+          <ul class="control-list" aria-live="polite">
+            <li data-at="1"><span class="control-what">Answer "What's the Wi-Fi password?"</span><span class="control-st"></span></li>
+            <li data-at="1"><span class="control-what">Remind the cleaner the night before</span><span class="control-st"></span></li>
+            <li data-at="2"><span class="control-what">Send the door code once the guest is registered</span><span class="control-st"></span></li>
+            <li data-at="2"><span class="control-what">Say yes to a late checkout when the next guest arrives late</span><span class="control-st"></span></li>
+            <li data-at="3"><span class="control-what">Move the cleaning after a date change</span><span class="control-st"></span></li>
+            <li data-at="3"><span class="control-what">Offer an extra night at your price</span><span class="control-st"></span></li>
+            <li data-at="9"><span class="control-what">Refund a guest €200</span><span class="control-st"></span></li>
           </ul>
         </div>
+        <script>
+          // The control slider: each task is handled on its own once the slider reaches its level; the rest go to your team.
+          (function () {
+            var range = document.getElementById('control-level');
+            var items = Array.prototype.slice.call(document.querySelectorAll('.control-list li'));
+            var stops = Array.prototype.slice.call(document.querySelectorAll('.control-stops li'));
+            function update() {
+              var v = +range.value;
+              items.forEach(function (li) {
+                var auto = v >= +li.dataset.at;
+                li.dataset.state = auto ? 'auto' : 'you';
+                li.querySelector('.control-st').textContent = auto ? 'Handled' : (li.dataset.at === '9' ? 'Always your call' : 'Needs approval');
+              });
+              stops.forEach(function (s, i) { s.classList.toggle('is-on', i === v); });
+              range.setAttribute('aria-valuetext', stops[v].textContent);
+              range.style.setProperty('--fill', (v / 3 * 100) + '%');
+            }
+            range.addEventListener('input', update);
+            stops.forEach(function (st, i) { st.addEventListener('click', function () { range.value = i; update(); }); });
+            update();
+          })();
+        </script>
+      </div>
+    </section>
+
+    <!-- IT WORKS IN CHAT: WHATSAPP OR TELEGRAM -->
+    <section class="section in-chat" id="chat">
+      <div class="wrap chat-grid">
+        <div>
+          <h2>It talks to you like a teammate, on WhatsApp or Telegram.</h2>
+          <p class="lede">When it needs something only you know, it asks. You answer in one line, and it takes it from there.</p>
+          <p class="lede no-app"><strong>No new software to learn.</strong> If your team can use WhatsApp, they can use Flixbnb.</p>
+        </div>
+        <figure class="chat wa" aria-label="Example WhatsApp chat with Flixbnb">
+          <div class="wa-head">
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            <span class="chat-avatar" aria-hidden="true"><img src="favicon.svg" alt=""></span>
+            <span class="wa-who"><span class="chat-name">Flixbnb</span><span class="wa-status"><span class="wa-online">online</span><span class="wa-typing">typing…</span></span></span>
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="12" height="10" rx="2"/><path d="M15 10.5l5-3v9l-5-3"/></svg>
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4h3l1.5 4-2 1.2a10 10 0 0 0 4.8 4.8L15 12l4 1.5v3A2 2 0 0 1 17 18.5 13.5 13.5 0 0 1 4.5 6 2 2 0 0 1 6.5 4z"/></svg>
+          </div>
+          <ol class="chat-msgs">
+            <li class="wa-day" aria-hidden="true"><span>Today</span></li>
+            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>The electricity in Nikis 54 is out. Where's the fuse box, so I can tell the guest to check it?</p><time>14:32</time></div></li>
+            <li class="msg from-you"><div class="bubble"><span class="sender">Your team</span><p>Behind the curtain, left of the shower door.</p><time>14:33 <svg class="wa-read" viewBox="0 0 18 11" aria-label="read"><path d="M1 6l3 3 6.5-7.5M7.5 8.6L8 9l6.5-7.5"/></svg></time></div></li>
+            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>Got it. Telling the guest now. I'll check in with them in about 15 minutes to make sure it's OK, and update you if more help is needed.</p><time>14:33</time></div></li>
+            <li class="chat-gap"><span>15 minutes later</span></li>
+            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>Power's back, the guest is all good ✅</p><time>14:48</time></div></li>
+          </ol>
+          <div class="wa-foot" aria-hidden="true">
+            <span class="wa-input"><svg class="wa-ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 14a4 4 0 0 0 7 0M9.5 9.5h.01M14.5 9.5h.01"/></svg>Message</span>
+            <span class="wa-mic"><svg viewBox="0 0 24 24"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M6 11.5a6 6 0 0 0 12 0M12 17.5v3"/></svg></span>
+          </div>
+        </figure>
+        <script>
+          // The chat plays out once it's on screen, the way WhatsApp shows it: "typing…" under the name, then the message.
+          (function () {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            var chat = document.querySelector('.chat');
+            var msgs = Array.prototype.slice.call(chat.querySelectorAll('.chat-msgs > li:not(.wa-day)'));
+            msgs.forEach(function (m) { m.dataset.state = 'wait'; });
+            function play() {
+              var t = 300;
+              msgs.forEach(function (m) {
+                if (m.classList.contains('from-bot')) {
+                  setTimeout(function () { chat.classList.add('is-typing'); }, t);
+                  t += 1400;
+                } else {
+                  t += 900;
+                }
+                setTimeout(function () { chat.classList.remove('is-typing'); m.dataset.state = 'shown'; }, t);
+                t += 700;
+              });
+            }
+            new IntersectionObserver(function (entries, obs) {
+              if (!entries[0].isIntersecting) return;
+              obs.disconnect();
+              play();
+            }, { threshold: 0.5 }).observe(chat);
+          })();
+        </script>
       </div>
     </section>
 
@@ -360,74 +455,6 @@
       </div>
     </section>
 
-    <!-- IT WORKS IN CHAT: WHATSAPP OR TELEGRAM -->
-    <section class="section in-chat" id="chat">
-      <div class="wrap chat-grid">
-        <div>
-          <h2>It talks to you like a teammate, on WhatsApp or Telegram.</h2>
-          <p class="lede">When it needs something only you know, it asks. You answer in one line, and it takes it from there.</p>
-        </div>
-        <figure class="chat" aria-label="Example chat with Flixbnb">
-          <div class="chat-head">
-            <span class="chat-avatar" aria-hidden="true">F</span>
-            <span class="chat-name">Flixbnb</span>
-          </div>
-          <ol class="chat-msgs">
-            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>The electricity in Nikis 54 is out. Where's the fuse box, so I can tell the guest to check it?</p><time>14:32</time></div></li>
-            <li class="msg from-you"><div class="bubble"><span class="sender">Your team</span><p>Behind the curtain, left of the shower door.</p><time>14:33</time></div></li>
-            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>Got it. Telling the guest now. I'll check in with them in about 15 minutes to make sure it's OK, and update you if more help is needed.</p><time>14:33</time></div></li>
-            <li class="chat-gap">15 minutes later</li>
-            <li class="msg from-bot"><div class="bubble"><span class="sender">Flixbnb</span><p>Power's back, the guest is all good <span class="ok" aria-label="done">✓</span></p><time>14:48</time></div></li>
-          </ol>
-        </figure>
-        <script>
-          // The chat plays out once it's on screen: Flixbnb types, you answer, Flixbnb takes it from there and follows up.
-          (function () {
-            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-            var chat = document.querySelector('.chat');
-            var msgs = Array.prototype.slice.call(chat.querySelectorAll('.chat-msgs > li'));
-            msgs.forEach(function (m) {
-              m.dataset.state = 'wait';
-              if (m.classList.contains('from-bot')) {
-                m.insertAdjacentHTML('beforeend', '<span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>');
-              }
-            });
-            function play() {
-              var t = 300;
-              msgs.forEach(function (m) {
-                if (m.classList.contains('from-bot')) {
-                  setTimeout(function () { m.dataset.state = 'typing'; }, t);
-                  t += 1400;
-                } else {
-                  t += 900;
-                }
-                setTimeout(function () { m.dataset.state = 'shown'; }, t);
-                t += 700;
-              });
-            }
-            new IntersectionObserver(function (entries, obs) {
-              if (!entries[0].isIntersecting) return;
-              obs.disconnect();
-              play();
-            }, { threshold: 0.5 }).observe(chat);
-          })();
-        </script>
-      </div>
-    </section>
-
-    <!-- 100X: AI-NATIVE, NOT ANOTHER BOT -->
-    <section class="section native">
-      <div class="wrap">
-        <div class="native-grid">
-          <div>
-            <h2>Our AI approach makes your team 100X better.</h2>
-            <p class="big-line"><span class="nowrap">10x less time.</span> <span class="nowrap">10x better quality.</span></p>
-          </div>
-          <p class="native-text"><span class="bot">While old AI bots just answer your guests' trivial messages,</span> Flixbnb manages your entire operation, and answering guests is just one part of it.</p>
-        </div>
-      </div>
-    </section>
-
     <!-- THE THREE PARTS -->
     <section class="section parts">
       <div class="wrap">
@@ -443,7 +470,7 @@
           </div>
           <div class="part part-us">
             <p class="part-line">Flixbnb brings the experience.</p>
-            <p class="part-note">150+ situations and exactly how to handle each one, and it makes sure every step actually happens.</p>
+            <p class="part-note"><strong class="hl">150+ situations</strong> and exactly how to handle each one, and it makes sure every step actually happens.</p>
           </div>
         </div>
       </div>
@@ -461,10 +488,10 @@
     <section class="section talk on-dark" id="talk">
       <div class="wrap">
         <h2>See it run on your own listings.</h2>
-        <p>Start onboarding, or begin with a free scan of your PMS.</p>
+        <p>Start onboarding, or schedule a call with our team first.</p>
         <div class="actions">
-          <a href="mailto:sharon@flixbnb.com?subject=Start%20onboarding" class="btn" data-lead="onboarding">Start onboarding</a>
-          <a href="mailto:sharon@flixbnb.com?subject=Free%20PMS%20scan" class="btn btn-ghost" data-lead="scan">Free PMS scan</a>
+          <a href="mailto:hello@flixbnb.com?subject=Start%20onboarding" class="btn" data-lead="onboarding">Start onboarding</a>
+          <a href="mailto:hello@flixbnb.com?subject=Schedule%20a%20call" class="btn btn-ghost" data-lead="call">Schedule a call</a>
         </div>
         <p class="cta-note">No credit card required yet.</p>
       </div>
@@ -475,11 +502,11 @@
   <footer class="foot">
     <div class="wrap">
       <span><b>Flixbnb</b>, the AI operations manager for short-term rentals</span>
-      <a href="mailto:sharon@flixbnb.com">sharon@flixbnb.com</a>
+      <a href="mailto:hello@flixbnb.com">hello@flixbnb.com</a>
     </div>
   </footer>
 
-  <!-- LEAD FORM: opened by every "Start onboarding" and "Free PMS scan" button -->
+  <!-- LEAD FORM: opened by every "Start onboarding" and "Schedule a call" button -->
   <dialog class="lead" id="lead" aria-labelledby="lead-title">
     <button type="button" class="lead-close" aria-label="Close" data-close>&times;</button>
     <form class="lead-form" novalidate>

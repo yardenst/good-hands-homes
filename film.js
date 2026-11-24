@@ -43,10 +43,10 @@
   const SANS = (w, s) => `${w} ${s}px "Schibsted Grotesk", system-ui, sans-serif`;
 
   const C = {
-    paper: '#F6F3EC', navy: '#0F2342', ink: '#13233B', soft: '#56657A',
-    aegean: '#1D4FA3', aegeanPale: '#DCE7F7',
-    green: '#16703E', greenLight: '#7FDDA4', greenPale: '#DDF3E5',
-    pink: '#C2207A', pinkPale: '#FBDDEB',
+    paper: '#F6F5F2', navy: '#1D2124', ink: '#1D2124', soft: '#5B6166',
+    aegean: '#9E2B1E', aegeanPale: '#F6DDD7',
+    green: '#9E2B1E', greenLight: '#F0782F', greenPale: '#F7E4DF',
+    pink: '#E2571B', pinkPale: '#FCE3D3',
     yellow: '#FCF1A0', yellowDark: '#E6D27A',
     kraft: '#D9C29B', kraftDark: '#BFA67C',
     white: '#FFFFFF', skin: '#FFF4E6', orange: '#F4A259'
@@ -152,7 +152,7 @@
   }
 
   function makeTextures() {
-    PAPER = makePaper(C.paper, 11, { grid: 'rgba(29,79,163,0.07)', grain: 12 });
+    PAPER = makePaper(C.paper, 11, { grid: 'rgba(29,33,36,0.06)', grain: 12 });
     NAVY = makePaper(C.navy, 12, { grain: 10, fibre: 'rgba(255,255,255,0.035)', vignette: 'rgba(0,0,0,0.32)' });
     const grain = document.createElement('canvas');
     grain.width = grain.height = 160;
@@ -337,7 +337,7 @@
   }
 
   /* ───────────── Characters and props ───────────── */
-  const SLEEVE = '#17428A';
+  const SLEEVE = '#7E2016';
   function host(x, y, s, mood, t, o = {}) {
     if (s <= 0) return;
     ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
@@ -504,9 +504,14 @@
     ctx.font = SANS(700, 96);
     const ww = ctx.measureText('Flixbnb').width, total = 116 + 26 + ww, x0 = -total / 2;
     ctx.save(); ctx.translate(x0 + 58, 0);
-    piece('logo-mark', () => roundPoly(116, 116, 28), C.aegean, { rough: 1, edge: C.white, shadowA: 0.35 });
-    ctx.fillStyle = C.white; ctx.font = SANS(800, 76); ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-    ctx.fillText('F', 2, 5);
+    // The mark: a house with a double tick (handled, perfectly), same geometry as favicon.svg
+    const k = 2.9, P = (px, py) => [(px - 24) * k, (py - 24) * k];
+    piece('logo-mark', () => [P(24, 2), P(46, 19.5), P(46, 46), P(2, 46), P(2, 19.5)], C.aegean, { rough: 1, edge: C.white, shadowA: 0.35 });
+    ctx.lineWidth = 4.6 * k; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    [[8.5, C.white], [19.5, '#F0782F']].forEach(([x0, col]) => {
+      ctx.strokeStyle = col; ctx.beginPath();
+      ctx.moveTo(...P(x0, 31)); ctx.lineTo(...P(x0 + 6, 37)); ctx.lineTo(...P(x0 + 18, 23.5)); ctx.stroke();
+    });
     ctx.restore();
     ctx.fillStyle = o.color || C.white; ctx.font = SANS(700, 96); ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
     ctx.fillText('Flixbnb', x0 + 142, 8);
@@ -863,7 +868,7 @@
     const r = rng(702);
     for (let i = 0; i < 60; i++) dot((r() - 0.5) * (tw + 40), (r() - 0.5) * 150, 1 + r() * 2.6, 'rgba(15,35,66,0.55)');
     ctx.restore();
-    if (f >= 1) splats(cx, cy, t, t0, 703, 'rgba(127,221,164,0.55)', 14, 300);
+    if (f >= 1) splats(cx, cy, t, t0, 703, 'rgba(240,120,47,0.5)', 14, 300);
   }
   function drawEnd(t) {
     ctx.drawImage(NAVY, 0, 0, W, H);

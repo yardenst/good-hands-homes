@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <rect x="0" y="0" width="48" height="48" rx="12" fill="#1D4FA3"/>
-  <text x="24" y="33" text-anchor="middle" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="27" fill="#FFFFFF">F</text>
+  <path d="M24 3.5 L44.5 19.5 L44.5 44.5 L3.5 44.5 L3.5 19.5 Z" fill="#9E2B1E" stroke="#9E2B1E" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M8.5 31 L14.5 37 L26.5 23.5" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M19.5 31 L25.5 37 L37.5 23.5" fill="none" stroke="#F0782F" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
