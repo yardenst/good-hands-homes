@@ -578,7 +578,7 @@
   /* ───────────── Scene 1 + 2: the chaos, then 150+ sticky notes ───────────── */
   function drawChaos(t) {
     ctx.drawImage(PAPER, 0, 0, W, H);
-    moonAndStars(t);
+    sun(1176, 98, 0.42 * pop(t, 0.4, 0.4), t); // daytime: this happens every single day
     building(175, 735, pop(t, 0.5, 0.4), t);
     host(640, 470, pop(t, 0.8, 0.4), t > 3 ? 'stressed' : 'neutral', t, { phone: true, buzz: buzzAt(t), scribble: t > 4.6 });
     NOTIFS.forEach((n, i) => notif(n, i, t));
@@ -590,7 +590,7 @@
       caption('cap1', 'Running short-term rentals?', 640, 96, 52, C.ink, C.white, 0.2, t);
       ctx.restore();
     }
-    if (t > 5.35) caption('cap2', '3am. Again.', 640, 96, 60, C.pink, C.white, 5.35, t);
+    if (t > 5.35) caption('cap2', 'Every. Single. Day.', 640, 96, 60, C.pink, C.white, 5.35, t);
 
     if (t >= NOTES[0].t - 0.05) drawNotes(t);
   }
