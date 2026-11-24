@@ -1186,7 +1186,8 @@ html:has(.lead[open]) { overflow: hidden; }
   .wrap { padding-left: 20px; padding-right: 20px; }
   .section { padding: 80px 0; }
   .sizes { padding: 72px 0; }
-  .nav-links a:not(.btn), .brand-line { display: none; }
+  .nav-links { display: none; }
+  .brand-line { font-size: 0.8125rem; padding-left: 12px; margin-left: 2px; }
   .sheet { padding: 28px 14px 10px 54px; transform: rotate(-0.6deg); }
   .sheet::after { left: 40px; }
   .box { left: -44px; width: 18px; height: 18px; }
