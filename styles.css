@@ -1207,6 +1207,7 @@ html:has(.lead[open]) { overflow: hidden; }
 .field input[aria-invalid]:focus { box-shadow: 0 0 0 3px rgba(194, 32, 122, 0.16); }
 
 .lead-error { margin-top: 14px; font-size: 0.9375rem; font-weight: 550; color: var(--orange); }
+.lead-error a { color: var(--red); text-decoration: underline; white-space: nowrap; }
 .lead-submit { width: 100%; margin-top: 24px; }
 .lead-submit:disabled { opacity: 0.6; cursor: progress; }
 .lead-note { margin-top: 12px; text-align: center; font-size: 0.875rem; color: var(--ink-faint); }

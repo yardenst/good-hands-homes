@@ -1724,6 +1724,11 @@
    "es": "Resuelto.",
    "fr": "Géré.",
    "pl": "Załatwione."
+  },
+  "Send by email instead": {
+   "es": "Enviar por email",
+   "fr": "Envoyer par e-mail",
+   "pl": "Wyślij e-mailem"
   }
  },
  "js": [
@@ -1826,6 +1831,7 @@
   "Your call",
   "Lockbox empty.",
   "Refund threat.",
-  "Extra night request."
+  "Extra night request.",
+  "Send by email instead"
  ]
 }

@@ -55,11 +55,12 @@ document.querySelectorAll('[role="tablist"]').forEach(list => {
 })();
 
 // The lead form: every "Start onboarding" and "Schedule a call" button opens it.
-// Submissions go to FormSubmit, which emails each one to Sharon. The very first submission
-// sends Sharon an "Activate Form" email; until that link is clicked, sends fail and the visitor
-// is told to email instead. If LEAD_ENDPOINT is emptied, the form opens a ready-to-send email.
-const LEAD_ENDPOINT = 'https://formsubmit.co/ajax/sharon@flixbnb.com';
-const LEAD_EMAIL = 'hello@flixbnb.com'; // shown to visitors; form leads still go to LEAD_ENDPOINT
+// Submissions go to Web3Forms, which emails each one to the address the access key was made for.
+// If sending fails, the visitor gets a "Send by email instead" link with their details filled in.
+// With no access key set, the form opens a ready-to-send email straight away.
+const LEAD_KEY = '60b405a2-1581-4a5c-a8f2-c3ff72a98a2c'; // Web3Forms access key (public by design, safe to keep in this file)
+const LEAD_ENDPOINT = 'https://api.web3forms.com/submit';
+const LEAD_EMAIL = 'hello@flixbnb.com'; // shown to visitors and used for the email fallback
 
 (function () {
   const dialog = document.getElementById('lead');
@@ -128,27 +129,37 @@ const LEAD_EMAIL = 'hello@flixbnb.com'; // shown to visitors; form leads still g
     const data = Object.fromEntries(new FormData(form));
     const k = kinds[data.request] || kinds.onboarding;
 
-    if (LEAD_ENDPOINT) {
+    const subject = k.subject + ': ' + data.company;
+    const mailto = 'mailto:' + LEAD_EMAIL + '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent('Company: ' + data.company + '\nEmail: ' + data.email + '\nPhone: ' + data.phone);
+
+    if (LEAD_KEY) {
       submit.disabled = true;
       try {
         const res = await fetch(LEAD_ENDPOINT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({ ...data, language: document.documentElement.lang, _subject: k.subject + ': ' + data.company, _template: 'table' })
+          body: JSON.stringify({
+            access_key: LEAD_KEY, subject, from_name: 'flixbnb.com',
+            request: data.request, company: data.company, email: data.email, phone: data.phone,
+            language: document.documentElement.lang, botcheck: data._honey || ''
+          })
         });
-        // FormSubmit answers 200 with success "false" while the form isn't activated yet
         const reply = await res.json().catch(() => ({}));
-        if (!res.ok || String(reply.success) !== 'true') throw new Error(reply.message || res.status);
+        if (!res.ok || reply.success !== true) throw new Error(reply.message || res.status);
       } catch (err) {
-        error.textContent = t('Your details weren\'t sent. Try again, or email ') + LEAD_EMAIL + '.';
+        error.textContent = t("Your details weren't sent. Try again, or email ") + LEAD_EMAIL + '. ';
+        const a = document.createElement('a');
+        a.href = mailto;
+        a.textContent = t('Send by email instead');
+        error.append(a);
         error.hidden = false;
         submit.disabled = false;
         return;
       }
       submit.disabled = false;
     } else {
-      const body = 'Company: ' + data.company + '\nEmail: ' + data.email + '\nPhone: ' + data.phone;
-      location.href = 'mailto:' + LEAD_EMAIL + '?subject=' + encodeURIComponent(k.subject + ': ' + data.company) + '&body=' + encodeURIComponent(body);
+      location.href = mailto;
     }
 
     form.hidden = true;
