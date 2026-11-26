@@ -8,7 +8,7 @@
   if (!root) return;
   const canvas = root.querySelector('canvas');
   const ctx = canvas.getContext('2d');
-  const W = 1280, H = 720, DUR = 52;
+  const W = 1280, H = 720, DUR = 55, MUSIC_END = 52;
 
   /* ───────────── Small helpers ───────────── */
   function rng(seed) {
@@ -1018,13 +1018,16 @@
     const map = t => ctxStart + (t - songStart);
     const out = ac.createGain();
     out.gain.value = 0.8;
-    if (songStart < DUR) { out.gain.setValueAtTime(0.8, map(Math.max(50.6, songStart))); out.gain.linearRampToValueAtTime(0.0001, map(DUR + 0.4)); }
+    // The music still ends at 52s; the last 3 seconds hold the end card while the narrator finishes
+    if (songStart < MUSIC_END) { out.gain.setValueAtTime(0.8, map(Math.max(50.6, songStart))); out.gain.linearRampToValueAtTime(0.0001, map(MUSIC_END + 0.4)); }
     const comp = ac.createDynamicsCompressor();
     comp.threshold.value = -16; comp.knee.value = 10; comp.ratio.value = 3.5; comp.attack.value = 0.004; comp.release.value = 0.18;
     const limit = ac.createDynamicsCompressor();
     limit.threshold.value = -3; limit.knee.value = 0; limit.ratio.value = 20; limit.attack.value = 0.001; limit.release.value = 0.1;
-    out.connect(comp); comp.connect(limit); limit.connect(dest);
-    s.tail = limit;
+    // duck: turns the music down while the narrator speaks (see attachVoice)
+    const duck = ac.createGain();
+    out.connect(comp); comp.connect(limit); limit.connect(duck); duck.connect(dest);
+    s.tail = limit; s.duck = duck; s.map = map;
 
     const sr = ac.sampleRate, r = rng(4243);
     const verb = ac.createConvolver();
@@ -1274,6 +1277,49 @@
   let state = 'idle', offset = POSTER, startAt = 0, clockStart = 0, muted = false, seeking = false, ready = false;
   let actx = null, master = null, session = null, timer = 0;
 
+  // The narrator: one pre-recorded track per language (voice/<lang>.m4a, made with narration/ in the
+  // outreach folder). WINDOWS are the seconds where the narrator speaks, used to duck the music.
+  const VOICE_LANG = ['en', 'es', 'fr', 'pl'].includes(document.documentElement.lang) ? document.documentElement.lang : 'en';
+  const WINDOWS = {
+    en: [[0.3, 4.81], [6.4, 11.14], [11.8, 18.26], [19.5, 28.56], [30.9, 36.81], [40.4, 43.83], [45.9, 52.43]],
+    es: [[0.3, 5.26], [6.4, 11.06], [11.8, 19.37], [19.5, 29.55], [30.9, 36.79], [40.4, 45.08], [45.9, 53.14]],
+    fr: [[0.3, 5.58], [6.4, 10.9], [11.8, 18.09], [19.5, 29.37], [30.9, 36.31], [40.4, 45.34], [45.9, 54.34]],
+    pl: [[0.3, 5.29], [6.4, 10.91], [11.8, 18.03], [19.5, 28.95], [30.9, 37.15], [40.4, 45.24], [45.9, 53.31]]
+  }[VOICE_LANG];
+  const DUCK = 0.4;
+  let voiceBytes = null, voiceBuf = null, voiceDecoding = null;
+  // Fetch the file early (no sound needed for that), decode it once the audio context exists
+  function fetchVoice() {
+    if (!voiceBytes) voiceBytes = fetch('/voice/' + VOICE_LANG + '.m4a?v=20261126c').then(r => (r.ok ? r.arrayBuffer() : null)).catch(() => null);
+    return voiceBytes;
+  }
+  function decodeVoice() {
+    if (!voiceDecoding) voiceDecoding = fetchVoice().then(bytes => bytes && new Promise((res, rej) => {
+      const p = actx.decodeAudioData(bytes, res, rej);
+      if (p && p.then) p.then(res, rej);
+    })).then(buf => {
+      voiceBuf = buf || null;
+      if (voiceBuf && state === 'playing' && session) attachVoice(session);
+    }).catch(() => null);
+    return voiceDecoding;
+  }
+  // Start the narrator in a sound session from the current film time, and duck the music around each line
+  function attachVoice(s) {
+    if (!voiceBuf || s.voice || s.ac !== actx) return;
+    const from = Math.max(s.songStart, s.songStart + (actx.currentTime - s.ctxStart) + 0.05);
+    if (from >= voiceBuf.duration) return;
+    const src = actx.createBufferSource();
+    src.buffer = voiceBuf; src.connect(master);
+    src.start(s.map(from), from);
+    s.voice = src;
+    const g = s.duck.gain;
+    WINDOWS.forEach(([a, b]) => {
+      if (b + 0.1 <= from) return;
+      g.setTargetAtTime(DUCK, s.map(Math.max(a - 0.2, from)), 0.06);
+      g.setTargetAtTime(1, s.map(Math.max(b + 0.1, from)), 0.25);
+    });
+  }
+
   function setState(s) {
     state = s; root.dataset.state = s;
     toggleBtn.setAttribute('aria-label', tr(s === 'playing' ? 'Pause' : 'Play'));
@@ -1298,13 +1344,18 @@
       const ctxStart = actx.currentTime + 0.05;
       session = newSession(actx, master, offset, ctxStart);
       startAt = ctxStart - offset;
+      attachVoice(session);
       fill();
       timer = setInterval(fill, 40);
     } else clockStart = performance.now() - offset * 1000;
   }
   function stopSound() {
     clearInterval(timer);
-    if (session) { session.tail.disconnect(); session = null; }
+    if (session) {
+      session.tail.disconnect();
+      if (session.voice) { try { session.voice.stop(); } catch (e) { /* already stopped */ } session.voice.disconnect(); }
+      session = null;
+    }
   }
   async function play() {
     if (state === 'playing' || state === 'loading') return;
@@ -1319,6 +1370,12 @@
       // If the browser won't start the sound, the film still plays, silently
       setState('loading');
       try { await Promise.race([actx.resume(), new Promise(r => setTimeout(r, 400))]); } catch (e) { /* stays silent */ }
+    }
+    // Give the narrator up to 1.5s to be ready, so the first line isn't cut; if it's late it joins mid-film
+    if (actx && actx.state === 'running' && !voiceBuf) {
+      setState('loading');
+      await Promise.race([decodeVoice(), new Promise(r => setTimeout(r, 1500))]);
+      if (state !== 'loading') return;
     }
     startSound();
     setState('playing');
@@ -1391,6 +1448,7 @@
   const fonts = [HAND(700, 40), HAND(400, 40), SANS(500, 20), SANS(600, 20), SANS(700, 40), SANS(800, 40)];
   Promise.all(fonts.map(f => (document.fonts ? document.fonts.load(f, 'AaĄąĘęŁłŻżŹźŚśĆćŃńÓóÀàÉéÈèÇçÑñ¿¡€') : null))).catch(() => {}).then(() => {
     makeTextures(); fit(); ready = true; setState('idle'); render(POSTER);
+    setTimeout(fetchVoice, 1500); // download the narrator quietly once the page has settled
   });
 
   // For checking by hand: .film.show(27) draws a frame; .film.renderSound(46, 50) renders that slice offline
