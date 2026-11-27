@@ -1281,16 +1281,16 @@
   // outreach folder). WINDOWS are the seconds where the narrator speaks, used to duck the music.
   const VOICE_LANG = ['en', 'es', 'fr', 'pl'].includes(document.documentElement.lang) ? document.documentElement.lang : 'en';
   const WINDOWS = {
-    en: [[0.3, 4.81], [6.4, 11.14], [11.8, 18.26], [19.5, 28.56], [30.9, 36.81], [40.4, 43.83], [45.9, 52.43]],
-    es: [[0.3, 5.26], [6.4, 11.06], [11.8, 19.37], [19.5, 29.55], [30.9, 36.79], [40.4, 45.08], [45.9, 53.14]],
-    fr: [[0.3, 5.58], [6.4, 10.9], [11.8, 18.09], [19.5, 29.37], [30.9, 36.31], [40.4, 45.34], [45.9, 54.34]],
-    pl: [[0.3, 5.29], [6.4, 10.91], [11.8, 18.03], [19.5, 28.95], [30.9, 37.15], [40.4, 45.24], [45.9, 53.31]]
+    en: [[0.3, 6.63], [7.0, 9.54], [11.8, 17.01], [19.5, 26.69], [30.9, 35.42], [40.4, 42.8], [45.9, 49.3]],
+    es: [[0.3, 6.7], [7.0, 10.08], [11.8, 17.8], [19.5, 27.77], [30.9, 36.31], [40.4, 43.51], [45.9, 49.86]],
+    fr: [[0.3, 6.21], [7.0, 10.12], [11.8, 18.4], [19.5, 28.88], [30.9, 35.58], [40.4, 42.99], [45.9, 50.3]],
+    pl: [[0.3, 5.82], [7.0, 9.97], [11.8, 17.83], [19.5, 29.37], [30.9, 35.02], [40.4, 43.43], [45.9, 51.45]]
   }[VOICE_LANG];
   const DUCK = 0.4;
   let voiceBytes = null, voiceBuf = null, voiceDecoding = null;
   // Fetch the file early (no sound needed for that), decode it once the audio context exists
   function fetchVoice() {
-    if (!voiceBytes) voiceBytes = fetch('/voice/' + VOICE_LANG + '.m4a?v=20261126c').then(r => (r.ok ? r.arrayBuffer() : null)).catch(() => null);
+    if (!voiceBytes) voiceBytes = fetch('/voice/' + VOICE_LANG + '.m4a?v=20261127a').then(r => (r.ok ? r.arrayBuffer() : null)).catch(() => null);
     return voiceBytes;
   }
   function decodeVoice() {
